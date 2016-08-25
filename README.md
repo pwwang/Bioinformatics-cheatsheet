@@ -1,5 +1,23 @@
+
 # Bioinformatics-cheatsheet
 A cheat sheet for Bioinformatians.
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents  
+
+- [Biological Concepts](#biological-concepts)
+- [Experimental Techniques](#experimental-techniques)
+  - [Next Generate Sequencing](#next-generate-sequencing)
+  - [Uncategorized](#uncategorized)
+- [NGS data repositories](#ngs-data-repositories)
+- [NGS data analysis](#ngs-data-analysis)
+  - [Variants calling](#variants-calling)
+    - [SNP calling](#snp-calling)
+- [File formats](#file-formats)
+  - [Formats](#formats)
+  - [Tools](#tools)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Biological Concepts
 - **DNA**: Deoxyribonucleic acid is a molecule that carries the genetic instructions used in the growth, development, functioning and reproduction of all known living organisms and many viruses. [@Wiki](https://en.wikipedia.org/wiki/DNA), [@NIH](https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/)
@@ -25,6 +43,7 @@ A cheat sheet for Bioinformatians.
 - **CAGE**: [@Wiki](https://en.wikipedia.org/wiki/Cap_analysis_gene_expression)
 - **ChIA-PET**: [@Wiki](https://en.wikipedia.org/wiki/Chia_Pet)
 - **5C/Hi-C**: [@Wiki](https://en.wikipedia.org/wiki/Chromosome_conformation_capture) 
+
 ### Uncategorized
 - **ChIP**: Chromatin Immunoprecipitation (ChIP) is a type of immunoprecipitation experimental technique used to investigate the interaction between proteins and DNA in the cell. [@Wiki](https://en.wikipedia.org/wiki/Chromatin_immunoprecipitation)
 - **ChIP-chip**: ChIP-chip (also known as ChIP-on-chip) is a technology that combines chromatin immunoprecipitation ('ChIP') with DNA microarray ("chip"). Like regular ChIP, ChIP-on-chip is used to investigate interactions between proteins and DNA in vivo. [@Wiki](https://en.wikipedia.org/wiki/ChIP-on-chip)
@@ -51,6 +70,7 @@ A cheat sheet for Bioinformatians.
 - **BigWig**: The BigWig format is designed for dense, continuous data that is intended to be displayed as a graph. Files can be created from WIG or BedGraph files using the appropriate utility program. [@UCSC](http://genome.ucsc.edu/goldenPath/help/bigWig.html)
 - **GFF**: The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. [@UCSC](https://genome.ucsc.edu/FAQ/FAQformat.html#format3), [@Ensembl](http://useast.ensembl.org/info/website/upload/gff.html), [GTF(GFFv2)@GMOD](http://gmod.org/wiki/GFF2), [@Wiki](https://en.wikipedia.org/wiki/General_feature_format)
 - **VCF**: The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations. [v4.0@1000genomes](http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-40), [@Wiki](https://en.wikipedia.org/wiki/Variant_Call_Format)
+
 ### Tools
 - **[bedtools](https://github.com/arq5x/bedtools2)**: Collectively, the bedtools utilities are a swiss-army knife of tools for a wide-range of genomics analysis tasks.
 - **[samtools](https://github.com/samtools/samtools)**: SAM Tools provide various utilities for manipulating alignments in the SAM/BAM format, including sorting, merging, indexing and generating alignments in a per-position format.
