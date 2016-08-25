@@ -8,5 +8,6 @@ A cheat sheet for Bioinformatians.
 
 
 ## File formats
+- BED: [BED format at UCSC](https://genome.ucsc.edu/FAQ/FAQformat.html#format1)
 
 
