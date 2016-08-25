@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Bioinformatics-cheatsheet by pwwang</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Bioinformatics-cheatsheet</h1>
+        <h2>A cheat sheet for Bioinformatians.</h2>
+        <a href="https://github.com/pwwang/Bioinformatics-cheatsheet" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="bioinformatics-cheatsheet" class="anchor" href="#bioinformatics-cheatsheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bioinformatics-cheatsheet</h1>
+
+<p>A cheat sheet for Bioinformatians.</p>
+
+<h2>
+<a id="biological-concepts" class="anchor" href="#biological-concepts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Biological Concepts</h2>
+
+<ul>
+<li>
+<strong>DNA</strong>: Deoxyribonucleic acid is a molecule that carries the genetic instructions used in the growth, development, functioning and reproduction of all known living organisms and many viruses. <a href="https://en.wikipedia.org/wiki/DNA">@Wiki</a>, <a href="https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/">@NIH</a>
+</li>
+<li>
+<strong>RNA</strong>: Ribonucleic acid (RNA) is a polymeric molecule implicated in various biological roles in coding, decoding, regulation, and expression of genes. <a href="https://en.wikipedia.org/wiki/RNA">@Wiki</a>
+</li>
+<li>
+<strong>Protein</strong>: Proteins are large biomolecules, or macromolecules, consisting of one or more long chains of amino acid residues. <a href="https://en.wikipedia.org/wiki/Protein">@Wiki</a>
+</li>
+<li>
+<strong>Gene</strong>: A gene is a locus (or region) of DNA which is made up of nucleotides and is the molecular unit of heredity. <a href="https://en.wikipedia.org/wiki/Gene">@Wiki</a>, <a href="https://ghr.nlm.nih.gov/primer/basics/gene">@NIH</a>
+</li>
+<li>
+<strong>SNP</strong>: A single nucleotide polymorphism, often abbreviated to SNP (pronounced snip; plural snips), is a variation in a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population (e.g. &gt;1%). <a href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">@Wiki</a>, <a href="https://ghr.nlm.nih.gov/primer/genomicresearch/snp">@NIH</a>
+</li>
+<li>
+<strong>Pathway (Biological pathway)</strong>: A biological pathway is a series of actions among molecules in a cell that leads to a certain product or a change in a cell. Such a pathway can trigger the assembly of new molecules, such as a fat or protein. Pathways can also turn genes on and off, or spur a cell to move. <a href="https://en.wikipedia.org/wiki/Biological_pathway">@Wiki</a>, <a href="https://www.genome.gov/27530687/biological-pathways-fact-sheet/">@NIH</a>
+</li>
+<li>
+<strong>CNV</strong>: The chromosome now has two copies of this section of DNA, rather than one. Copy number variation (CNVs) is a relatively new field in genomics and it is defined as a phenomenon in which sections of the genome are repeated and the number of repeats in the genome varies between individuals in the human population. <a href="https://en.wikipedia.org/wiki/Copy-number_variation">@Wiki</a>
+</li>
+<li>
+<strong>Transcription</strong>: Transcription is the first step of gene expression, in which a particular segment of DNA is copied into RNA (mRNA) by the enzyme RNA polymerase. <a href="https://en.wikipedia.org/wiki/Transcription_(genetics)">@Wiki</a>
+</li>
+<li>
+<strong>Translation</strong>: In molecular biology and genetics, translation is the process in which cellular ribosomes create proteins. In translation, messenger RNA (mRNA)—produced by transcription from DNA—is decoded by a ribosome to produce a specific amino acid chain, or polypeptide. <a href="https://en.wikipedia.org/wiki/Translation_(biology)">@Wiki</a>
+</li>
+<li>
+<strong>Transcription factor</strong>: In molecular biology and genetics, a transcription factor (sometimes called a sequence-specific DNA-binding factor) is a protein that binds to specific DNA sequences, thereby controlling the rate of transcription of genetic information from DNA to messenger RNA. <a href="https://en.wikipedia.org/wiki/Transcription_factor">@Wiki</a>, <a href="https://www.broadinstitute.org/education/glossary/transcription-factor">@BroadInstitute</a>, <a href="http://www.nature.com/scitable/definition/general-transcription-factor-transcription-factor-167">@Scitable</a>
+</li>
+<li>
+<strong>Expression (Gene expression)</strong>: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. <a href="https://en.wikipedia.org/wiki/Gene_expression">@Wiki</a>, <a href="http://www.nature.com/scitable/topicpage/gene-expression-14121669">@Scitable</a>
+</li>
+</ul>
+
+<h2>
+<a id="experimental-techniques" class="anchor" href="#experimental-techniques" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Experimental Techniques</h2>
+
+<h3>
+<a id="next-generate-sequencing" class="anchor" href="#next-generate-sequencing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next Generate Sequencing</h3>
+
+<ul>
+<li>
+<strong>DNA-seq</strong>: DNA sequencing is the process of determining the precise order of nucleotides within a DNA molecule. <a href="https://en.wikipedia.org/wiki/DNA_sequencing">@Wiki</a>
+</li>
+<li>
+<strong>RNA-seq</strong>: RNA-seq (RNA sequencing), also called whole transcriptome shotgun sequencing<a href="WTSS">1</a>, uses next-generation sequencing (NGS) to reveal the presence and quantity of RNA in a biological sample at a given moment in time. <a href="https://en.wikipedia.org/wiki/RNA-Seq">@Wiki</a>
+</li>
+<li>
+<strong>ChIP-seq</strong>: ChIP-sequencing, also known as ChIP-seq, is a method used to analyze protein interactions with DNA. ChIP-seq combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to identify the binding sites of DNA-associated proteins. <a href="https://en.wikipedia.org/wiki/ChIP-sequencing">@Wiki</a>
+</li>
+<li>
+<strong>CLIP-Seq</strong>: <a href="https://en.wikipedia.org/wiki/CLIP">@Wiki</a>
+</li>
+<li>
+<strong>FAIRE-seq</strong>: <a href="https://en.wikipedia.org/wiki/FAIRE-Seq">@Wiki</a>
+</li>
+<li>
+<strong>DNase-Seq</strong>: <a href="https://en.wikipedia.org/wiki/DNase-Seq">@Wiki</a>
+</li>
+<li>
+<strong>CAGE</strong>: <a href="https://en.wikipedia.org/wiki/Cap_analysis_gene_expression">@Wiki</a>
+</li>
+<li>
+<strong>ChIA-PET</strong>: <a href="https://en.wikipedia.org/wiki/Chia_Pet">@Wiki</a>
+</li>
+<li>
+<strong>5C/Hi-C</strong>: <a href="https://en.wikipedia.org/wiki/Chromosome_conformation_capture">@Wiki</a> 
+### Uncategorized</li>
+<li>
+<strong>ChIP</strong>: Chromatin Immunoprecipitation (ChIP) is a type of immunoprecipitation experimental technique used to investigate the interaction between proteins and DNA in the cell. <a href="https://en.wikipedia.org/wiki/Chromatin_immunoprecipitation">@Wiki</a>
+</li>
+<li>
+<strong>ChIP-chip</strong>: ChIP-chip (also known as ChIP-on-chip) is a technology that combines chromatin immunoprecipitation ('ChIP') with DNA microarray ("chip"). Like regular ChIP, ChIP-on-chip is used to investigate interactions between proteins and DNA in vivo. <a href="https://en.wikipedia.org/wiki/ChIP-on-chip">@Wiki</a>
+</li>
+</ul>
+
+<h2>
+<a id="ngs-data-repositories" class="anchor" href="#ngs-data-repositories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NGS data repositories</h2>
+
+<ul>
+<li>
+<strong><a href="http://www.ncbi.nlm.nih.gov/geo/">GEO</a></strong>: GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted.</li>
+<li>
+<strong><a href="https://www.encodeproject.org/">ENCODE</a></strong>: The goal of ENCODE is to build a comprehensive parts list of functional elements in the human genome, including elements that act at the protein and RNA levels, and regulatory elements that control cells and circumstances in which a gene is active.</li>
+<li>
+<strong><a href="http://cancergenome.nih.gov/">TCGA</a></strong>: The Cancer Genome Atlas (TCGA) is a collaboration between the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) that has generated comprehensive, multi-dimensional maps of the key genomic changes in 33 types of cancer. </li>
+<li>
+<strong><a href="http://www.1000genomes.org/">1000 Genomes Project</a></strong>: The 1000 Genomes Project ran between 2008 and 2015, creating the largest public catalogue of human variation and genotype data.</li>
+<li>
+<strong><a href="http://www.ebi.ac.uk/arrayexpress/">Array Express</a></strong>: an NIH-funded database at the European Molecular Biology Laboratory -European Bioinformatics Institute that collects and disseminates microarray-based gene-expression data.</li>
+<li>
+<strong><a href="http://www.ddbj.nig.ac.jp/">DDBJ</a></strong>: DNA Data Bank of Japan (DDBJ) is a data bank organized by the National Institute of Genetics in Japan that collects sequence data.</li>
+</ul>
+
+<h2>
+<a id="ngs-data-analysis" class="anchor" href="#ngs-data-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NGS data analysis</h2>
+
+<h3>
+<a id="variants-calling" class="anchor" href="#variants-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variants calling</h3>
+
+<h4>
+<a id="snp-calling" class="anchor" href="#snp-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SNP calling</h4>
+
+<ul>
+<li>
+<strong><a href="https://software.broadinstitute.org/gatk/">GATK</a></strong>: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</li>
+</ul>
+
+<h2>
+<a id="file-formats" class="anchor" href="#file-formats" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File formats</h2>
+
+<h3>
+<a id="formats" class="anchor" href="#formats" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Formats</h3>
+
+<ul>
+<li>
+<strong><a href="http://samtools.github.io/hts-specs/SAMv1.pdf">SAM</a></strong>: The SAM Format is a text format for storing sequence data in a series of tab delimited ASCII columns. <a href="http://genome.sph.umich.edu/wiki/SAM">@Wiki</a>
+</li>
+<li>
+<strong>BAM</strong>: BAM is the compressed binary version of the Sequence Alignment/Map (SAM) format, a compact and index-able representation of nucleotide sequence alignments.</li>
+<li>
+<strong>BED</strong>: The BED format consists of one line per feature, each containing 3-12 columns of data, plus optional track definition lines. <a href="https://genome.ucsc.edu/FAQ/FAQformat.html#format1">@UCSC</a>, <a href="http://bedtools.readthedocs.io/en/latest/content/general-usage.html">@bedtools</a>, <a href="http://useast.ensembl.org/info/website/upload/bed.html">@Ensembl</a>
+</li>
+<li>
+<strong>WIG</strong>: The WIG (wiggle) format is designed for display of dense continuous data such as probability scores. Wiggle data elements must be equally sized; if you need to display continuous data that is sparse or contains elements of varying size, use the BedGraph format instead. <a href="https://genome.ucsc.edu/goldenpath/help/wiggle.html">@UCSC</a>, <a href="http://useast.ensembl.org/info/website/upload/wig.html">@Ensembl</a>
+</li>
+<li>
+<strong>BigWig</strong>: The BigWig format is designed for dense, continuous data that is intended to be displayed as a graph. Files can be created from WIG or BedGraph files using the appropriate utility program. <a href="http://genome.ucsc.edu/goldenPath/help/bigWig.html">@UCSC</a>
+</li>
+<li>
+<strong>GFF</strong>: The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. <a href="https://genome.ucsc.edu/FAQ/FAQformat.html#format3">@UCSC</a>, <a href="http://useast.ensembl.org/info/website/upload/gff.html">@Ensembl</a>, <a href="http://gmod.org/wiki/GFF2">GTF(GFFv2)@GMOD</a>, <a href="https://en.wikipedia.org/wiki/General_feature_format">@Wiki</a>
+</li>
+<li>
+<strong>VCF</strong>: The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations. <a href="http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-40">v4.0@1000genomes</a>, <a href="https://en.wikipedia.org/wiki/Variant_Call_Format">@Wiki</a>
+### Tools</li>
+<li>
+<strong><a href="https://github.com/arq5x/bedtools2">bedtools</a></strong>: Collectively, the bedtools utilities are a swiss-army knife of tools for a wide-range of genomics analysis tasks.</li>
+<li>
+<strong><a href="https://github.com/samtools/samtools">samtools</a></strong>: SAM Tools provide various utilities for manipulating alignments in the SAM/BAM format, including sorting, merging, indexing and generating alignments in a per-position format.</li>
+<li>
+<strong><a href="https://github.com/lomereiter/sambamba">sambamba</a></strong>: samtools functions with multi-threading support.</li>
+<li>
+<strong><a href="https://bedops.readthedocs.io/en/latest/">BEDOPS</a></strong>: the fast, highly scalable and easily-parallelizable genome analysis toolkit.</li>
+<li>
+<strong><a href="https://github.com/CRG-Barcelona/bwtool">bwtool</a></strong>: bwtool is a command-line utility for bigWig files.</li>
+<li>
+<strong><a href="https://vcftools.github.io/index.html">VCFtools</a></strong>: A set of tools written in Perl and C++ for working with VCF files.</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/pwwang/Bioinformatics-cheatsheet/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/pwwang/Bioinformatics-cheatsheet/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/pwwang/Bioinformatics-cheatsheet"></a> is maintained by <a href="https://github.com/pwwang">pwwang</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
