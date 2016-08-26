@@ -122,6 +122,17 @@ A cheat sheet for Bioinformatians.
 ### Other Databases
 - **[ASD](http://mdl.shsmu.edu.cn/ASD)**: Allosteric Database.
 
+## Prediction of Basic Elements
+### Gene Prediction
+- **[BGF](http://bgf.genomics.org.cn/)**: It is a hidden Markov model (HMM) and dynamic programming based ab initio gene prediction program.
+
+### Promoter/TSS Prediction
+- **[PePPER](http://pepper.molgenrug.nl/index.php/prokaryote-promoters)**: Prediction of prokaryote promoters.
+- **[Promoter2.0](http://www.cbs.dtu.dk/services/Promoter/)**: Promoter2.0 predicts transcription start sites of vertebrate PolII promoters in DNA sequences.
+
+### Enhancer Prediction
+- **[DEEP](http://cbrc.kaust.edu.sa/deep/)**: a general computational framework for predicting enhancers
+
 ## Databases of Biological interactions/Regulations/Associations
 ### TFBS/TF Binding Motif/TF Target Databases
 - **[Cistrome DB](http://dc2.cistrome.org/)**: Cistrome DB is a comprehensive resource of hg38 and mm10 ChIP-seq data collection. Here is a brief introduction about the workflow of [ChiLin](http://cistrome.org/chilin/).
@@ -321,17 +332,16 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[DESeq](http://bioconductor.org/packages/release/bioc/html/DESeq.html)**: Differential gene expression analysis based on the negative binomial distribution.
 - **[Cufflinks](http://cole-trapnell-lab.github.io/cufflinks/)**: Transcriptome assembly and differential expression analysis for RNA-Seq.
 
-### SNP/INDEL Calling
+### Variant Calling
 - **[FaSD](http://jjwanglab.org/fasd)**: a fast and accurate single-nucleotide polymorphism detection program that uses a binomial distribution-based algorithm and a mutation probability.
 - **[SOAPsnp](http://soap.genomics.org.cn/soapsnp.html)**: SOAPsnp uses a method based on Bayes’ theorem (the reverse probability model) to call consensus genotype by carefully considering the data quality, alignment, and recurring experimental errors.
 - **[SNVmix](http://compbio.bccrc.ca/software/snvmix/)**: SNVMix is designed to detect single nucleotide variants from next generation sequencing data. 
-
-### CNV Calling
 - **[CNVnator](https://github.com/abyzovlab/CNVnator)**: a tool for CNV discovery and genotyping from depth-of-coverage by mapped reads.
-
-### SNP/INDEL & CNV Calling
 - **[bcftools](https://samtools.github.io/bcftools/bcftools.html)**: utilities for variant calling and manipulating VCFs and BCFs.
 - **[GATK](https://software.broadinstitute.org/gatk/)**: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.
+
+## NGS Data Analysis Pipeline/framework
+- **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
 
 ## File Formats
 ### Formats
