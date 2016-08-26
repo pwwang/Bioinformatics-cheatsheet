@@ -7,7 +7,7 @@ A cheat sheet for Bioinformatians.
 
 - [Biological Concepts](#biological-concepts)
   - [Basics](#basics)
-  - [Interaction/Regulation/Association](#interactionregulationassociation)
+  - [Interactions/Regulations/Associations](#interactionsregulationsassociations)
   - [Biological Processes](#biological-processes)
 - [Databases Collecting Basic Elements](#databases-collecting-basic-elements)
   - [Gene/Genome Databases](#genegenome-databases)
@@ -15,6 +15,7 @@ A cheat sheet for Bioinformatians.
   - [Transcription Factor Databases](#transcription-factor-databases)
   - [Enhancer Databases](#enhancer-databases)
   - [Drug/Small Molecule Database](#drugsmall-molecule-database)
+  - [Variant Databases](#variant-databases)
   - [Other Databases](#other-databases)
 - [Databases of Biological interactions/Regulations/Associations](#databases-of-biological-interactionsregulationsassociations)
   - [TFBS/TF Binding Motif/TF Target Databases](#tfbstf-binding-motiftf-target-databases)
@@ -23,13 +24,18 @@ A cheat sheet for Bioinformatians.
   - [Pathway Databases](#pathway-databases)
   - [Other Databases](#other-databases-1)
 - [Experimental Techniques](#experimental-techniques)
+  - [PPI Detection](#ppi-detection)
   - [Next Generate Sequencing](#next-generate-sequencing)
   - [Uncategorized](#uncategorized)
 - [NGS Data Repositories](#ngs-data-repositories)
 - [NGS Data Analysis](#ngs-data-analysis)
-  - [Variants Calling](#variants-calling)
-    - [SNP Calling](#snp-calling)
-- [Variant Databases](#variant-databases)
+  - [Alignment](#alignment)
+  - [Quality Control](#quality-control)
+  - [Peak Calling/Differential Peak Calling](#peak-callingdifferential-peak-calling)
+  - [Differential Expressed Gene Calling](#differential-expressed-gene-calling)
+  - [SNP/INDEL Calling](#snpindel-calling)
+  - [CNV Calling](#cnv-calling)
+  - [SNP/INDEL & CNV Calling](#snpindel-&-cnv-calling)
 - [File Formats](#file-formats)
   - [Formats](#formats)
   - [Tools](#tools)
@@ -107,6 +113,11 @@ A cheat sheet for Bioinformatians.
 - **[AHD2.0](http://ahd.cbi.pku.edu.cn)**: The aim of the Arabidopsis hormone database is to provide a systematic and comprehensive view of morphological phenotypes regulated by plant hormones, as well as regulatory genes participating in numerous plant hormone responses.
 - **[DrugBank](http://www.drugbank.ca/)**: The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
 - **[TTD - Therapeutic Target Database](http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp)**: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.
+
+### Variant Databases
+- **[COSMIC](http://cancer.sanger.ac.uk/)**: COSMIC is an online database of somatically acquired mutations found in human cancer.
+- **[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)**: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).
+- **[GWASdb](http://jjwanglab.org/gwasdb)**: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.
 
 ### Other Databases
 - **[ASD](http://mdl.shsmu.edu.cn/ASD)**: Allosteric Database.
@@ -289,14 +300,38 @@ A cheat sheet for Bioinformatians.
 - **[TCGA](http://cancergenome.nih.gov/)**: The Cancer Genome Atlas (TCGA) is a collaboration between the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) that has generated comprehensive, multi-dimensional maps of the key genomic changes in 33 types of cancer. 
 
 ## NGS Data Analysis
-### Variants Calling
-#### SNP Calling
-- **[GATK](https://software.broadinstitute.org/gatk/)**: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.
+### Alignment
+- **[bwa](http://bio-bwa.sourceforge.net/)**: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
+- **[bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)**: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.
 
-## Variant Databases
-- **[COSMIC](http://cancer.sanger.ac.uk/)**: COSMIC is an online database of somatically acquired mutations found in human cancer.
-- **[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)**: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).
-- **[GWASdb](http://jjwanglab.org/gwasdb)**: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.
+### Quality Control
+- **[ClinQC](https://sourceforge.net/projects/clinqc/)**: ClinQC is an integrated and user-friendly pipeline for quality control, filtering and trimming of Sanger and NGS sequencing data for hundred to thousands of samples/patients in a single run in clinical research.
+- **[NGS QC Toolkit](http://www.nipgr.res.in/ngsqctoolkit.html)**: NGS QC Toolkit: A toolkit for the quality control (QC) of next generation sequencing (NGS) data.
+
+### Peak Calling/Differential Peak Calling
+__Peak calling__ is a computational method used to identify areas in a genome that have been enriched with aligned reads as a consequence of performing a ChIP-sequencing or MeDIP-seq experiment. These areas are those where a protein interacts with DNA.  
+__Differential peak calling__ is about identifying significant differences in two ChIP-seq signals.
+- **[MACS](http://liulab.dfci.harvard.edu/MACS/)**: Model-based analysis of ChIP-seq (MACS) is a computational algorithm that identifies genome-wide locations of transcription/chromatin factor binding or histone modification from ChIP-seq data. 
+- **[DBChIP](http://pages.cs.wisc.edu/~kliang/DBChIP/)**: detects differentially bound sharp binding sites across multiple conditions, with or without matching control samples.
+- **[MAnorm](http://bcb.dfci.harvard.edu/~gcyuan/MAnorm/MAnorm.htm)**: a robust model for quantitative comparison of ChIP-Seq data sets.
+
+### Differential Expressed Gene Calling
+- **[Limma](https://bioconductor.org/packages/release/bioc/html/limma.html)**: Linear Models for Microarray and RNA-Seq Data.
+- **[edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)**: Empirical Analysis of Digital Gene Expression Data in R.
+- **[DESeq](http://bioconductor.org/packages/release/bioc/html/DESeq.html)**: Differential gene expression analysis based on the negative binomial distribution.
+- **[Cufflinks](http://cole-trapnell-lab.github.io/cufflinks/)**: Transcriptome assembly and differential expression analysis for RNA-Seq.
+
+### SNP/INDEL Calling
+- **[FaSD](http://jjwanglab.org/fasd)**: a fast and accurate single-nucleotide polymorphism detection program that uses a binomial distribution-based algorithm and a mutation probability.
+- **[SOAPsnp](http://soap.genomics.org.cn/soapsnp.html)**: SOAPsnp uses a method based on Bayes’ theorem (the reverse probability model) to call consensus genotype by carefully considering the data quality, alignment, and recurring experimental errors.
+- **[SNVmix](http://compbio.bccrc.ca/software/snvmix/)**: SNVMix is designed to detect single nucleotide variants from next generation sequencing data. 
+
+### CNV Calling
+- **[CNVnator](https://github.com/abyzovlab/CNVnator)**: a tool for CNV discovery and genotyping from depth-of-coverage by mapped reads.
+
+### SNP/INDEL & CNV Calling
+- **[bcftools](https://samtools.github.io/bcftools/bcftools.html)**: utilities for variant calling and manipulating VCFs and BCFs.
+- **[GATK](https://software.broadinstitute.org/gatk/)**: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.
 
 ## File Formats
 ### Formats
