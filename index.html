@@ -46,7 +46,7 @@
 
 <ul>
 <li><a href="#basics">Basics</a></li>
-<li><a href="#interactionregulationassociation">Interaction/Regulation/Association</a></li>
+<li><a href="#interactionsregulationsassociations">Interactions/Regulations/Associations</a></li>
 <li><a href="#biological-processes">Biological Processes</a></li>
 </ul>
 </li>
@@ -59,6 +59,7 @@
 <li><a href="#transcription-factor-databases">Transcription Factor Databases</a></li>
 <li><a href="#enhancer-databases">Enhancer Databases</a></li>
 <li><a href="#drugsmall-molecule-database">Drug/Small Molecule Database</a></li>
+<li><a href="#variant-databases">Variant Databases</a></li>
 <li><a href="#other-databases">Other Databases</a></li>
 </ul>
 </li>
@@ -77,6 +78,7 @@
 <a href="#experimental-techniques">Experimental Techniques</a>
 
 <ul>
+<li><a href="#ppi-detection">PPI Detection</a></li>
 <li><a href="#next-generate-sequencing">Next Generate Sequencing</a></li>
 <li><a href="#uncategorized">Uncategorized</a></li>
 </ul>
@@ -86,16 +88,15 @@
 <a href="#ngs-data-analysis">NGS Data Analysis</a>
 
 <ul>
-<li>
-<a href="#variants-calling">Variants Calling</a>
-
-<ul>
-<li><a href="#snp-calling">SNP Calling</a></li>
+<li><a href="#alignment">Alignment</a></li>
+<li><a href="#quality-control">Quality Control</a></li>
+<li><a href="#peak-callingdifferential-peak-calling">Peak Calling/Differential Peak Calling</a></li>
+<li><a href="#differential-expressed-gene-calling">Differential Expressed Gene Calling</a></li>
+<li><a href="#snpindel-calling">SNP/INDEL Calling</a></li>
+<li><a href="#cnv-calling">CNV Calling</a></li>
+<li><a href="#snpindel-&amp;-cnv-calling">SNP/INDEL &amp; CNV Calling</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#variant-databases">Variant Databases</a></li>
 <li>
 <a href="#file-formats">File Formats</a>
 
@@ -148,7 +149,7 @@
 </ul>
 
 <h3>
-<a id="interactionregulationassociation" class="anchor" href="#interactionregulationassociation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interaction/Regulation/Association</h3>
+<a id="interactionsregulationsassociations" class="anchor" href="#interactionsregulationsassociations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interactions/Regulations/Associations</h3>
 
 <ul>
 <li>
@@ -288,6 +289,18 @@
 <strong><a href="http://www.drugbank.ca/">DrugBank</a></strong>: The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.</li>
 <li>
 <strong><a href="http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp">TTD - Therapeutic Target Database</a></strong>: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.</li>
+</ul>
+
+<h3>
+<a id="variant-databases" class="anchor" href="#variant-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variant Databases</h3>
+
+<ul>
+<li>
+<strong><a href="http://cancer.sanger.ac.uk/">COSMIC</a></strong>: COSMIC is an online database of somatically acquired mutations found in human cancer.</li>
+<li>
+<strong><a href="http://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a></strong>: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).</li>
+<li>
+<strong><a href="http://jjwanglab.org/gwasdb">GWASdb</a></strong>: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.</li>
 </ul>
 
 <h3>
@@ -585,6 +598,36 @@
 <a id="experimental-techniques" class="anchor" href="#experimental-techniques" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Experimental Techniques</h2>
 
 <h3>
+<a id="ppi-detection" class="anchor" href="#ppi-detection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PPI Detection</h3>
+
+<ul>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Co-immunoprecipitation">CoIP - Co-immunoprecipitation</a></strong>: is considered to be the gold standard assay for protein–protein interactions, especially when it is performed with endogenous (not overexpressed and not <a href="https://en.wikipedia.org/wiki/Epitope#Epitope_tags">tagged</a>) proteins. The protein of interest is isolated with a specific antibody. Interaction partners which stick to this protein are subsequently identified by <a href="https://en.wikipedia.org/wiki/Western_blotting">Western blotting</a>. Interactions detected by this approach are considered to be real. </li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Bimolecular_fluorescence_complementation">Bimolecular fluorescence complementation</a></strong>: (BiFC) is a new technique in observing the interactions of proteins. Combining with other new techniques, this method can be used to screen protein–protein interactions and their modulators, <a href="https://en.wikipedia.org/wiki/DERB">DERB</a>.</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Affinity_electrophoresis">Affinity electrophoresis</a></strong>: as used for estimation of <a href="https://en.wikipedia.org/wiki/binding_constant">binding constant</a>s, as for instance in <a href="https://en.wikipedia.org/wiki/lectin">lectin</a> affinity electrophoresis or characterization of molecules with specific features like <a href="https://en.wikipedia.org/wiki/glycan">glycan</a> content or <a href="https://en.wikipedia.org/wiki/ligand">ligand</a> binding.</li>
+<li>
+<strong>Pull-down assays</strong>: are a common variation of <a href="https://en.wikipedia.org/wiki/immunoprecipitation">immunoprecipitation</a> and <a href="https://en.wikipedia.org/wiki/immunoelectrophoresis">immunoelectrophoresis</a> and are used identically, although this approach is more amenable to an initial screen for interacting proteins.</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Label_transfer">Label transfer</a></strong>: can be used for screening or confirmation of protein interactions and can provide information about the interface where the interaction takes place. Label transfer can also detect weak or transient interactions that are difficult to capture using other ''in vitro'' detection strategies. In a label transfer reaction, a known protein is tagged with a detectable label. The label is then passed to an interacting protein, which can then be identified by the presence of the label.</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/yeast_two-hybrid">Y2H - Yeast Two-Hybrid</a></strong>: Y2H screen investigates the interaction between artificial fusion proteins inside the nucleus of yeast. This approach can identify binding partners of a protein in an unbiased manner.</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Phage_display">Phage display</a></strong>: used for the high-throughput screening of protein interactions</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Tandem_affinity_purification">TAP - Tandem Affinity Purification</a></strong>: (TAP) method allows high throughput identification of protein interactions. In contrast to yeast two-hybrid approach the accuracy of the method can be compared to those of small-scale experiments and the interactions are detected within the correct cellular environment as by <a href="https://en.wikipedia.org/wiki/co-immunoprecipitation">co-immunoprecipitation</a>. However, the TAP tag method requires two successive steps of protein purification and consequently it can not readily detect transient protein–protein interactions. </li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/cross-link%7CChemical_cross-linking">Cross-link/Chemical cross-linking</a></strong>: is often used to "fix" protein interactions in place before trying to isolate/identify interacting proteins. Common crosslinkers for this application include the non-cleavable <a href="https://en.wikipedia.org/wiki/N-Hydroxysuccinimide">NHS</a>-ester cross-linker, <a href="https://en.wikipedia.org/wiki/bissulfosuccinimidyl_suberate">bissulfosuccinimidyl suberate</a> (BS3); a cleavable version of BS3, <a href="https://en.wikipedia.org/wiki/dithiobis(sulfosuccinimidyl_propionate)">dithiobis(sulfosuccinimidyl propionate)</a> (DTSSP); and the <a href="https://en.wikipedia.org/wiki/imidoester">imidoester</a> cross-linker <a href="https://en.wikipedia.org/wiki/dimethyl_dithiobispropionimidate">dimethyl dithiobispropionimidate</a> (DTBP) that is popular for fixing interactions in <a href="https://en.wikipedia.org/wiki/ChIP">ChIP</a> assays.</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/SPINE_(molecular_biology)">SPINE</a></strong>: (Strepprotein interaction experiment) uses a combination of reversible crosslinking with formaldehyde and an incorporation of an affinity tag to detect interaction partners ''in vivo''.</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Quantitative_immunoprecipitation_combined_with_knock-down">Quantitative immunoprecipitation combined with knock-down</a></strong>: (QUICK) relies on co-immunoprecipitation, quantitative <a href="https://en.wikipedia.org/wiki/mass_spectrometry">mass spectrometry</a> (<a href="https://en.wikipedia.org/wiki/SILAC">SILAC</a>) and <a href="https://en.wikipedia.org/wiki/RNA_interference">RNA interference</a> (RNAi). This method detects interactions among endogenous non-tagged proteins. Thus, it has the same high confidence as co-immunoprecipitation. However, this method also depends on the availability of suitable antibodies.</li>
+<li>
+<strong><a href="https://en.wikipedia.org/wiki/Proximity_ligation_assay">Proximity ligation assay</a></strong>: (PLA) in situ is an immunohistochemical method utilizing so called PLA probes for detection of proteins, protein interactions and modifications.</li>
+</ul>
+
+<h3>
 <a id="next-generate-sequencing" class="anchor" href="#next-generate-sequencing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next Generate Sequencing</h3>
 
 <ul>
@@ -654,26 +697,82 @@
 <a id="ngs-data-analysis" class="anchor" href="#ngs-data-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NGS Data Analysis</h2>
 
 <h3>
-<a id="variants-calling" class="anchor" href="#variants-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variants Calling</h3>
-
-<h4>
-<a id="snp-calling" class="anchor" href="#snp-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SNP Calling</h4>
+<a id="alignment" class="anchor" href="#alignment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alignment</h3>
 
 <ul>
 <li>
-<strong><a href="https://software.broadinstitute.org/gatk/">GATK</a></strong>: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</li>
+<strong><a href="http://bio-bwa.sourceforge.net/">bwa</a></strong>: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.</li>
+<li>
+<strong><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">bowtie2</a></strong>: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.</li>
 </ul>
 
-<h2>
-<a id="variant-databases" class="anchor" href="#variant-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variant Databases</h2>
+<h3>
+<a id="quality-control" class="anchor" href="#quality-control" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quality Control</h3>
 
 <ul>
 <li>
-<strong><a href="http://cancer.sanger.ac.uk/">COSMIC</a></strong>: COSMIC is an online database of somatically acquired mutations found in human cancer.</li>
+<strong><a href="https://sourceforge.net/projects/clinqc/">ClinQC</a></strong>: ClinQC is an integrated and user-friendly pipeline for quality control, filtering and trimming of Sanger and NGS sequencing data for hundred to thousands of samples/patients in a single run in clinical research.</li>
 <li>
-<strong><a href="http://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a></strong>: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).</li>
+<strong><a href="http://www.nipgr.res.in/ngsqctoolkit.html">NGS QC Toolkit</a></strong>: NGS QC Toolkit: A toolkit for the quality control (QC) of next generation sequencing (NGS) data.</li>
+</ul>
+
+<h3>
+<a id="peak-callingdifferential-peak-calling" class="anchor" href="#peak-callingdifferential-peak-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Peak Calling/Differential Peak Calling</h3>
+
+<p><strong>Peak calling</strong> is a computational method used to identify areas in a genome that have been enriched with aligned reads as a consequence of performing a ChIP-sequencing or MeDIP-seq experiment. These areas are those where a protein interacts with DNA.<br>
+<strong>Differential peak calling</strong> is about identifying significant differences in two ChIP-seq signals.</p>
+
+<ul>
 <li>
-<strong><a href="http://jjwanglab.org/gwasdb">GWASdb</a></strong>: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.</li>
+<strong><a href="http://liulab.dfci.harvard.edu/MACS/">MACS</a></strong>: Model-based analysis of ChIP-seq (MACS) is a computational algorithm that identifies genome-wide locations of transcription/chromatin factor binding or histone modification from ChIP-seq data. </li>
+<li>
+<strong><a href="http://pages.cs.wisc.edu/%7Ekliang/DBChIP/">DBChIP</a></strong>: detects differentially bound sharp binding sites across multiple conditions, with or without matching control samples.</li>
+<li>
+<strong><a href="http://bcb.dfci.harvard.edu/%7Egcyuan/MAnorm/MAnorm.htm">MAnorm</a></strong>: a robust model for quantitative comparison of ChIP-Seq data sets.</li>
+</ul>
+
+<h3>
+<a id="differential-expressed-gene-calling" class="anchor" href="#differential-expressed-gene-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Differential Expressed Gene Calling</h3>
+
+<ul>
+<li>
+<strong><a href="https://bioconductor.org/packages/release/bioc/html/limma.html">Limma</a></strong>: Linear Models for Microarray and RNA-Seq Data.</li>
+<li>
+<strong><a href="https://bioconductor.org/packages/release/bioc/html/edgeR.html">edgeR</a></strong>: Empirical Analysis of Digital Gene Expression Data in R.</li>
+<li>
+<strong><a href="http://bioconductor.org/packages/release/bioc/html/DESeq.html">DESeq</a></strong>: Differential gene expression analysis based on the negative binomial distribution.</li>
+<li>
+<strong><a href="http://cole-trapnell-lab.github.io/cufflinks/">Cufflinks</a></strong>: Transcriptome assembly and differential expression analysis for RNA-Seq.</li>
+</ul>
+
+<h3>
+<a id="snpindel-calling" class="anchor" href="#snpindel-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SNP/INDEL Calling</h3>
+
+<ul>
+<li>
+<strong><a href="http://jjwanglab.org/fasd">FaSD</a></strong>: a fast and accurate single-nucleotide polymorphism detection program that uses a binomial distribution-based algorithm and a mutation probability.</li>
+<li>
+<strong><a href="http://soap.genomics.org.cn/soapsnp.html">SOAPsnp</a></strong>: SOAPsnp uses a method based on Bayes’ theorem (the reverse probability model) to call consensus genotype by carefully considering the data quality, alignment, and recurring experimental errors.</li>
+<li>
+<strong><a href="http://compbio.bccrc.ca/software/snvmix/">SNVmix</a></strong>: SNVMix is designed to detect single nucleotide variants from next generation sequencing data. </li>
+</ul>
+
+<h3>
+<a id="cnv-calling" class="anchor" href="#cnv-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CNV Calling</h3>
+
+<ul>
+<li>
+<strong><a href="https://github.com/abyzovlab/CNVnator">CNVnator</a></strong>: a tool for CNV discovery and genotyping from depth-of-coverage by mapped reads.</li>
+</ul>
+
+<h3>
+<a id="snpindel--cnv-calling" class="anchor" href="#snpindel--cnv-calling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SNP/INDEL &amp; CNV Calling</h3>
+
+<ul>
+<li>
+<strong><a href="https://samtools.github.io/bcftools/bcftools.html">bcftools</a></strong>: utilities for variant calling and manipulating VCFs and BCFs.</li>
+<li>
+<strong><a href="https://software.broadinstitute.org/gatk/">GATK</a></strong>: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</li>
 </ul>
 
 <h2>
