@@ -61,11 +61,11 @@ A cheat sheet for Bioinformatians.
 ## General Elements
 ### DNA/Gene/Genome
 #### Related Terms
-- **DNA**: Deoxyribonucleic acid is a molecule that carries the genetic instructions used in the growth, development, functioning and reproduction of all known living organisms and many viruses. [@Wiki](https://en.wikipedia.org/wiki/DNA), [@NIH]
+- **DNA**: Deoxyribonucleic acid is a molecule that carries the genetic instructions used in the growth, development, functioning and reproduction of all known living organisms and many viruses. [@Wiki](https://en.wikipedia.org/wiki/DNA), [@NIH](https://ghr.nlm.nih.gov/primer/basics/dna)
 - **Gene**: A gene is a locus (or region) of DNA which is made up of nucleotides and is the molecular unit of heredity. [@Wiki](https://en.wikipedia.org/wiki/Gene), [@NIH](https://ghr.nlm.nih.gov/primer/basics/gene)
 - **Promoter**: In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the transcription start sites of genes, on the same strand and upstream on the DNA (towards the 5' region of the sense strand). [@Wiki](https://en.wikipedia.org/wiki/Promoter_(genetics))
 - **TSS - Transcription Start Side**: The transcription start site is the location where transcription starts at the 5'-end of a gene sequence. [@Wiki](https://en.wikiversity.org/wiki/Gene_transcriptions/Start_sites)
-- **Expression (Gene expression)**: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. [@Wiki](https://en.wikipedia.org/wiki/Gene_expression), [@Scitable](http://www.nature.com/scitable/topicpage/gene-expression-14121669)(https://en.wikipedia.org/wiki/Biological_pathway), [@NIH](https://www.genome.gov/27530687/biological-pathways-fact-sheet/)
+- **Expression (Gene expression)**: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. [@Wiki](https://en.wikipedia.org/wiki/Gene_expression), [@Scitable](http://www.nature.com/scitable/topicpage/gene-expression-14121669)
 
 #### Genome Databases
 - **[Ensembl genome browser](www.ensembl.org/)**: Ensembl is a joint project between EMBL - EBI and the Sanger Institute to develop a software system which produces and maintains automatic annotation on selected eukaryotic genomes.
@@ -300,7 +300,7 @@ A cheat sheet for Bioinformatians.
 ## Biological Processes
 ### Pathways
 #### Related Terms
-- **Pathway (Biological pathway)**: A biological pathway is a series of actions among molecules in a cell that leads to a certain product or a change in a cell. Such a pathway can trigger the assembly of new molecules, such as a fat or protein. Pathways can also turn genes on and off, or spur a cell to move. [@Wiki]
+- **Pathway (Biological pathway)**: A biological pathway is a series of actions among molecules in a cell that leads to a certain product or a change in a cell. Such a pathway can trigger the assembly of new molecules, such as a fat or protein. Pathways can also turn genes on and off, or spur a cell to move. [@Wiki](https://en.wikipedia.org/wiki/Biological_pathway), [@NIH](https://www.genome.gov/27530687/biological-pathways-fact-sheet/)
 
 #### Pathway Databases
 - **[ConsensusPathDB](http://consensuspathdb.org/)**: ConsensusPathDB is a database that integrates different types of functional interactions between physical entities in the cell like genes, RNA, proteins, protein complexes and metabolites in order to assemble a more complete and a less biased picture of cellular biology.
