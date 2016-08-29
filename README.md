@@ -1,6 +1,6 @@
 
 # Bioinformatics-cheatsheet
-A cheat sheet for Bioinformatians.
+A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioinformatics-cheatsheet/)
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents  
@@ -315,6 +315,16 @@ A cheat sheet for Bioinformatians.
 - **[SMPDB](http://smpdb.ca/)**: SMPDB (The Small Molecule Pathway Database) is an interactive, visual database containing more than 618 small molecule pathways found in humans. More than 70% of these pathways (>433) are not found in any other pathway database.
 - **[Yeast Pathways Database](http://pathway.yeastgenome.org/)**: The Yeast Pathways Database is a collection of manually curated metabolic pathways and enzymes of Saccharomyces cerevisiae.
 
+## Drug/Chemicals
+### Drug/Small Molecule Database
+- **[AHD2.0](http://ahd.cbi.pku.edu.cn)**: The aim of the Arabidopsis hormone database is to provide a systematic and comprehensive view of morphological phenotypes regulated by plant hormones, as well as regulatory genes participating in numerous plant hormone responses.
+- **[DrugBank](http://www.drugbank.ca/)**: The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
+- **[TTD - Therapeutic Target Database](http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp)**: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.
+
+## Diseases
+### Cancer
+#### Related Terms
+- **Cancer Predisposition Genes**: Genes in which germline mutations confer highly or moderately increased risks of cancer. [@Nature](http://www.nature.com/nature/journal/v505/n7483/full/nature12981.html)
 
 ## Next Generate Sequencing
 ### Related Terms
@@ -379,11 +389,6 @@ __Differential peak calling__ is about identifying significant differences in tw
 #### NGS Data Analysis Pipeline/framework
 - **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
 
-### Drug/Chemicals
-#### Drug/Small Molecule Database
-- **[AHD2.0](http://ahd.cbi.pku.edu.cn)**: The aim of the Arabidopsis hormone database is to provide a systematic and comprehensive view of morphological phenotypes regulated by plant hormones, as well as regulatory genes participating in numerous plant hormone responses.
-- **[DrugBank](http://www.drugbank.ca/)**: The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
-- **[TTD - Therapeutic Target Database](http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp)**: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.
 
 ## File Formats
 ### Formats
