@@ -44,13 +44,14 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Pathway Databases](#pathway-databases)
 - [Drug/Chemicals](#drugchemicals)
   - [Drug/Small Molecule Database](#drugsmall-molecule-database)
-- [Diseases](#diseases)
+- [Mutations and Diseases](#mutations-and-diseases)
   - [Disease/Phenotype Databases/Ontologies](#diseasephenotype-databasesontologies)
-  - [Genetic Diseases](#genetic-diseases)
+  - [Germline Mutations and Genetic Diseases](#germline-mutations-and-genetic-diseases)
     - [Related Terms](#related-terms-7)
     - [Genetic Variant/Disease Databases](#genetic-variantdisease-databases)
     - [Tools](#tools)
-  - [Cancer](#cancer)
+    - [Mutation-Protein Structure Studies](#mutation-protein-structure-studies)
+  - [Somatic Mutations and Cancers](#somatic-mutations-and-cancers)
     - [Related Terms](#related-terms-8)
     - [Cancer Data Repositories](#cancer-data-repositories)
 - [Next Generate Sequencing](#next-generate-sequencing)
@@ -58,6 +59,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
   - [NGS Data Repositories](#ngs-data-repositories)
   - [NGS Data Analysis](#ngs-data-analysis)
     - [Read Trimming](#read-trimming)
+    - [De-Duplication](#de-duplication)
     - [Alignment](#alignment)
     - [Quality Control](#quality-control)
     - [Peak Calling/Differential Peak Calling](#peak-callingdifferential-peak-calling)
@@ -86,6 +88,8 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **Promoter**: In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the transcription start sites of genes, on the same strand and upstream on the DNA (towards the 5' region of the sense strand). [@Wiki](https://en.wikipedia.org/wiki/Promoter_(genetics))
 - **TSS - Transcription Start Side**: The transcription start site is the location where transcription starts at the 5'-end of a gene sequence. [@Wiki](https://en.wikiversity.org/wiki/Gene_transcriptions/Start_sites)
 - **Expression (Gene expression)**: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. [@Wiki](https://en.wikipedia.org/wiki/Gene_expression), [@Scitable](http://www.nature.com/scitable/topicpage/gene-expression-14121669)
+- **Exon**: An exon is any part of a gene that will become a part of the final mature RNA produced by that gene after introns have been removed by RNA splicing. [@Wiki](https://en.wikipedia.org/wiki/Exon)
+- **Intron**: An intron is any nucleotide sequence within a gene that is removed by RNA splicing during maturation of the final RNA product. [@Wiki](https://en.wikipedia.org/wiki/Intron)
 
 #### Genome Databases
 - **[Ensembl genome browser](www.ensembl.org/)**: Ensembl is a joint project between EMBL - EBI and the Sanger Institute to develop a software system which produces and maintains automatic annotation on selected eukaryotic genomes.
@@ -355,16 +359,16 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[DrugBank](http://www.drugbank.ca/)**: The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
 - **[TTD - Therapeutic Target Database](http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp)**: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.
 
-## Diseases
+## Mutations and Diseases
 ### Disease/Phenotype Databases/Ontologies
 - **[HPO - Human Phenotype Ontoloy](http://human-phenotype-ontology.github.io/)**: The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of phenotypic abnormalities encountered in human disease.
 - **[DO - Disease Ontology](http://disease-ontology.org/)**: The Disease Ontology semantically integrates disease and medical vocabularies through extensive cross mapping of DO terms to MeSH, ICD, NCI’s thesaurus, SNOMED and OMIM.
 - **[MeSH - Medical Subject Headings](https://www.nlm.nih.gov/mesh/MBrowser.html)**: MeSH is the National Library of Medicine's controlled vocabulary thesaurus. It consists of sets of terms naming descriptors in a hierarchical structure that permits searching at various levels of specificity.
 
-### Genetic Diseases
+### Germline Mutations and Genetic Diseases
 #### Related Terms
 - **GWAS**: In genetics, a genome-wide association study (GWA study, or GWAS), also known as whole genome association study (WGA study, or WGAS), is an examination of a genome-wide set of genetic variants in different individuals to see if any variant is associated with a trait. [@Wiki](https://en.wikipedia.org/wiki/Genome-wide_association_study)
-- **CNV**: The chromosome now has two copies of this section of DNA, rather than one. Copy number variation (CNVs) is a relatively new field in genomics and it is defined as a phenomenon in which sections of the genome are repeated and the number of repeats in the genome varies between individuals in the human population. [@Wiki](https://en.wikipedia.org/wiki/Copy-number_variation)(https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/)
+- **CNV - Copy-Number Variation**: Copy-number variations (CNVs) are a form of structural variation that manifest as deletions or duplications in the genome. [@Wiki](https://en.wikipedia.org/wiki/Copy-number_variation)(https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/)
 - **SNP**: A single nucleotide polymorphism, often abbreviated to SNP (pronounced snip; plural snips), is a variation in a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population (e.g. >1%). [@Wiki](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism), [@NIH](https://ghr.nlm.nih.gov/primer/genomicresearch/snp)
 - **Genotype**: The genotype is the part (DNA sequence) of the genetic makeup of a cell, and therefore of an organism or individual, which determines a specific characteristic (phenotype) of that cell/organism/individual. [@Wiki](https://en.wikipedia.org/wiki/Genotype)
 - **PheWAS**: Phenome-wide association studies (PheWAS) analyze many phenotypes compared to a single genetic variant (or other attribute). [@Tool](https://github.com/PheWAS/PheWAS)
@@ -374,6 +378,11 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **ICD**: The International Statistical Classification of Diseases and Related Health Problems, usually called by the short-form name International Classification of Diseases (ICD), is the international "standard diagnostic tool for epidemiology, health management and clinical purposes". [@Wiki](https://en.wikipedia.org/wiki/International_Statistical_Classification_of_Diseases_and_Related_Health_Problems)
 - **MAF - Minor Allele Frequency**: MAF refers to the frequency at which the second most common allele occurs in a given population. SNPs with a minor allele frequency of 5% or greater were targeted by the HapMap project.
 - **LOH - Loss Of Heterozygosity**: Loss of heterozygosity (LOH) is a gross chromosomal event that results in loss of the entire gene and the surrounding chromosomal region. [@Wiki](https://en.wikipedia.org/wiki/Loss_of_heterozygosity)
+- **Missense Mutation**: A missense mutation is a point mutation in which a single nucleotide change results in a codon that codes for a different amino acid. [@Wiki](https://en.wikipedia.org/wiki/Missense_mutation)
+- **Nonsense Mutation**: A nonsense mutation is a point mutation in a sequence of DNA that results in a premature stop codon, or a nonsense codon in the transcribed mRNA, and in a truncated, incomplete, and usually nonfunctional protein product.
+- **Rare Variant**: A rare functional variant is a genetic variant which alters gene function, and which occurs at low frequency in a population. [@Wiki](https://en.wikipedia.org/wiki/Rare_functional_variant)
+- **Allele Frequency**: Allele frequency, or gene frequency, is the relative frequency of an allele (variant of a gene) at a particular locus in a population, expressed as a fraction or percentage. [@Wiki](https://en.wikipedia.org/wiki/Allele_frequency)
+- **SV - Structural Variation**: Structural variation (also genomic structural variation) is the variation in structure of an organism's chromosome. It consists of many kinds of variation in the genome of one species, and usually includes microscopic and submicroscopic types, such as deletions, duplications, copy-number variants, insertions, inversions and translocations.
 
 #### Genetic Variant/Disease Databases
 - **[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)**: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).
@@ -382,13 +391,21 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[OMIM - Online Mendelian Inheritance in Man®](http://www.omim.org/)**: An Online Catalog of Human Genes and Genetic Disorders 
 - **[eMERGE](https://emerge.mc.vanderbilt.edu/)**: eMERGE is a national network that combines DNA biorepositories with electronic medical record (EMR) systems for large scale, high-throughput genetic research in support of implementing genomic medicine.
 - **[International HapMap Project](https://www.genome.gov/10001688/international-hapmap-project/)**: The International HapMap Project was an organization that aimed to develop a haplotype map (HapMap) of the human genome, to describe the common patterns of human genetic variation. HapMap is used to find genetic variants affecting health, disease and responses to drugs and environmental factors.
+- **[MutDB](http://www.mutdb.org/)**: A database for assessing the impact of genetic variants. [@Ref](http://nar.oxfordjournals.org/content/36/suppl_1/D815)
+- **[The Genome of the Netherlands](http://www.nlgenome.nl/)**: 250 trios (father, mother and child) of Dutch descent.
 
 #### Tools
 - **[SNPRelate](http://bioconductor.org/packages/release/bioc/html/SNPRelate.html)**: SNPRelate (high-performance computing R packages for multi-core symmetric multiprocessing computer architectures) to accelerate two key computations in GWAS: principal component analysis (PCA) and relatedness analysis using identity-by-descent (IBD) measures.
 - **[EIGENSOFT](https://github.com/DReichLab/EIG)**: The EIGENSOFT package combines functionality from our population genetics methods [@Ref](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020190), EIGENSTRAT stratification correction method [@Ref](http://www.nature.com/ng/journal/v38/n8/abs/ng1847.html), and FastPCA and PC-based selection statistic [@Ref](http://www.sciencedirect.com/science/article/pii/S0002929716000033).
 - **[PLATO](http://www.ritchielab.psu.edu/software/plato-download)**: The PLatform for the Analysis, Translation, and Organization of large-scale data (PLATO) is a standalone program written in C++ that is designed to be a flexible and extensible analysis tool for a wide variety of genetic data.
 
-### Cancer
+#### Mutation-Protein Structure Studies
+- **[HotSpot3D](https://github.com/ding-lab/hotspot3d)**: This 3D proximity tool can be used to identify the mutation hotspots in the linear 1D sequence and correlates these hotspots with known or potential interacting domains based on both known intermolecular interactions and calculated proximity for potential intramolecular interactions. [@Ref](http://www.nature.com/ng/journal/v48/n8/full/ng.3586.html)
+- **[MuPIT_Interactive](http://mupit.icm.jhu.edu/MuPIT_Interactive/)**: webserver for mapping variant positions to annotated, interactive 3D structures. [@Ref](http://link.springer.com/article/10.1007%2Fs00439-013-1325-0)
+- **[Interactome3D](http://interactome3d.irbbarcelona.org/)**: Interactome3D is a web service for the structural annotation of protein-protein interaction networks. [@Ref](http://www.nature.com/nmeth/journal/v10/n1/full/nmeth.2300.html)
+- **[CLUMP](https://github.com/KarchinLab/CLUMP)**: CLUMP (CLustering by Mutation Postion) is an unsupervised clustering of amino acid residue positions where variants occur, without any prior knowledge of their functional importance. [@Ref](http://www.pnas.org/content/112/40/E5486)
+
+### Somatic Mutations and Cancers
 #### Related Terms
 - **Cancer Predisposition Genes**: Genes in which germline mutations confer highly or moderately increased risks of cancer. [@Nature](http://www.nature.com/nature/journal/v505/n7483/full/nature12981.html)
 
@@ -424,6 +441,10 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic)**: A flexible read trimming tool for Illumina NGS data.
 - **[Sickle](https://github.com/najoshi/sickle)**: A windowed adaptive trimming tool for FASTQ files using quality.
 
+#### De-Duplication
+- **[PiCard MarkDuplicates](https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates)**: This tool locates and tags duplicate reads in a BAM or SAM file, where duplicate reads are defined as originating from a single fragment of DNA. 
+- **[sambamba-markdup](http://lomereiter.github.io/sambamba/docs/sambamba-markdup.html)**: Find duplicate reads in BAM file.
+
 #### Alignment
 - **[bwa](http://bio-bwa.sourceforge.net/)**: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
 - **[bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)**: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.
@@ -440,6 +461,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[MAnorm](http://bcb.dfci.harvard.edu/~gcyuan/MAnorm/MAnorm.htm)**: a robust model for quantitative comparison of ChIP-Seq data sets.
 - **[THOR](http://www.regulatory-genomics.org/thor-2/basic-intrstruction/)**: Differential peak calling of ChIP-seq signals with replicates. [@Ref](http://nar.oxfordjournals.org/content/early/2016/08/01/nar.gkw680.abstract)
 - **[ODIN](http://www.regulatory-genomics.org/odin-2/basic-introduction/)**: ODIN is an HMM-based approach to detect and analyse differential peaks in pairs of ChIP-seq data. ODIN performs genomic signal processing, peak calling and p-value calculation in an integrated framework. [@Ref](http://bioinformatics.oxfordjournals.org/content/30/24/3467)
+- **[MMDiff](https://www.bioconductor.org/packages/release/bioc/html/MMDiff.html)**: This package detects statistically significant difference between read enrichment profiles in different ChIP-Seq samples. [@Ref](bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-14-826)
+
 
 #### Differential Expressed Gene Calling
 - **[Limma](https://bioconductor.org/packages/release/bioc/html/limma.html)**: Linear Models for Microarray and RNA-Seq Data.
@@ -463,6 +486,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[CNV-seq](http://tiger.dbs.nus.edu.sg/cnv-seq/)**: a new method to detect copy number variation using high-throughput sequencing.
 - **[BICseq2](http://www.math.pku.edu.cn/teachers/xirb/downloads/software/BICseq2/BICseq2.html)**: BICseq2 is an algorithm developed for the normalization of  high-throughput sequencing (HTS) data and detection of copy number variations (CNV) in the genome. BICseq2 can be used for detecting CNVs with or without a control genome.
 - **[MuSE](http://bioinformatics.mdanderson.org/main/MuSE)**: a novel approach to mutation calling based on the F81 Markov substitution model for molecular evolution, which models the evolution of the reference allele to the allelic composition of the matched tumor and normal tissue at each genomic locus. [@Ref](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1029-6)
+- **[VarScan](http://dkoboldt.github.io/varscan/)**: a platform-independent software tool developed at the Genome Institute at Washington University to detect variants in NGS data.
+- **[Pindel](https://github.com/genome/pindel)**: Pindel can detect breakpoints of large deletions, medium sized insertions, inversions, tandem duplications and other structural variants at single-based resolution from next-gen sequence data.
 
 #### Variant Filtering
 - **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
@@ -511,6 +536,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[sambamba](https://github.com/lomereiter/sambamba)**: samtools functions with multi-threading support.
 - **[samtools](https://github.com/samtools/samtools)**: SAM Tools provide various utilities for manipulating alignments in the SAM/BAM format, including sorting, merging, indexing and generating alignments in a per-position format.
 - **[VCFtools](https://vcftools.github.io/index.html)**: A set of tools written in Perl and C++ for working with VCF files.
+- **[PiCard](https://broadinstitute.github.io/picard/)**: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
 
 ## Statistics
 ### Distributions
