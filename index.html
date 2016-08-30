@@ -31,7 +31,7 @@
           <h1>
 <a id="bioinformatics-cheatsheet" class="anchor" href="#bioinformatics-cheatsheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bioinformatics-cheatsheet</h1>
 
-<p>A cheat sheet for Bioinformatians.</p>
+<p>A cheat sheet for Bioinformatians. <a href="https://pwwang.github.io/Bioinformatics-cheatsheet/">@Github Pages</a></p>
 
 
 
@@ -125,13 +125,42 @@
 </ul>
 </li>
 <li>
-<a href="#next-generate-sequencing">Next Generate Sequencing</a>
+<a href="#drugchemicals">Drug/Chemicals</a>
+
+<ul>
+<li><a href="#drugsmall-molecule-database">Drug/Small Molecule Database</a></li>
+</ul>
+</li>
+<li>
+<a href="#diseases">Diseases</a>
+
+<ul>
+<li><a href="#diseasephenotype-databasesontologies">Disease/Phenotype Databases/Ontologies</a></li>
+<li>
+<a href="#genetic-diseases">Genetic Diseases</a>
 
 <ul>
 <li><a href="#related-terms-7">Related Terms</a></li>
+<li><a href="#genetic-variantdisease-databases">Genetic Variant/Disease Databases</a></li>
+<li><a href="#tools">Tools</a></li>
+</ul>
+</li>
+<li>
+<a href="#cancer">Cancer</a>
+
+<ul>
+<li><a href="#related-terms-8">Related Terms</a></li>
+<li><a href="#cancer-data-repositories">Cancer Data Repositories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#next-generate-sequencing">Next Generate Sequencing</a>
+
+<ul>
 <li><a href="#techniques">Techniques</a></li>
 <li><a href="#ngs-data-repositories">NGS Data Repositories</a></li>
-<li><a href="#variant-databases">Variant Databases</a></li>
 <li>
 <a href="#ngs-data-analysis">NGS Data Analysis</a>
 
@@ -141,14 +170,9 @@
 <li><a href="#peak-callingdifferential-peak-calling">Peak Calling/Differential Peak Calling</a></li>
 <li><a href="#differential-expressed-gene-calling">Differential Expressed Gene Calling</a></li>
 <li><a href="#variant-calling">Variant Calling</a></li>
+<li><a href="#variant-annotators">Variant Annotators</a></li>
+<li><a href="#haplotype-estimation-tools">Haplotype Estimation Tools</a></li>
 <li><a href="#ngs-data-analysis-pipelineframework">NGS Data Analysis Pipeline/framework</a></li>
-</ul>
-</li>
-<li>
-<a href="#drugchemicals">Drug/Chemicals</a>
-
-<ul>
-<li><a href="#drugsmall-molecule-database">Drug/Small Molecule Database</a></li>
 </ul>
 </li>
 </ul>
@@ -158,7 +182,7 @@
 
 <ul>
 <li><a href="#formats">Formats</a></li>
-<li><a href="#tools">Tools</a></li>
+<li><a href="#tools-1">Tools</a></li>
 </ul>
 </li>
 </ul>
@@ -176,7 +200,8 @@
 
 <ul>
 <li>
-<strong>DNA</strong>: Deoxyribonucleic acid is a molecule that carries the genetic instructions used in the growth, development, functioning and reproduction of all known living organisms and many viruses. <a href="https://en.wikipedia.org/wiki/DNA">@Wiki</a>, [<a href="https://github.com/NIH" class="user-mention">@NIH</a>]</li>
+<strong>DNA</strong>: Deoxyribonucleic acid is a molecule that carries the genetic instructions used in the growth, development, functioning and reproduction of all known living organisms and many viruses. <a href="https://en.wikipedia.org/wiki/DNA">@Wiki</a>, <a href="https://ghr.nlm.nih.gov/primer/basics/dna">@NIH</a>
+</li>
 <li>
 <strong>Gene</strong>: A gene is a locus (or region) of DNA which is made up of nucleotides and is the molecular unit of heredity. <a href="https://en.wikipedia.org/wiki/Gene">@Wiki</a>, <a href="https://ghr.nlm.nih.gov/primer/basics/gene">@NIH</a>
 </li>
@@ -187,7 +212,7 @@
 <strong>TSS - Transcription Start Side</strong>: The transcription start site is the location where transcription starts at the 5'-end of a gene sequence. <a href="https://en.wikiversity.org/wiki/Gene_transcriptions/Start_sites">@Wiki</a>
 </li>
 <li>
-<strong>Expression (Gene expression)</strong>: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. <a href="https://en.wikipedia.org/wiki/Gene_expression">@Wiki</a>, <a href="http://www.nature.com/scitable/topicpage/gene-expression-14121669">@Scitable</a>(<a href="https://en.wikipedia.org/wiki/Biological_pathway">https://en.wikipedia.org/wiki/Biological_pathway</a>), <a href="https://www.genome.gov/27530687/biological-pathways-fact-sheet/">@NIH</a>
+<strong>Expression (Gene expression)</strong>: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. <a href="https://en.wikipedia.org/wiki/Gene_expression">@Wiki</a>, <a href="http://www.nature.com/scitable/topicpage/gene-expression-14121669">@Scitable</a>
 </li>
 </ul>
 
@@ -339,7 +364,7 @@
 <li>
 <strong><a href="http://sea.edbc.org/">SEA</a></strong>: a super-enhancer archive.</li>
 <li>
-<strong><a href="http://www.dcode.org/EI/">EI</a></strong>: Database of EI candidate tissue-specific enhancers: Predicting Tissue-Specific Enhancers in the Human Genome. <a href="http://www.genome.org/cgi/reprint/17/2/201">@Paper</a>
+<strong><a href="http://www.dcode.org/EI/">EI</a></strong>: Database of EI candidate tissue-specific enhancers: Predicting Tissue-Specific Enhancers in the Human Genome. <a href="http://www.genome.org/cgi/reprint/17/2/201">@Ref</a>
 </li>
 </ul>
 
@@ -718,7 +743,8 @@
 
 <ul>
 <li>
-<strong>Pathway (Biological pathway)</strong>: A biological pathway is a series of actions among molecules in a cell that leads to a certain product or a change in a cell. Such a pathway can trigger the assembly of new molecules, such as a fat or protein. Pathways can also turn genes on and off, or spur a cell to move. [@Wiki]</li>
+<strong>Pathway (Biological pathway)</strong>: A biological pathway is a series of actions among molecules in a cell that leads to a certain product or a change in a cell. Such a pathway can trigger the assembly of new molecules, such as a fat or protein. Pathways can also turn genes on and off, or spur a cell to move. <a href="https://en.wikipedia.org/wiki/Biological_pathway">@Wiki</a>, <a href="https://www.genome.gov/27530687/biological-pathways-fact-sheet/">@NIH</a>
+</li>
 </ul>
 
 <h4>
@@ -750,18 +776,133 @@
 </ul>
 
 <h2>
-<a id="next-generate-sequencing" class="anchor" href="#next-generate-sequencing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next Generate Sequencing</h2>
+<a id="drugchemicals" class="anchor" href="#drugchemicals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Drug/Chemicals</h2>
 
 <h3>
-<a id="related-terms-7" class="anchor" href="#related-terms-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Terms</h3>
+<a id="drugsmall-molecule-database" class="anchor" href="#drugsmall-molecule-database" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Drug/Small Molecule Database</h3>
 
 <ul>
+<li>
+<strong><a href="http://ahd.cbi.pku.edu.cn">AHD2.0</a></strong>: The aim of the Arabidopsis hormone database is to provide a systematic and comprehensive view of morphological phenotypes regulated by plant hormones, as well as regulatory genes participating in numerous plant hormone responses.</li>
+<li>
+<strong><a href="http://www.drugbank.ca/">DrugBank</a></strong>: The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.</li>
+<li>
+<strong><a href="http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp">TTD - Therapeutic Target Database</a></strong>: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.</li>
+</ul>
+
+<h2>
+<a id="diseases" class="anchor" href="#diseases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diseases</h2>
+
+<h3>
+<a id="diseasephenotype-databasesontologies" class="anchor" href="#diseasephenotype-databasesontologies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disease/Phenotype Databases/Ontologies</h3>
+
+<ul>
+<li>
+<strong><a href="http://human-phenotype-ontology.github.io/">HPO - Human Phenotype Ontoloy</a></strong>: The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of phenotypic abnormalities encountered in human disease.</li>
+<li>
+<strong><a href="http://disease-ontology.org/">DO - Disease Ontology</a></strong>: The Disease Ontology semantically integrates disease and medical vocabularies through extensive cross mapping of DO terms to MeSH, ICD, NCI’s thesaurus, SNOMED and OMIM.</li>
+<li>
+<strong><a href="https://www.nlm.nih.gov/mesh/MBrowser.html">MeSH - Medical Subject Headings</a></strong>: MeSH is the National Library of Medicine's controlled vocabulary thesaurus. It consists of sets of terms naming descriptors in a hierarchical structure that permits searching at various levels of specificity.</li>
+</ul>
+
+<h3>
+<a id="genetic-diseases" class="anchor" href="#genetic-diseases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Genetic Diseases</h3>
+
+<h4>
+<a id="related-terms-7" class="anchor" href="#related-terms-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Terms</h4>
+
+<ul>
+<li>
+<strong>GWAS</strong>: In genetics, a genome-wide association study (GWA study, or GWAS), also known as whole genome association study (WGA study, or WGAS), is an examination of a genome-wide set of genetic variants in different individuals to see if any variant is associated with a trait. <a href="https://en.wikipedia.org/wiki/Genome-wide_association_study">@Wiki</a>
+</li>
 <li>
 <strong>CNV</strong>: The chromosome now has two copies of this section of DNA, rather than one. Copy number variation (CNVs) is a relatively new field in genomics and it is defined as a phenomenon in which sections of the genome are repeated and the number of repeats in the genome varies between individuals in the human population. <a href="https://en.wikipedia.org/wiki/Copy-number_variation">@Wiki</a>(<a href="https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/">https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/</a>)</li>
 <li>
 <strong>SNP</strong>: A single nucleotide polymorphism, often abbreviated to SNP (pronounced snip; plural snips), is a variation in a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population (e.g. &gt;1%). <a href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">@Wiki</a>, <a href="https://ghr.nlm.nih.gov/primer/genomicresearch/snp">@NIH</a>
 </li>
+<li>
+<strong>Genotype</strong>: The genotype is the part (DNA sequence) of the genetic makeup of a cell, and therefore of an organism or individual, which determines a specific characteristic (phenotype) of that cell/organism/individual. <a href="https://en.wikipedia.org/wiki/Genotype">@Wiki</a>
+</li>
+<li>
+<strong>PheWAS</strong>: Phenome-wide association studies (PheWAS) analyze many phenotypes compared to a single genetic variant (or other attribute). <a href="https://github.com/PheWAS/PheWAS">@Tool</a>
+</li>
+<li>
+<strong>Haplotype</strong>: A haplotype (haploid genotype) is a group of genes in an organism that are inherited together from a single parent. A haplogroup is a group of similar haplotypes that share a common ancestor with a single-nucleotide polymorphism mutation. <a href="https://en.wikipedia.org/wiki/Haplotype">@Wiki</a>, <a href="www.nature.com/scitable/definition/haplotype-haplotypes-142">@Scitable</a>
+</li>
+<li>
+<strong>IBD - Identity By Descent</strong>: A DNA segment is identical by state (IBS) in two or more individuals if they have identical nucleotide sequences in this segment. An IBS segment is identical by descent (IBD) in two or more individuals if they have inherited it from a common ancestor without recombination, that is, the segment has the same ancestral origin in these individuals. <a href="https://en.wikipedia.org/wiki/Identity_by_descent">@Wiki</a>
+</li>
+<li>
+<strong>Phasing/Haplotype Estimation</strong>: In genetics, haplotype estimation (also known as "phasing") refers to the process of statistical estimation of haplotypes from genotype data.</li>
+<li>
+<strong>ICD</strong>: The International Statistical Classification of Diseases and Related Health Problems, usually called by the short-form name International Classification of Diseases (ICD), is the international "standard diagnostic tool for epidemiology, health management and clinical purposes". <a href="https://en.wikipedia.org/wiki/International_Statistical_Classification_of_Diseases_and_Related_Health_Problems">@Wiki</a>
+</li>
+<li>
+<strong>MAF - Minor Allele Frequency</strong>: MAF refers to the frequency at which the second most common allele occurs in a given population. SNPs with a minor allele frequency of 5% or greater were targeted by the HapMap project.</li>
 </ul>
+
+<h4>
+<a id="genetic-variantdisease-databases" class="anchor" href="#genetic-variantdisease-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Genetic Variant/Disease Databases</h4>
+
+<ul>
+<li>
+<strong><a href="http://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a></strong>: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).</li>
+<li>
+<strong><a href="http://jjwanglab.org/gwasdb">GWASdb</a></strong>: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.</li>
+<li>
+<strong><a href="http://www.gwascentral.org/">GWAS Central</a></strong>: GWAS Central provides a centralized compilation of summary level findings from genetic association studies, both large and small. </li>
+<li>
+<strong><a href="http://www.omim.org/">OMIM - Online Mendelian Inheritance in Man®</a></strong>: An Online Catalog of Human Genes and Genetic Disorders </li>
+<li>
+<strong><a href="https://emerge.mc.vanderbilt.edu/">eMERGE</a></strong>: eMERGE is a national network that combines DNA biorepositories with electronic medical record (EMR) systems for large scale, high-throughput genetic research in support of implementing genomic medicine.</li>
+<li>
+<strong><a href="https://www.genome.gov/10001688/international-hapmap-project/">International HapMap Project</a></strong>: The International HapMap Project was an organization that aimed to develop a haplotype map (HapMap) of the human genome, to describe the common patterns of human genetic variation. HapMap is used to find genetic variants affecting health, disease and responses to drugs and environmental factors.</li>
+</ul>
+
+<h4>
+<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h4>
+
+<ul>
+<li>
+<strong><a href="http://bioconductor.org/packages/release/bioc/html/SNPRelate.html">SNPRelate</a></strong>: SNPRelate (high-performance computing R packages for multi-core symmetric multiprocessing computer architectures) to accelerate two key computations in GWAS: principal component analysis (PCA) and relatedness analysis using identity-by-descent (IBD) measures.</li>
+<li>
+<strong><a href="https://github.com/DReichLab/EIG">EIGENSOFT</a></strong>: The EIGENSOFT package combines functionality from our population genetics methods <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020190">@Ref</a>, EIGENSTRAT stratification correction method <a href="http://www.nature.com/ng/journal/v38/n8/abs/ng1847.html">@Ref</a>, and FastPCA and PC-based selection statistic <a href="http://www.sciencedirect.com/science/article/pii/S0002929716000033">@Ref</a>.</li>
+<li>
+<strong><a href="http://www.ritchielab.psu.edu/software/plato-download">PLATO</a></strong>: The PLatform for the Analysis, Translation, and Organization of large-scale data (PLATO) is a standalone program written in C++ that is designed to be a flexible and extensible analysis tool for a wide variety of genetic data.</li>
+<li>
+<strong><a href="http://visualization.ritchielab.psu.edu/synthesis_views/plot">Synthesis-View</a></strong>: A SNP visualization tool. [<a href="https://github.com/Ref" class="user-mention">@Ref</a>]</li>
+</ul>
+
+<h3>
+<a id="cancer" class="anchor" href="#cancer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cancer</h3>
+
+<h4>
+<a id="related-terms-8" class="anchor" href="#related-terms-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Terms</h4>
+
+<ul>
+<li>
+<strong>Cancer Predisposition Genes</strong>: Genes in which germline mutations confer highly or moderately increased risks of cancer. <a href="http://www.nature.com/nature/journal/v505/n7483/full/nature12981.html">@Nature</a>
+</li>
+</ul>
+
+<h4>
+<a id="cancer-data-repositories" class="anchor" href="#cancer-data-repositories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cancer Data Repositories</h4>
+
+<ul>
+<li>
+<strong><a href="http://www.cbioportal.org/">cBioPortal</a></strong>: The cBioPortal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets. <a href="http://www.ncbi.nlm.nih.gov/pubmed/23550210">@Ref</a>, <a href="http://cancerdiscovery.aacrjournals.org/content/2/5/401.abstract">@Ref</a>
+</li>
+<li>
+<strong><a href="http://cancergenome.nih.gov/">TCGA</a></strong>: The Cancer Genome Atlas (TCGA) is a collaboration between the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) that has generated comprehensive, multi-dimensional maps of the key genomic changes in 33 types of cancer. </li>
+<li>
+<strong><a href="http://cancer.sanger.ac.uk/">COSMIC</a></strong>: COSMIC is an online database of somatically acquired mutations found in human cancer.</li>
+<li>
+<strong><a href="https://pecan.stjude.org/proteinpaint/">ProteinPaint</a></strong>: Explorer for genomic alteration in pediatric cancer. <a href="http://www.nature.com/ng/journal/v48/n1/full/ng.3466.html">@Ref</a>
+</li>
+</ul>
+
+<h2>
+<a id="next-generate-sequencing" class="anchor" href="#next-generate-sequencing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next Generate Sequencing</h2>
 
 <h3>
 <a id="techniques" class="anchor" href="#techniques" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Techniques</h3>
@@ -811,19 +952,8 @@
 <li>
 <strong><a href="http://www.roadmapepigenomics.org/">Roadmap Epigenomics Project</a></strong>: The NIH Roadmap Epigenomics Mapping Consortium was launched with the goal of producing a public resource of human epigenomic data to catalyze basic biology and disease-oriented research.</li>
 <li>
-<strong><a href="http://cancergenome.nih.gov/">TCGA</a></strong>: The Cancer Genome Atlas (TCGA) is a collaboration between the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) that has generated comprehensive, multi-dimensional maps of the key genomic changes in 33 types of cancer. </li>
-</ul>
-
-<h3>
-<a id="variant-databases" class="anchor" href="#variant-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variant Databases</h3>
-
-<ul>
-<li>
-<strong><a href="http://cancer.sanger.ac.uk/">COSMIC</a></strong>: COSMIC is an online database of somatically acquired mutations found in human cancer.</li>
-<li>
-<strong><a href="http://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a></strong>: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).</li>
-<li>
-<strong><a href="http://jjwanglab.org/gwasdb">GWASdb</a></strong>: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.</li>
+<strong><a href="http://www.ebi.ac.uk/gxa">Expression Atlas</a></strong>: The Expression Atlas provides information on gene expression patterns under different biological conditions such as a gene knock out, a plant treated with a compound, or in a particular organism part or cell. <a href="http://nar.oxfordjournals.org/content/44/D1/D746.full">@Ref</a>
+</li>
 </ul>
 
 <h3>
@@ -894,6 +1024,52 @@
 <strong><a href="https://samtools.github.io/bcftools/bcftools.html">bcftools</a></strong>: utilities for variant calling and manipulating VCFs and BCFs.</li>
 <li>
 <strong><a href="https://software.broadinstitute.org/gatk/">GATK</a></strong>: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.</li>
+<li>
+<strong><a href="https://cgwb.nci.nih.gov/goldenPath/bamview/documentation/index.html">Bambino</a></strong>: a variant detector and alignment viewer for next-generation sequencing data in the SAM/BAM format.</li>
+<li>
+<strong><a href="http://www.stjuderesearch.org/site/lab/zhang">CONSERTING</a></strong>: integrating copy-number analysis with structural-variation detection. <a href="http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3394.html">@Ref</a>
+</li>
+<li>
+<strong><a href="http://www.stjuderesearch.org/site/lab/zhang">CREST</a></strong>: CREST (Clipping Reveals Structure) is a new algorithm for detecting genomic structural variations at base-pair resolution using next-generation sequencing data. <a href="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1628.html">@Ref</a>
+</li>
+</ul>
+
+<h4>
+<a id="variant-annotators" class="anchor" href="#variant-annotators" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variant Annotators</h4>
+
+<ul>
+<li>
+<strong><a href="http://annovar.openbioinformatics.org/en/latest/">ANNOVAR</a></strong>: is an efficient software tool to utilize update-to-date information to functionally annotate genetic variants detected from diverse genomes (including human genome hg18, hg19, hg38, as well as mouse, worm, fly, yeast and many others). </li>
+<li>
+<strong><a href="http://snpeff.sourceforge.net/">SnpEff</a></strong>: Genetic variant annotation and effect prediction toolbox. <a href="http://www.tandfonline.com/doi/abs/10.4161/fly.19695">@Ref</a>
+</li>
+<li>
+<strong><a href="http://snpeff.sourceforge.net/SnpSift.html">SnpSift</a></strong>: SnpSift is a toolbox that allows you to filter and manipulate annotated files.</li>
+<li>
+<strong><a href="https://gemini.readthedocs.io/en/latest/">GEMINI</a></strong>: GEMINI (GEnome MINIng) is a flexible framework for exploring genetic variation in the context of the wealth of genome annotations available for the human genome. <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003153">@Ref</a>
+</li>
+<li>
+<strong><a href="http://asia.ensembl.org/Homo_sapiens/Tools/VEP?db=core">Variant Effect Predictor</a></strong>: Analyse your own variants and predict the functional consequences of known and unknown variants via our Variant Effect Predictor (VEP) tool. <a href="http://bioinformatics.oxfordjournals.org/content/26/16/2069">@Ref</a>
+</li>
+<li>
+<strong><a href="http://vat.gersteinlab.org/index.php">VAT - Variant Annotation Tool</a></strong>: A computational framework to functionally annotate variants in personal genomes using a cloud-computing environment. <a href="http://bioinformatics.oxfordjournals.org/content/28/17/2267">@Ref</a>
+</li>
+<li>
+<strong><a href="http://snp.gs.washington.edu/SeattleSeqAnnotation147/">SeattleSeq Variation Annotation</a></strong>: The SeattleSeq Annotation server provides annotation of SNVs (single-nucleotide variations) and small indels, both known and novel. <a href="http://www.nature.com/nature/journal/v461/n7261/full/nature08250.html">@Ref</a>
+</li>
+</ul>
+
+<h4>
+<a id="haplotype-estimation-tools" class="anchor" href="#haplotype-estimation-tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Haplotype Estimation Tools</h4>
+
+<ul>
+<li>
+<strong><a href="http://stephenslab.uchicago.edu/phase/download.html">PHASE</a></strong>: A program for reconstructing haplotypes from population data. PHASE was limited by its speed and was not applicable to datasets from genome-wide association studies. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1275651/">@Ref</a> </li>
+<li>
+<strong><a href="http://scheet.org/code/fastphase_doc_1.4.pdf">fastPHASE</a></strong>: fastPHASE is software that implements methods for estimating missing genotypes and reconstructing haplotypes from unphased SNP genotype data of unrelated individuals.  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1424677/">@Ref</a> </li>
+<li>
+<strong><a href="https://mathgen.stats.ox.ac.uk/impute/impute_v2.html">IMPUTE2</a></strong>: IMPUTE version 2 (also known as IMPUTE2) is a genotype imputation and haplotype phasing program based on ideas from <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000529">Howie et al. 2009</a>
+</li>
 </ul>
 
 <h4>
@@ -902,21 +1078,6 @@
 <ul>
 <li>
 <strong><a href="https://www.nextflow.io/">nextflow</a></strong>: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.</li>
-</ul>
-
-<h3>
-<a id="drugchemicals" class="anchor" href="#drugchemicals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Drug/Chemicals</h3>
-
-<h4>
-<a id="drugsmall-molecule-database" class="anchor" href="#drugsmall-molecule-database" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Drug/Small Molecule Database</h4>
-
-<ul>
-<li>
-<strong><a href="http://ahd.cbi.pku.edu.cn">AHD2.0</a></strong>: The aim of the Arabidopsis hormone database is to provide a systematic and comprehensive view of morphological phenotypes regulated by plant hormones, as well as regulatory genes participating in numerous plant hormone responses.</li>
-<li>
-<strong><a href="http://www.drugbank.ca/">DrugBank</a></strong>: The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.</li>
-<li>
-<strong><a href="http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp">TTD - Therapeutic Target Database</a></strong>: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.</li>
 </ul>
 
 <h2>
@@ -949,7 +1110,7 @@
 </ul>
 
 <h3>
-<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h3>
+<a id="tools-1" class="anchor" href="#tools-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h3>
 
 <ul>
 <li>
