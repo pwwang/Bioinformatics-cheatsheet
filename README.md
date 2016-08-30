@@ -53,6 +53,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
   - [Techniques](#techniques)
   - [NGS Data Repositories](#ngs-data-repositories)
   - [NGS Data Analysis](#ngs-data-analysis)
+    - [Read Trimming](#read-trimming)
     - [Alignment](#alignment)
     - [Quality Control](#quality-control)
     - [Peak Calling/Differential Peak Calling](#peak-callingdifferential-peak-calling)
