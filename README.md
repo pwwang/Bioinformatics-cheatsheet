@@ -395,6 +395,10 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[Expression Atlas](http://www.ebi.ac.uk/gxa)**: The Expression Atlas provides information on gene expression patterns under different biological conditions such as a gene knock out, a plant treated with a compound, or in a particular organism part or cell. [@Ref](http://nar.oxfordjournals.org/content/44/D1/D746.full)
 
 ### NGS Data Analysis
+#### Read Trimming
+- **[Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic)**: A flexible read trimming tool for Illumina NGS data.
+- **[Sickle](https://github.com/najoshi/sickle)**: A windowed adaptive trimming tool for FASTQ files using quality.
+
 #### Alignment
 - **[bwa](http://bio-bwa.sourceforge.net/)**: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
 - **[bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)**: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.
