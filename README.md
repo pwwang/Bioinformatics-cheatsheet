@@ -33,7 +33,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Protein-Protein Interaction Databases](#protein-protein-interaction-databases)
     - [Protein-Chemical Interaction Databases](#protein-chemical-interaction-databases)
     - [PPI Detection Methods](#ppi-detection-methods)
-  - [Other Databases](#other-databases)
+  - [Correlation Databases](#correlation-databases)
 - [Epigenetics](#epigenetics)
   - [DNA Methylation](#dna-methylation)
     - [DNA Methylation Detection Methods](#dna-methylation-detection-methods)
@@ -63,6 +63,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Peak Calling/Differential Peak Calling](#peak-callingdifferential-peak-calling)
     - [Differential Expressed Gene Calling](#differential-expressed-gene-calling)
     - [Variant Calling](#variant-calling)
+    - [Variant Filtering](#variant-filtering)
     - [Variant Annotators](#variant-annotators)
     - [Haplotype Estimation Tools](#haplotype-estimation-tools)
     - [NGS Data/Variant/Genome Visulizers/Browsers/Diagrams](#ngs-datavariantgenome-visulizersbrowsersdiagrams)
@@ -70,6 +71,10 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - [File Formats](#file-formats)
   - [Formats](#formats)
   - [Tools](#tools-1)
+- [Statistics](#statistics)
+  - [Distributions](#distributions)
+  - [Tests](#tests)
+  - [Machine Learning](#machine-learning)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -98,6 +103,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[GeneCards](www.genecards.org/)**: GeneCards is a searchable, integrated, database of human genes that provides concise genomic related information, on all known and predicted human genes.
 - **[NCBI Gene](www.ncbi.nlm.nih.gov/gene)**: A portal to gene-specific content based on NCBI's RefSeq project, information from model organism databases, and links to other resources.
 - **[WikiGenes](https://www.wikigenes.org/)**: WikiGenes is a non-profit initiative to provide a global collaborative knowledge base for the life sciences, where authorship matters.
+- **[Harmonizome](http://amp.pharm.mssm.edu/Harmonizome/)**: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins. [@Ref](http://database.oxfordjournals.org/content/2016/baw100.full)
 
 #### Specialized/Disease-associated Gene Databases
 - **[CADgene](http://www.bioguo.org/CADgene)**: Coronary Artery Disease Gene Database.
@@ -132,6 +138,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[ProtCID](http://dunbrack2.fccc.edu/protcid)**: PROTein Common Interfaces Database.
 - **[SUBA3](http://suba.plantenergy.uwa.edu.au)**: The SUBcellular localization database for Arabidopsis proteins.
 - **[SynSysNet](http://bioinformatics.charite.de/synsysnet)**: Synaptic Proteins Database.
+- **[ASD](http://mdl.shsmu.edu.cn/ASD)**: Allosteric Database.
 
 ### Enhancer
 #### Related Terms
@@ -144,6 +151,8 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[dbSUPER](http://bioinfo.au.tsinghua.edu.cn/dbsuper/)**: dbSUPER is the first integrated and interactive database of super-enhancers.
 - **[SEA](http://sea.edbc.org/)**: a super-enhancer archive.
 - **[EI](http://www.dcode.org/EI/)**: Database of EI candidate tissue-specific enhancers: Predicting Tissue-Specific Enhancers in the Human Genome. [@Ref](http://www.genome.org/cgi/reprint/17/2/201)
+- **[EnhancerAtlas](http://www.enhanceratlas.org/)**: a resource for enhancer annotation and analysis in 105 human cell/tissue types. [@Ref](http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw495.abstract)
+
 
 #### Enhancer Prediction
 - **[DEEP](http://cbrc.kaust.edu.sa/deep/)**: a general computational framework for predicting enhancers
@@ -307,8 +316,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[Quantitative immunoprecipitation combined with knock-down](https://en.wikipedia.org/wiki/Quantitative_immunoprecipitation_combined_with_knock-down)**: (QUICK) relies on co-immunoprecipitation, quantitative [mass spectrometry](https://en.wikipedia.org/wiki/mass_spectrometry) ([SILAC](https://en.wikipedia.org/wiki/SILAC)) and [RNA interference](https://en.wikipedia.org/wiki/RNA_interference) (RNAi). This method detects interactions among endogenous non-tagged proteins. Thus, it has the same high confidence as co-immunoprecipitation. However, this method also depends on the availability of suitable antibodies.
 - **[Proximity ligation assay](https://en.wikipedia.org/wiki/Proximity_ligation_assay)**: (PLA) in situ is an immunohistochemical method utilizing so called PLA probes for detection of proteins, protein interactions and modifications.
 
-### Other Databases
-- **[ASD](http://mdl.shsmu.edu.cn/ASD)**: Allosteric Database.
+### Correlation Databases
 - **[CORNET](https://cornet.psb.ugent.be)**: CORrelation NETworks.
 - **[GeneMANIA](http://www.genemania.org)**: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.
 
@@ -430,6 +438,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[MACS](http://liulab.dfci.harvard.edu/MACS/)**: Model-based analysis of ChIP-seq (MACS) is a computational algorithm that identifies genome-wide locations of transcription/chromatin factor binding or histone modification from ChIP-seq data. 
 - **[DBChIP](http://pages.cs.wisc.edu/~kliang/DBChIP/)**: detects differentially bound sharp binding sites across multiple conditions, with or without matching control samples.
 - **[MAnorm](http://bcb.dfci.harvard.edu/~gcyuan/MAnorm/MAnorm.htm)**: a robust model for quantitative comparison of ChIP-Seq data sets.
+- **[THOR](http://www.regulatory-genomics.org/thor-2/basic-intrstruction/)**: Differential peak calling of ChIP-seq signals with replicates. [@Ref](http://nar.oxfordjournals.org/content/early/2016/08/01/nar.gkw680.abstract)
+- **[ODIN](http://www.regulatory-genomics.org/odin-2/basic-introduction/)**: ODIN is an HMM-based approach to detect and analyse differential peaks in pairs of ChIP-seq data. ODIN performs genomic signal processing, peak calling and p-value calculation in an integrated framework. [@Ref](http://bioinformatics.oxfordjournals.org/content/30/24/3467)
 
 #### Differential Expressed Gene Calling
 - **[Limma](https://bioconductor.org/packages/release/bioc/html/limma.html)**: Linear Models for Microarray and RNA-Seq Data.
@@ -452,15 +462,21 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[SegSeq](http://portals.broadinstitute.org/cgi-bin/cancer/publications/pub_paper.cgi?mode=view&paper_id=182)**: an algorithm to identify chromosomal breakpoints using massively parallel sequence data.
 - **[CNV-seq](http://tiger.dbs.nus.edu.sg/cnv-seq/)**: a new method to detect copy number variation using high-throughput sequencing.
 - **[BICseq2](http://www.math.pku.edu.cn/teachers/xirb/downloads/software/BICseq2/BICseq2.html)**: BICseq2 is an algorithm developed for the normalization of  high-throughput sequencing (HTS) data and detection of copy number variations (CNV) in the genome. BICseq2 can be used for detecting CNVs with or without a control genome.
+- **[MuSE](http://bioinformatics.mdanderson.org/main/MuSE)**: a novel approach to mutation calling based on the F81 Markov substitution model for molecular evolution, which models the evolution of the reference allele to the allelic composition of the matched tumor and normal tissue at each genomic locus. [@Ref](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1029-6)
+
+#### Variant Filtering
+- **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
+- **[Varapp](https://varapp-demo.vital-it.ch/#/login)**: Varapp is an open-source web application to filter variants from large sets of exome data stored in a relational database. 
+
 
 #### Variant Annotators
 - **[ANNOVAR](http://annovar.openbioinformatics.org/en/latest/)**: is an efficient software tool to utilize update-to-date information to functionally annotate genetic variants detected from diverse genomes (including human genome hg18, hg19, hg38, as well as mouse, worm, fly, yeast and many others). 
 - **[SnpEff](http://snpeff.sourceforge.net/)**: Genetic variant annotation and effect prediction toolbox. [@Ref](http://www.tandfonline.com/doi/abs/10.4161/fly.19695)
-- **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
 - **[GEMINI](https://gemini.readthedocs.io/en/latest/)**: GEMINI (GEnome MINIng) is a flexible framework for exploring genetic variation in the context of the wealth of genome annotations available for the human genome. [@Ref](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003153)
 - **[Variant Effect Predictor](http://asia.ensembl.org/Homo_sapiens/Tools/VEP?db=core)**: Analyse your own variants and predict the functional consequences of known and unknown variants via our Variant Effect Predictor (VEP) tool. [@Ref](http://bioinformatics.oxfordjournals.org/content/26/16/2069)
 - **[VAT - Variant Annotation Tool](http://vat.gersteinlab.org/index.php)**: A computational framework to functionally annotate variants in personal genomes using a cloud-computing environment. [@Ref](http://bioinformatics.oxfordjournals.org/content/28/17/2267)
 - **[SeattleSeq Variation Annotation](http://snp.gs.washington.edu/SeattleSeqAnnotation147/)**: The SeattleSeq Annotation server provides annotation of SNVs (single-nucleotide variations) and small indels, both known and novel. [@Ref](http://www.nature.com/nature/journal/v461/n7261/full/nature08250.html)
+- **[Jannovar](https://github.com/charite/jannovar)**: A Java Library for Exome Annotation
 
 #### Haplotype Estimation Tools
 - **[PHASE](http://stephenslab.uchicago.edu/phase/download.html)**: A program for reconstructing haplotypes from population data. PHASE was limited by its speed and was not applicable to datasets from genome-wide association studies. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1275651/) 
@@ -475,6 +491,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 
 #### NGS Data Analysis Pipeline/framework
 - **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
+- **[RUbioSeq+](http://rubioseq.bioinfo.cnio.es/)**: RUbioSeq+ is a stand-alone and multiplatform application for the integrated analysis of NGS data. More specifically, our software implements pipelines for the analysis of single nucleotide and copy-number variation, bisulfite-seq and ChIP-seq experiments using well-established tools to perform these common tasks.
 
 ## File Formats
 ### Formats
@@ -495,3 +512,14 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[samtools](https://github.com/samtools/samtools)**: SAM Tools provide various utilities for manipulating alignments in the SAM/BAM format, including sorting, merging, indexing and generating alignments in a per-position format.
 - **[VCFtools](https://vcftools.github.io/index.html)**: A set of tools written in Perl and C++ for working with VCF files.
 
+## Statistics
+### Distributions
+- **T-distribution**: Student's t-distribution (or t-distribution) is any member of a family of continuous probability distributions that arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.
+
+### Tests
+- **T-Test**: A t-test is any statistical hypothesis test in which the test statistic follows a Student's t-distribution under the null hypothesis. It can be used to determine if two sets of data are significantly different from each other. [@Wiki](https://en.wikipedia.org/wiki/Student%27s_t-test)
+- **[GSEA - Gene Set Enrichment Analysis](http://software.broadinstitute.org/gsea/index.jsp)**: Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes). 
+- **[fgsea](https://github.com/ctlab/fgsea)**: An R-package for fast preranked gene set enrichment analysis (GSEA).
+
+### Machine Learning
+- **SVM - Support Vector Machine**: support vector machines (SVMs, also support vector networks) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. [@Wiki](https://en.wikipedia.org/wiki/Support_vector_machine)
