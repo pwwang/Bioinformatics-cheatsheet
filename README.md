@@ -38,23 +38,32 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
   - [Pathways](#pathways)
     - [Related Terms](#related-terms-6)
     - [Pathway Databases](#pathway-databases)
+- [Drug/Chemicals](#drugchemicals)
+  - [Drug/Small Molecule Database](#drugsmall-molecule-database)
+- [Diseases](#diseases)
+  - [Disease/Phenotype Databases/Ontologies](#diseasephenotype-databasesontologies)
+  - [Genetic Diseases](#genetic-diseases)
+    - [Related Terms](#related-terms-7)
+    - [Genetic Variant/Disease Databases](#genetic-variantdisease-databases)
+    - [Tools](#tools)
+  - [Cancer](#cancer)
+    - [Related Terms](#related-terms-8)
+    - [Cancer Data Repositories](#cancer-data-repositories)
 - [Next Generate Sequencing](#next-generate-sequencing)
-  - [Related Terms](#related-terms-7)
   - [Techniques](#techniques)
   - [NGS Data Repositories](#ngs-data-repositories)
-  - [Variant Databases](#variant-databases)
   - [NGS Data Analysis](#ngs-data-analysis)
     - [Alignment](#alignment)
     - [Quality Control](#quality-control)
     - [Peak Calling/Differential Peak Calling](#peak-callingdifferential-peak-calling)
     - [Differential Expressed Gene Calling](#differential-expressed-gene-calling)
     - [Variant Calling](#variant-calling)
+    - [Variant Annotators](#variant-annotators)
+    - [Haplotype Estimation Tools](#haplotype-estimation-tools)
     - [NGS Data Analysis Pipeline/framework](#ngs-data-analysis-pipelineframework)
-  - [Drug/Chemicals](#drugchemicals)
-    - [Drug/Small Molecule Database](#drugsmall-molecule-database)
 - [File Formats](#file-formats)
   - [Formats](#formats)
-  - [Tools](#tools)
+  - [Tools](#tools-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -128,7 +137,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[DENdb](http://www.cbrc.kaust.edu.sa/dendb/)**: DENdb is a centralized on-line repository of predicted enhancers derived from multiple human cell-lines.
 - **[dbSUPER](http://bioinfo.au.tsinghua.edu.cn/dbsuper/)**: dbSUPER is the first integrated and interactive database of super-enhancers.
 - **[SEA](http://sea.edbc.org/)**: a super-enhancer archive.
-- **[EI](http://www.dcode.org/EI/)**: Database of EI candidate tissue-specific enhancers: Predicting Tissue-Specific Enhancers in the Human Genome. [@Paper](http://www.genome.org/cgi/reprint/17/2/201)
+- **[EI](http://www.dcode.org/EI/)**: Database of EI candidate tissue-specific enhancers: Predicting Tissue-Specific Enhancers in the Human Genome. [@Ref](http://www.genome.org/cgi/reprint/17/2/201)
 
 #### Enhancer Prediction
 - **[DEEP](http://cbrc.kaust.edu.sa/deep/)**: a general computational framework for predicting enhancers
@@ -322,15 +331,49 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[TTD - Therapeutic Target Database](http://bidd.nus.edu.sg/BIDD-Databases/TTD/TTD.asp)**: A database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets.
 
 ## Diseases
+### Disease/Phenotype Databases/Ontologies
+- **[HPO - Human Phenotype Ontoloy](http://human-phenotype-ontology.github.io/)**: The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of phenotypic abnormalities encountered in human disease.
+- **[DO - Disease Ontology](http://disease-ontology.org/)**: The Disease Ontology semantically integrates disease and medical vocabularies through extensive cross mapping of DO terms to MeSH, ICD, NCI’s thesaurus, SNOMED and OMIM.
+- **[MeSH - Medical Subject Headings](https://www.nlm.nih.gov/mesh/MBrowser.html)**: MeSH is the National Library of Medicine's controlled vocabulary thesaurus. It consists of sets of terms naming descriptors in a hierarchical structure that permits searching at various levels of specificity.
+
+### Genetic Diseases
+#### Related Terms
+- **GWAS**: In genetics, a genome-wide association study (GWA study, or GWAS), also known as whole genome association study (WGA study, or WGAS), is an examination of a genome-wide set of genetic variants in different individuals to see if any variant is associated with a trait. [@Wiki](https://en.wikipedia.org/wiki/Genome-wide_association_study)
+- **CNV**: The chromosome now has two copies of this section of DNA, rather than one. Copy number variation (CNVs) is a relatively new field in genomics and it is defined as a phenomenon in which sections of the genome are repeated and the number of repeats in the genome varies between individuals in the human population. [@Wiki](https://en.wikipedia.org/wiki/Copy-number_variation)(https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/)
+- **SNP**: A single nucleotide polymorphism, often abbreviated to SNP (pronounced snip; plural snips), is a variation in a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population (e.g. >1%). [@Wiki](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism), [@NIH](https://ghr.nlm.nih.gov/primer/genomicresearch/snp)
+- **Genotype**: The genotype is the part (DNA sequence) of the genetic makeup of a cell, and therefore of an organism or individual, which determines a specific characteristic (phenotype) of that cell/organism/individual. [@Wiki](https://en.wikipedia.org/wiki/Genotype)
+- **PheWAS**: Phenome-wide association studies (PheWAS) analyze many phenotypes compared to a single genetic variant (or other attribute). [@Tool](https://github.com/PheWAS/PheWAS)
+- **Haplotype**: A haplotype (haploid genotype) is a group of genes in an organism that are inherited together from a single parent. A haplogroup is a group of similar haplotypes that share a common ancestor with a single-nucleotide polymorphism mutation. [@Wiki](https://en.wikipedia.org/wiki/Haplotype), [@Scitable](www.nature.com/scitable/definition/haplotype-haplotypes-142)
+- **IBD - Identity By Descent**: A DNA segment is identical by state (IBS) in two or more individuals if they have identical nucleotide sequences in this segment. An IBS segment is identical by descent (IBD) in two or more individuals if they have inherited it from a common ancestor without recombination, that is, the segment has the same ancestral origin in these individuals. [@Wiki](https://en.wikipedia.org/wiki/Identity_by_descent)
+- **Phasing/Haplotype Estimation**: In genetics, haplotype estimation (also known as "phasing") refers to the process of statistical estimation of haplotypes from genotype data.
+- **ICD**: The International Statistical Classification of Diseases and Related Health Problems, usually called by the short-form name International Classification of Diseases (ICD), is the international "standard diagnostic tool for epidemiology, health management and clinical purposes". [@Wiki](https://en.wikipedia.org/wiki/International_Statistical_Classification_of_Diseases_and_Related_Health_Problems)
+- **MAF - Minor Allele Frequency**: MAF refers to the frequency at which the second most common allele occurs in a given population. SNPs with a minor allele frequency of 5% or greater were targeted by the HapMap project.
+
+#### Genetic Variant/Disease Databases
+- **[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)**: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).
+- **[GWASdb](http://jjwanglab.org/gwasdb)**: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.
+- **[GWAS Central](http://www.gwascentral.org/)**: GWAS Central provides a centralized compilation of summary level findings from genetic association studies, both large and small. 
+- **[OMIM - Online Mendelian Inheritance in Man®](http://www.omim.org/)**: An Online Catalog of Human Genes and Genetic Disorders 
+- **[eMERGE](https://emerge.mc.vanderbilt.edu/)**: eMERGE is a national network that combines DNA biorepositories with electronic medical record (EMR) systems for large scale, high-throughput genetic research in support of implementing genomic medicine.
+- **[International HapMap Project](https://www.genome.gov/10001688/international-hapmap-project/)**: The International HapMap Project was an organization that aimed to develop a haplotype map (HapMap) of the human genome, to describe the common patterns of human genetic variation. HapMap is used to find genetic variants affecting health, disease and responses to drugs and environmental factors.
+
+#### Tools
+- **[SNPRelate](http://bioconductor.org/packages/release/bioc/html/SNPRelate.html)**: SNPRelate (high-performance computing R packages for multi-core symmetric multiprocessing computer architectures) to accelerate two key computations in GWAS: principal component analysis (PCA) and relatedness analysis using identity-by-descent (IBD) measures.
+- **[EIGENSOFT](https://github.com/DReichLab/EIG)**: The EIGENSOFT package combines functionality from our population genetics methods [@Ref](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020190), EIGENSTRAT stratification correction method [@Ref](http://www.nature.com/ng/journal/v38/n8/abs/ng1847.html), and FastPCA and PC-based selection statistic [@Ref](http://www.sciencedirect.com/science/article/pii/S0002929716000033).
+- **[PLATO](http://www.ritchielab.psu.edu/software/plato-download)**: The PLatform for the Analysis, Translation, and Organization of large-scale data (PLATO) is a standalone program written in C++ that is designed to be a flexible and extensible analysis tool for a wide variety of genetic data.
+- **[Synthesis-View](http://visualization.ritchielab.psu.edu/synthesis_views/plot)**: A SNP visualization tool. [@Ref]
+
 ### Cancer
 #### Related Terms
 - **Cancer Predisposition Genes**: Genes in which germline mutations confer highly or moderately increased risks of cancer. [@Nature](http://www.nature.com/nature/journal/v505/n7483/full/nature12981.html)
 
-## Next Generate Sequencing
-### Related Terms
-- **CNV**: The chromosome now has two copies of this section of DNA, rather than one. Copy number variation (CNVs) is a relatively new field in genomics and it is defined as a phenomenon in which sections of the genome are repeated and the number of repeats in the genome varies between individuals in the human population. [@Wiki](https://en.wikipedia.org/wiki/Copy-number_variation)(https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/)
-- **SNP**: A single nucleotide polymorphism, often abbreviated to SNP (pronounced snip; plural snips), is a variation in a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population (e.g. >1%). [@Wiki](https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism), [@NIH](https://ghr.nlm.nih.gov/primer/genomicresearch/snp)
+#### Cancer Data Repositories
+- **[cBioPortal](http://www.cbioportal.org/)**: The cBioPortal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets. [@Ref](http://www.ncbi.nlm.nih.gov/pubmed/23550210), [@Ref](http://cancerdiscovery.aacrjournals.org/content/2/5/401.abstract)
+- **[TCGA](http://cancergenome.nih.gov/)**: The Cancer Genome Atlas (TCGA) is a collaboration between the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) that has generated comprehensive, multi-dimensional maps of the key genomic changes in 33 types of cancer. 
+- **[COSMIC](http://cancer.sanger.ac.uk/)**: COSMIC is an online database of somatically acquired mutations found in human cancer.
+- **[ProteinPaint](https://pecan.stjude.org/proteinpaint/)**: Explorer for genomic alteration in pediatric cancer. [@Ref](http://www.nature.com/ng/journal/v48/n1/full/ng.3466.html)
 
+## Next Generate Sequencing
 ### Techniques
 - **DNA-seq**: DNA sequencing is the process of determining the precise order of nucleotides within a DNA molecule. [@Wiki](https://en.wikipedia.org/wiki/DNA_sequencing)
 - **RNA-seq**: RNA-seq (RNA sequencing), also called whole transcriptome shotgun sequencing[1] (WTSS), uses next-generation sequencing (NGS) to reveal the presence and quantity of RNA in a biological sample at a given moment in time. [@Wiki](https://en.wikipedia.org/wiki/RNA-Seq)
@@ -349,12 +392,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[GEO](http://www.ncbi.nlm.nih.gov/geo/)**: GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted.
 - **[GermOnline](http://www.germonline.org/index.html)**: The GermOnline 4.0 gateway is a cross-species microarray expression database focusing on germline development, meiosis and gametogenesis as well as the mitotic cell cycle.
 - **[Roadmap Epigenomics Project](http://www.roadmapepigenomics.org/)**: The NIH Roadmap Epigenomics Mapping Consortium was launched with the goal of producing a public resource of human epigenomic data to catalyze basic biology and disease-oriented research.
-- **[TCGA](http://cancergenome.nih.gov/)**: The Cancer Genome Atlas (TCGA) is a collaboration between the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) that has generated comprehensive, multi-dimensional maps of the key genomic changes in 33 types of cancer. 
-
-### Variant Databases
-- **[COSMIC](http://cancer.sanger.ac.uk/)**: COSMIC is an online database of somatically acquired mutations found in human cancer.
-- **[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)**: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).
-- **[GWASdb](http://jjwanglab.org/gwasdb)**: GWASdb is an online bioinformatics database combines collections of GVs from GWAS and their comprehensive functional annotations, as well as disease classifications.
+- **[Expression Atlas](http://www.ebi.ac.uk/gxa)**: The Expression Atlas provides information on gene expression patterns under different biological conditions such as a gene knock out, a plant treated with a compound, or in a particular organism part or cell. [@Ref](http://nar.oxfordjournals.org/content/44/D1/D746.full)
 
 ### NGS Data Analysis
 #### Alignment
@@ -385,10 +423,26 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[CNVnator](https://github.com/abyzovlab/CNVnator)**: a tool for CNV discovery and genotyping from depth-of-coverage by mapped reads.
 - **[bcftools](https://samtools.github.io/bcftools/bcftools.html)**: utilities for variant calling and manipulating VCFs and BCFs.
 - **[GATK](https://software.broadinstitute.org/gatk/)**: Genome Analysis Toolkit offers a wide variety of tools with a primary focus on variant discovery and genotyping.
+- **[Bambino](https://cgwb.nci.nih.gov/goldenPath/bamview/documentation/index.html)**: a variant detector and alignment viewer for next-generation sequencing data in the SAM/BAM format.
+- **[CONSERTING](http://www.stjuderesearch.org/site/lab/zhang)**: integrating copy-number analysis with structural-variation detection. [@Ref](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3394.html)
+- **[CREST](http://www.stjuderesearch.org/site/lab/zhang)**: CREST (Clipping Reveals Structure) is a new algorithm for detecting genomic structural variations at base-pair resolution using next-generation sequencing data. [@Ref](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1628.html)
+
+#### Variant Annotators
+- **[ANNOVAR](http://annovar.openbioinformatics.org/en/latest/)**: is an efficient software tool to utilize update-to-date information to functionally annotate genetic variants detected from diverse genomes (including human genome hg18, hg19, hg38, as well as mouse, worm, fly, yeast and many others). 
+- **[SnpEff](http://snpeff.sourceforge.net/)**: Genetic variant annotation and effect prediction toolbox. [@Ref](http://www.tandfonline.com/doi/abs/10.4161/fly.19695)
+- **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
+- **[GEMINI](https://gemini.readthedocs.io/en/latest/)**: GEMINI (GEnome MINIng) is a flexible framework for exploring genetic variation in the context of the wealth of genome annotations available for the human genome. [@Ref](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003153)
+- **[Variant Effect Predictor](http://asia.ensembl.org/Homo_sapiens/Tools/VEP?db=core)**: Analyse your own variants and predict the functional consequences of known and unknown variants via our Variant Effect Predictor (VEP) tool. [@Ref](http://bioinformatics.oxfordjournals.org/content/26/16/2069)
+- **[VAT - Variant Annotation Tool](http://vat.gersteinlab.org/index.php)**: A computational framework to functionally annotate variants in personal genomes using a cloud-computing environment. [@Ref](http://bioinformatics.oxfordjournals.org/content/28/17/2267)
+- **[SeattleSeq Variation Annotation](http://snp.gs.washington.edu/SeattleSeqAnnotation147/)**: The SeattleSeq Annotation server provides annotation of SNVs (single-nucleotide variations) and small indels, both known and novel. [@Ref](http://www.nature.com/nature/journal/v461/n7261/full/nature08250.html)
+
+#### Haplotype Estimation Tools
+- **[PHASE](http://stephenslab.uchicago.edu/phase/download.html)**: A program for reconstructing haplotypes from population data. PHASE was limited by its speed and was not applicable to datasets from genome-wide association studies. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1275651/) 
+- **[fastPHASE](http://scheet.org/code/fastphase_doc_1.4.pdf)**: fastPHASE is software that implements methods for estimating missing genotypes and reconstructing haplotypes from unphased SNP genotype data of unrelated individuals.  [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1424677/) 
+- **[IMPUTE2](https://mathgen.stats.ox.ac.uk/impute/impute_v2.html)**: IMPUTE version 2 (also known as IMPUTE2) is a genotype imputation and haplotype phasing program based on ideas from [Howie et al. 2009](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000529)
 
 #### NGS Data Analysis Pipeline/framework
 - **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
-
 
 ## File Formats
 ### Formats
