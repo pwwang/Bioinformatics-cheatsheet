@@ -34,6 +34,10 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Protein-Chemical Interaction Databases](#protein-chemical-interaction-databases)
     - [PPI Detection Methods](#ppi-detection-methods)
   - [Other Databases](#other-databases)
+- [Epigenetics](#epigenetics)
+  - [DNA Methylation](#dna-methylation)
+    - [DNA Methylation Detection Methods](#dna-methylation-detection-methods)
+  - [Histone Modification](#histone-modification)
 - [Biological Processes](#biological-processes)
   - [Pathways](#pathways)
     - [Related Terms](#related-terms-6)
@@ -61,6 +65,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Variant Calling](#variant-calling)
     - [Variant Annotators](#variant-annotators)
     - [Haplotype Estimation Tools](#haplotype-estimation-tools)
+    - [NGS Data/Variant/Genome Visulizers/Browsers/Diagrams](#ngs-datavariantgenome-visulizersbrowsersdiagrams)
     - [NGS Data Analysis Pipeline/framework](#ngs-data-analysis-pipelineframework)
 - [File Formats](#file-formats)
   - [Formats](#formats)
@@ -307,6 +312,17 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[CORNET](https://cornet.psb.ugent.be)**: CORrelation NETworks.
 - **[GeneMANIA](http://www.genemania.org)**: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.
 
+## Epigenetics
+"The study of mitotically and/or meiotically heritable changes in gene function that cannot be explained by changes in DNA sequence." [@Ref](https://cshmonographs.org/index.php/monographs/issue/view/087969490.32)
+
+### DNA Methylation
+#### DNA Methylation Detection Methods
+- **MeDIP/mDIP - Methylated DNA immunoprecipitation**: Methylated DNA immunoprecipitation (MeDIP or mDIP) is a large-scale (chromosome- or genome-wide) purification technique in molecular biology that is used to enrich for methylated DNA sequences. [@Wiki](https://en.wikipedia.org/wiki/Methylated_DNA_immunoprecipitation)
+- **MeDIP-seq**: The MeDIP-seq approach, i.e. the coupling of MeDIP with next generation, short-read sequencing technologies such as 454, Illumina (company) (Solexa), was first described by [Down et al. in 2008](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2644410). The high-throughput sequencing of the methylated DNA fragments produces a large number of short reads (36-50bp or 400 bp depending on the technology). 
+
+### Histone Modification
+
+
 ## Biological Processes
 ### Pathways
 #### Related Terms
@@ -349,6 +365,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **Phasing/Haplotype Estimation**: In genetics, haplotype estimation (also known as "phasing") refers to the process of statistical estimation of haplotypes from genotype data.
 - **ICD**: The International Statistical Classification of Diseases and Related Health Problems, usually called by the short-form name International Classification of Diseases (ICD), is the international "standard diagnostic tool for epidemiology, health management and clinical purposes". [@Wiki](https://en.wikipedia.org/wiki/International_Statistical_Classification_of_Diseases_and_Related_Health_Problems)
 - **MAF - Minor Allele Frequency**: MAF refers to the frequency at which the second most common allele occurs in a given population. SNPs with a minor allele frequency of 5% or greater were targeted by the HapMap project.
+- **LOH - Loss Of Heterozygosity**: Loss of heterozygosity (LOH) is a gross chromosomal event that results in loss of the entire gene and the surrounding chromosomal region. [@Wiki](https://en.wikipedia.org/wiki/Loss_of_heterozygosity)
 
 #### Genetic Variant/Disease Databases
 - **[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)**: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).
@@ -362,7 +379,6 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[SNPRelate](http://bioconductor.org/packages/release/bioc/html/SNPRelate.html)**: SNPRelate (high-performance computing R packages for multi-core symmetric multiprocessing computer architectures) to accelerate two key computations in GWAS: principal component analysis (PCA) and relatedness analysis using identity-by-descent (IBD) measures.
 - **[EIGENSOFT](https://github.com/DReichLab/EIG)**: The EIGENSOFT package combines functionality from our population genetics methods [@Ref](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020190), EIGENSTRAT stratification correction method [@Ref](http://www.nature.com/ng/journal/v38/n8/abs/ng1847.html), and FastPCA and PC-based selection statistic [@Ref](http://www.sciencedirect.com/science/article/pii/S0002929716000033).
 - **[PLATO](http://www.ritchielab.psu.edu/software/plato-download)**: The PLatform for the Analysis, Translation, and Organization of large-scale data (PLATO) is a standalone program written in C++ that is designed to be a flexible and extensible analysis tool for a wide variety of genetic data.
-- **[Synthesis-View](http://visualization.ritchielab.psu.edu/synthesis_views/plot)**: A SNP visualization tool. [@Ref]
 
 ### Cancer
 #### Related Terms
@@ -431,6 +447,11 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[Bambino](https://cgwb.nci.nih.gov/goldenPath/bamview/documentation/index.html)**: a variant detector and alignment viewer for next-generation sequencing data in the SAM/BAM format.
 - **[CONSERTING](http://www.stjuderesearch.org/site/lab/zhang)**: integrating copy-number analysis with structural-variation detection. [@Ref](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3394.html)
 - **[CREST](http://www.stjuderesearch.org/site/lab/zhang)**: CREST (Clipping Reveals Structure) is a new algorithm for detecting genomic structural variations at base-pair resolution using next-generation sequencing data. [@Ref](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1628.html)
+- **[Control-FREEC](http://boevalab.com/FREEC/)**: Control-FREEC is a tool for detection of copy-number changes and allelic imbalances (including LOH) using deep-sequencing data.
+- **[HMMcopy](http://compbio.bccrc.ca/software/hmmcopy/)**: Copy number prediction with correction for GC and mappability bias for HTS data
+- **[SegSeq](http://portals.broadinstitute.org/cgi-bin/cancer/publications/pub_paper.cgi?mode=view&paper_id=182)**: an algorithm to identify chromosomal breakpoints using massively parallel sequence data.
+- **[CNV-seq](http://tiger.dbs.nus.edu.sg/cnv-seq/)**: a new method to detect copy number variation using high-throughput sequencing.
+- **[BICseq2](http://www.math.pku.edu.cn/teachers/xirb/downloads/software/BICseq2/BICseq2.html)**: BICseq2 is an algorithm developed for the normalization of  high-throughput sequencing (HTS) data and detection of copy number variations (CNV) in the genome. BICseq2 can be used for detecting CNVs with or without a control genome.
 
 #### Variant Annotators
 - **[ANNOVAR](http://annovar.openbioinformatics.org/en/latest/)**: is an efficient software tool to utilize update-to-date information to functionally annotate genetic variants detected from diverse genomes (including human genome hg18, hg19, hg38, as well as mouse, worm, fly, yeast and many others). 
@@ -446,6 +467,12 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[fastPHASE](http://scheet.org/code/fastphase_doc_1.4.pdf)**: fastPHASE is software that implements methods for estimating missing genotypes and reconstructing haplotypes from unphased SNP genotype data of unrelated individuals.  [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1424677/) 
 - **[IMPUTE2](https://mathgen.stats.ox.ac.uk/impute/impute_v2.html)**: IMPUTE version 2 (also known as IMPUTE2) is a genotype imputation and haplotype phasing program based on ideas from [Howie et al. 2009](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000529)
 
+#### NGS Data/Variant/Genome Visulizers/Browsers/Diagrams
+- **[UCSC Genome Browser](https://genome.ucsc.edu/cgi-bin/hgTracks)**: The UCSC Genome Browser is an on-line genome browser hosted by the University of California, Santa Cruz (UCSC).
+- **[JBrowse](http://jbrowse.org/)**: a JavaScript genome browser by the open-source Generic Model Organism Database project. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752129)
+- **[Synthesis-View](http://visualization.ritchielab.psu.edu/synthesis_views/plot)**: A SNP visualization tool. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012023/)
+- **[IGV - Integrative Genomics Viewer](http://www.broadinstitute.org/igv/)**: A high-performance visualization tool for interactive exploration of large, integrated genomic datasets. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603213)
+
 #### NGS Data Analysis Pipeline/framework
 - **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
 
@@ -458,6 +485,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **WIG**: The WIG (wiggle) format is designed for display of dense continuous data such as probability scores. Wiggle data elements must be equally sized; if you need to display continuous data that is sparse or contains elements of varying size, use the BedGraph format instead. [@UCSC](https://genome.ucsc.edu/goldenpath/help/wiggle.html), [@Ensembl](http://useast.ensembl.org/info/website/upload/wig.html)
 - **[SAM](http://samtools.github.io/hts-specs/SAMv1.pdf)**: The SAM Format is a text format for storing sequence data in a series of tab delimited ASCII columns. [@Wiki](http://genome.sph.umich.edu/wiki/SAM)
 - **VCF**: The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations. [v4.0@1000genomes](http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-40), [@Wiki](https://en.wikipedia.org/wiki/Variant_Call_Format)
+- **[MAF - Mutation Annotation Format](https://wiki.nci.nih.gov/display/TCGA/Mutation+Annotation+Format+%28MAF%29+Specification+-+v2.4)**: A Mutation Annotation Format (MAF) file (.maf) is a tab-delimited text file that lists mutations. [Tutorial@Biostars](https://www.biostars.org/p/69222/)
 
 ### Tools
 - **[BEDOPS](https://bedops.readthedocs.io/en/latest/)**: the fast, highly scalable and easily-parallelizable genome analysis toolkit.
