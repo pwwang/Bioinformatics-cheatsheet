@@ -93,7 +93,8 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **Exon**: An exon is any part of a gene that will become a part of the final mature RNA produced by that gene after introns have been removed by RNA splicing. [@Wiki](https://en.wikipedia.org/wiki/Exon)
 - **Intron**: An intron is any nucleotide sequence within a gene that is removed by RNA splicing during maturation of the final RNA product. [@Wiki](https://en.wikipedia.org/wiki/Intron)
 
-#### Genome Databases
+#### Genome/Sequence Databases
+- **[SO - Sequence Ontology](http://www.sequenceontology.org/)**: SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation.
 - **[Ensembl genome browser](www.ensembl.org/)**: Ensembl is a joint project between EMBL - EBI and the Sanger Institute to develop a software system which produces and maintains automatic annotation on selected eukaryotic genomes.
 - **[Candida Genome Database](www.candidagenome.org/)**: Resource for genomic sequence data and gene and protein information for Candida albicans.
 - **[WormBase](http://www.wormbase.org)**: Worm Base.
