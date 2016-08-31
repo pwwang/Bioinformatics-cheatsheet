@@ -23,7 +23,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Enhancer Databases](#enhancer-databases)
     - [Enhancer Prediction](#enhancer-prediction)
 - [Interactions/Regulations/Associations](#interactionsregulationsassociations)
-  - [Protein-DNA Interaction](#protein-dna-interaction)
+  - [Transcription Factor - Target](#transcription-factor---target)
     - [Related Terms](#related-terms-4)
     - [Transcription Factor Databases](#transcription-factor-databases)
     - [TFBS/TF Binding Motif/TF Target Databases](#tfbstf-binding-motiftf-target-databases)
@@ -42,6 +42,8 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
   - [Pathways](#pathways)
     - [Related Terms](#related-terms-6)
     - [Pathway Databases](#pathway-databases)
+    - [Pathway Predictions](#pathway-predictions)
+    - [Pathway/Network analysis](#pathwaynetwork-analysis)
 - [Drug/Chemicals](#drugchemicals)
   - [Drug/Small Molecule Database](#drugsmall-molecule-database)
 - [Mutations and Diseases](#mutations-and-diseases)
@@ -73,7 +75,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - [File Formats](#file-formats)
   - [Formats](#formats)
   - [Tools](#tools-1)
-- [Statistics](#statistics)
+- [Math/Statistics](#mathstatistics)
   - [Distributions](#distributions)
   - [Tests](#tests)
   - [Machine Learning](#machine-learning)
@@ -107,6 +109,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[GeneCards](www.genecards.org/)**: GeneCards is a searchable, integrated, database of human genes that provides concise genomic related information, on all known and predicted human genes.
 - **[NCBI Gene](www.ncbi.nlm.nih.gov/gene)**: A portal to gene-specific content based on NCBI's RefSeq project, information from model organism databases, and links to other resources.
 - **[WikiGenes](https://www.wikigenes.org/)**: WikiGenes is a non-profit initiative to provide a global collaborative knowledge base for the life sciences, where authorship matters.
+- **[GENCODE](http://www.gencodegenes.org/)**: Encyclopedia of genes and gene variants.
 - **[Harmonizome](http://amp.pharm.mssm.edu/Harmonizome/)**: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins. [@Ref](http://database.oxfordjournals.org/content/2016/baw100.full)
 
 #### Specialized/Disease-associated Gene Databases
@@ -162,7 +165,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[DEEP](http://cbrc.kaust.edu.sa/deep/)**: a general computational framework for predicting enhancers
 
 ## Interactions/Regulations/Associations
-### Protein-DNA Interaction
+### Transcription Factor - Target
 #### Related Terms
 - **TF - Transcription Factor**: Transcription factors are proteins that control which genes are turned on or off in the genome. They do so by binding to DNA and other proteins. [@Wiki](https://en.wikipedia.org/wiki/Transcription_factor), [@BroadInstitute](https://www.broadinstitute.org/education/glossary/transcription-factor), [@Scitable](http://www.nature.com/scitable/definition/general-transcription-factor-transcription-factor-167)
 - **PWM - Position Weight Matrix/PSWM/PSSM**: A position weight matrix (PWM), also known as a position-specific weight matrix (PSWM) or position-specific scoring matrix (PSSM), is a commonly used representation of motifs (patterns) in biological sequences. [@Wiki](https://en.wikipedia.org/wiki/Position_weight_matrix)
@@ -320,6 +323,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[Quantitative immunoprecipitation combined with knock-down](https://en.wikipedia.org/wiki/Quantitative_immunoprecipitation_combined_with_knock-down)**: (QUICK) relies on co-immunoprecipitation, quantitative [mass spectrometry](https://en.wikipedia.org/wiki/mass_spectrometry) ([SILAC](https://en.wikipedia.org/wiki/SILAC)) and [RNA interference](https://en.wikipedia.org/wiki/RNA_interference) (RNAi). This method detects interactions among endogenous non-tagged proteins. Thus, it has the same high confidence as co-immunoprecipitation. However, this method also depends on the availability of suitable antibodies.
 - **[Proximity ligation assay](https://en.wikipedia.org/wiki/Proximity_ligation_assay)**: (PLA) in situ is an immunohistochemical method utilizing so called PLA probes for detection of proteins, protein interactions and modifications.
 
+
 ### Correlation Databases
 - **[CORNET](https://cornet.psb.ugent.be)**: CORrelation NETworks.
 - **[GeneMANIA](http://www.genemania.org)**: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.
@@ -352,6 +356,12 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[SignaLink](http://signalink.org/)**: An integrated resource to analyze signaling pathway cross-talks, transcription factors, miRNAs and regulatory enzymes.
 - **[SMPDB](http://smpdb.ca/)**: SMPDB (The Small Molecule Pathway Database) is an interactive, visual database containing more than 618 small molecule pathways found in humans. More than 70% of these pathways (>433) are not found in any other pathway database.
 - **[Yeast Pathways Database](http://pathway.yeastgenome.org/)**: The Yeast Pathways Database is a collection of manually curated metabolic pathways and enzymes of Saccharomyces cerevisiae.
+
+#### Pathway Predictions
+- **[PIUMet](http://fraenkel-nsf.csbi.mit.edu/PIUMet/)**: Inferring Disease-Modifying Pathways and Hidden Components via Integrative Analysis of Metabolite Features with Various Omic Data. [@Ref](http://www.nature.com/nmeth/journal/v13/n9/pdf/nmeth.3940.pdf)
+
+#### Pathway/Network analysis
+- **[HotNet2](https://github.com/raphael-group/hotnet2)**: HotNet2 is an algorithm for finding significantly altered subnetworks in a large gene interaction network. While originally developed for use with cancer mutation data, the current release also supports any application in which meaningful scores can be assigned to genes in the network. [@Ref](http://www.nature.com/ng/journal/v47/n2/full/ng.3168.html)
 
 ## Drug/Chemicals
 ### Drug/Small Molecule Database
@@ -448,6 +458,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 #### Alignment
 - **[bwa](http://bio-bwa.sourceforge.net/)**: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
 - **[bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)**: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.
+- **[ABRA](https://github.com/mozack/abra)**: ABRA is a realigner for next generation sequencing data. It uses localized assembly and global realignment to align reads more accurately, thus improving downstream analysis (detection of indels and complex variants in particular). [@Ref](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4173014/)
 
 #### Quality Control
 - **[ClinQC](https://sourceforge.net/projects/clinqc/)**: ClinQC is an integrated and user-friendly pipeline for quality control, filtering and trimming of Sanger and NGS sequencing data for hundred to thousands of samples/patients in a single run in clinical research.
@@ -493,7 +504,6 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
 - **[Varapp](https://varapp-demo.vital-it.ch/#/login)**: Varapp is an open-source web application to filter variants from large sets of exome data stored in a relational database. 
 
-
 #### Variant Annotators
 - **[ANNOVAR](http://annovar.openbioinformatics.org/en/latest/)**: is an efficient software tool to utilize update-to-date information to functionally annotate genetic variants detected from diverse genomes (including human genome hg18, hg19, hg38, as well as mouse, worm, fly, yeast and many others). 
 - **[SnpEff](http://snpeff.sourceforge.net/)**: Genetic variant annotation and effect prediction toolbox. [@Ref](http://www.tandfonline.com/doi/abs/10.4161/fly.19695)
@@ -538,7 +548,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[VCFtools](https://vcftools.github.io/index.html)**: A set of tools written in Perl and C++ for working with VCF files.
 - **[PiCard](https://broadinstitute.github.io/picard/)**: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
 
-## Statistics
+## Math/Statistics
 ### Distributions
 - **T-distribution**: Student's t-distribution (or t-distribution) is any member of a family of continuous probability distributions that arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.
 
