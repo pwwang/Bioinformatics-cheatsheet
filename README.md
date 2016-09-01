@@ -8,7 +8,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - [General Elements](#general-elements)
   - [DNA/Gene/Genome](#dnagenegenome)
     - [Related Terms](#related-terms)
-    - [Genome Databases](#genome-databases)
+    - [Genome/Sequence Databases](#genomesequence-databases)
     - [General Gene Databases](#general-gene-databases)
     - [Specialized/Disease-associated Gene Databases](#specializeddisease-associated-gene-databases)
     - [Gene Prediction](#gene-prediction)
@@ -69,6 +69,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Variant Calling](#variant-calling)
     - [Variant Filtering](#variant-filtering)
     - [Variant Annotators](#variant-annotators)
+    - [Variant Simulation](#variant-simulation)
     - [Haplotype Estimation Tools](#haplotype-estimation-tools)
     - [NGS Data/Variant/Genome Visulizers/Browsers/Diagrams](#ngs-datavariantgenome-visulizersbrowsersdiagrams)
     - [NGS Data Analysis Pipeline/framework](#ngs-data-analysis-pipelineframework)
@@ -500,6 +501,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[MuSE](http://bioinformatics.mdanderson.org/main/MuSE)**: a novel approach to mutation calling based on the F81 Markov substitution model for molecular evolution, which models the evolution of the reference allele to the allelic composition of the matched tumor and normal tissue at each genomic locus. [@Ref](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1029-6)
 - **[VarScan](http://dkoboldt.github.io/varscan/)**: a platform-independent software tool developed at the Genome Institute at Washington University to detect variants in NGS data.
 - **[Pindel](https://github.com/genome/pindel)**: Pindel can detect breakpoints of large deletions, medium sized insertions, inversions, tandem duplications and other structural variants at single-based resolution from next-gen sequence data.
+- **COPS**: A Sensitive and Accurate Tool for Detecting Somatic Copy Number Alterations Using Short-Read Sequence Data from Paired Samples. COPS is available at ftp://115.119.160.213 with username “cops” and password “cops”. [@Ref](http://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0047812)
 
 #### Variant Filtering
 - **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
@@ -512,7 +514,10 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[Variant Effect Predictor](http://asia.ensembl.org/Homo_sapiens/Tools/VEP?db=core)**: Analyse your own variants and predict the functional consequences of known and unknown variants via our Variant Effect Predictor (VEP) tool. [@Ref](http://bioinformatics.oxfordjournals.org/content/26/16/2069)
 - **[VAT - Variant Annotation Tool](http://vat.gersteinlab.org/index.php)**: A computational framework to functionally annotate variants in personal genomes using a cloud-computing environment. [@Ref](http://bioinformatics.oxfordjournals.org/content/28/17/2267)
 - **[SeattleSeq Variation Annotation](http://snp.gs.washington.edu/SeattleSeqAnnotation147/)**: The SeattleSeq Annotation server provides annotation of SNVs (single-nucleotide variations) and small indels, both known and novel. [@Ref](http://www.nature.com/nature/journal/v461/n7261/full/nature08250.html)
-- **[Jannovar](https://github.com/charite/jannovar)**: A Java Library for Exome Annotation
+- **[Jannovar](https://github.com/charite/jannovar)**: A Java Library for Exome Annotation.
+
+#### Variant Simulation
+- **[SCNVSim](https://sourceforge.net/projects/scnvsim/)**: somatic copy number variation and structure variation simulator. [@Ref](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0502-7)
 
 #### Haplotype Estimation Tools
 - **[PHASE](http://stephenslab.uchicago.edu/phase/download.html)**: A program for reconstructing haplotypes from population data. PHASE was limited by its speed and was not applicable to datasets from genome-wide association studies. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1275651/) 
@@ -524,10 +529,13 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[JBrowse](http://jbrowse.org/)**: a JavaScript genome browser by the open-source Generic Model Organism Database project. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752129)
 - **[Synthesis-View](http://visualization.ritchielab.psu.edu/synthesis_views/plot)**: A SNP visualization tool. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012023/)
 - **[IGV - Integrative Genomics Viewer](http://www.broadinstitute.org/igv/)**: A high-performance visualization tool for interactive exploration of large, integrated genomic datasets. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603213)
+- **[pileup.js](http://www.hammerlab.org/2015/06/19/introducing-pileup-js-a-browser-based-genome-viewer/)**: a Browser-based Genome Viewer.
+- **[Biodalliance](http://www.biodalliance.org/index.html)**: Biodalliance is a fast, interactive, genome visualization tool that's easy to embed in web pages and applications. 
 
 #### NGS Data Analysis Pipeline/framework
 - **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
 - **[RUbioSeq+](http://rubioseq.bioinfo.cnio.es/)**: RUbioSeq+ is a stand-alone and multiplatform application for the integrated analysis of NGS data. More specifically, our software implements pipelines for the analysis of single nucleotide and copy-number variation, bisulfite-seq and ChIP-seq experiments using well-established tools to perform these common tasks.
+- **[SpeedSeq](https://github.com/hall-lab/speedseq)**: A flexible framework for rapid genome analysis and interpretation. [@Ref](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3505.html)
 
 ## File Formats
 ### Formats
