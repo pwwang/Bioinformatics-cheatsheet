@@ -50,7 +50,7 @@
 
 <ul>
 <li><a href="#related-terms">Related Terms</a></li>
-<li><a href="#genome-databases">Genome Databases</a></li>
+<li><a href="#genomesequence-databases">Genome/Sequence Databases</a></li>
 <li><a href="#general-gene-databases">General Gene Databases</a></li>
 <li><a href="#specializeddisease-associated-gene-databases">Specialized/Disease-associated Gene Databases</a></li>
 <li><a href="#gene-prediction">Gene Prediction</a></li>
@@ -88,7 +88,7 @@
 
 <ul>
 <li>
-<a href="#protein-dna-interaction">Protein-DNA Interaction</a>
+<a href="#transcription-factor---target">Transcription Factor - Target</a>
 
 <ul>
 <li><a href="#related-terms-4">Related Terms</a></li>
@@ -107,7 +107,21 @@
 <li><a href="#ppi-detection-methods">PPI Detection Methods</a></li>
 </ul>
 </li>
-<li><a href="#other-databases">Other Databases</a></li>
+<li><a href="#correlation-databases">Correlation Databases</a></li>
+</ul>
+</li>
+<li>
+<a href="#epigenetics">Epigenetics</a>
+
+<ul>
+<li>
+<a href="#dna-methylation">DNA Methylation</a>
+
+<ul>
+<li><a href="#dna-methylation-detection-methods">DNA Methylation Detection Methods</a></li>
+</ul>
+</li>
+<li><a href="#histone-modification">Histone Modification</a></li>
 </ul>
 </li>
 <li>
@@ -120,6 +134,8 @@
 <ul>
 <li><a href="#related-terms-6">Related Terms</a></li>
 <li><a href="#pathway-databases">Pathway Databases</a></li>
+<li><a href="#pathway-predictions">Pathway Predictions</a></li>
+<li><a href="#pathwaynetwork-analysisvisualizers">Pathway/Network analysis/visualizers</a></li>
 </ul>
 </li>
 </ul>
@@ -132,21 +148,22 @@
 </ul>
 </li>
 <li>
-<a href="#diseases">Diseases</a>
+<a href="#mutations-and-diseases">Mutations and Diseases</a>
 
 <ul>
 <li><a href="#diseasephenotype-databasesontologies">Disease/Phenotype Databases/Ontologies</a></li>
 <li>
-<a href="#genetic-diseases">Genetic Diseases</a>
+<a href="#germline-mutations-and-genetic-diseases">Germline Mutations and Genetic Diseases</a>
 
 <ul>
 <li><a href="#related-terms-7">Related Terms</a></li>
 <li><a href="#genetic-variantdisease-databases">Genetic Variant/Disease Databases</a></li>
 <li><a href="#tools">Tools</a></li>
+<li><a href="#mutation-protein-structure-studies">Mutation-Protein Structure Studies</a></li>
 </ul>
 </li>
 <li>
-<a href="#cancer">Cancer</a>
+<a href="#somatic-mutations-and-cancers">Somatic Mutations and Cancers</a>
 
 <ul>
 <li><a href="#related-terms-8">Related Terms</a></li>
@@ -165,13 +182,18 @@
 <a href="#ngs-data-analysis">NGS Data Analysis</a>
 
 <ul>
+<li><a href="#read-trimming">Read Trimming</a></li>
+<li><a href="#de-duplication">De-Duplication</a></li>
 <li><a href="#alignment">Alignment</a></li>
 <li><a href="#quality-control">Quality Control</a></li>
 <li><a href="#peak-callingdifferential-peak-calling">Peak Calling/Differential Peak Calling</a></li>
 <li><a href="#differential-expressed-gene-calling">Differential Expressed Gene Calling</a></li>
 <li><a href="#variant-calling">Variant Calling</a></li>
+<li><a href="#variant-filtering">Variant Filtering</a></li>
 <li><a href="#variant-annotators">Variant Annotators</a></li>
+<li><a href="#variant-simulation">Variant Simulation</a></li>
 <li><a href="#haplotype-estimation-tools">Haplotype Estimation Tools</a></li>
+<li><a href="#ngs-datavariantgenome-visulizersbrowsersdiagrams">NGS Data/Variant/Genome Visulizers/Browsers/Diagrams</a></li>
 <li><a href="#ngs-data-analysis-pipelineframework">NGS Data Analysis Pipeline/framework</a></li>
 </ul>
 </li>
@@ -183,6 +205,16 @@
 <ul>
 <li><a href="#formats">Formats</a></li>
 <li><a href="#tools-1">Tools</a></li>
+<li><a href="#file-format-conversions">File Format Conversions</a></li>
+</ul>
+</li>
+<li>
+<a href="#mathstatistics">Math/Statistics</a>
+
+<ul>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
 </ul>
 </li>
 </ul>
@@ -214,12 +246,20 @@
 <li>
 <strong>Expression (Gene expression)</strong>: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. <a href="https://en.wikipedia.org/wiki/Gene_expression">@Wiki</a>, <a href="http://www.nature.com/scitable/topicpage/gene-expression-14121669">@Scitable</a>
 </li>
+<li>
+<strong>Exon</strong>: An exon is any part of a gene that will become a part of the final mature RNA produced by that gene after introns have been removed by RNA splicing. <a href="https://en.wikipedia.org/wiki/Exon">@Wiki</a>
+</li>
+<li>
+<strong>Intron</strong>: An intron is any nucleotide sequence within a gene that is removed by RNA splicing during maturation of the final RNA product. <a href="https://en.wikipedia.org/wiki/Intron">@Wiki</a>
+</li>
 </ul>
 
 <h4>
-<a id="genome-databases" class="anchor" href="#genome-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Genome Databases</h4>
+<a id="genomesequence-databases" class="anchor" href="#genomesequence-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Genome/Sequence Databases</h4>
 
 <ul>
+<li>
+<strong><a href="http://www.sequenceontology.org/">SO - Sequence Ontology</a></strong>: SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation.</li>
 <li>
 <strong><a href="www.ensembl.org/">Ensembl genome browser</a></strong>: Ensembl is a joint project between EMBL - EBI and the Sanger Institute to develop a software system which produces and maintains automatic annotation on selected eukaryotic genomes.</li>
 <li>
@@ -252,6 +292,11 @@
 <strong><a href="www.ncbi.nlm.nih.gov/gene">NCBI Gene</a></strong>: A portal to gene-specific content based on NCBI's RefSeq project, information from model organism databases, and links to other resources.</li>
 <li>
 <strong><a href="https://www.wikigenes.org/">WikiGenes</a></strong>: WikiGenes is a non-profit initiative to provide a global collaborative knowledge base for the life sciences, where authorship matters.</li>
+<li>
+<strong><a href="http://www.gencodegenes.org/">GENCODE</a></strong>: Encyclopedia of genes and gene variants.</li>
+<li>
+<strong><a href="http://amp.pharm.mssm.edu/Harmonizome/">Harmonizome</a></strong>: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins. <a href="http://database.oxfordjournals.org/content/2016/baw100.full">@Ref</a>
+</li>
 </ul>
 
 <h4>
@@ -333,6 +378,8 @@
 <strong><a href="http://suba.plantenergy.uwa.edu.au">SUBA3</a></strong>: The SUBcellular localization database for Arabidopsis proteins.</li>
 <li>
 <strong><a href="http://bioinformatics.charite.de/synsysnet">SynSysNet</a></strong>: Synaptic Proteins Database.</li>
+<li>
+<strong><a href="http://mdl.shsmu.edu.cn/ASD">ASD</a></strong>: Allosteric Database.</li>
 </ul>
 
 <h3>
@@ -366,6 +413,9 @@
 <li>
 <strong><a href="http://www.dcode.org/EI/">EI</a></strong>: Database of EI candidate tissue-specific enhancers: Predicting Tissue-Specific Enhancers in the Human Genome. <a href="http://www.genome.org/cgi/reprint/17/2/201">@Ref</a>
 </li>
+<li>
+<strong><a href="http://www.enhanceratlas.org/">EnhancerAtlas</a></strong>: a resource for enhancer annotation and analysis in 105 human cell/tissue types. <a href="http://bioinformatics.oxfordjournals.org/content/early/2016/08/20/bioinformatics.btw495.abstract">@Ref</a>
+</li>
 </ul>
 
 <h4>
@@ -380,7 +430,7 @@
 <a id="interactionsregulationsassociations" class="anchor" href="#interactionsregulationsassociations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interactions/Regulations/Associations</h2>
 
 <h3>
-<a id="protein-dna-interaction" class="anchor" href="#protein-dna-interaction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Protein-DNA Interaction</h3>
+<a id="transcription-factor---target" class="anchor" href="#transcription-factor---target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Transcription Factor - Target</h3>
 
 <h4>
 <a id="related-terms-4" class="anchor" href="#related-terms-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Terms</h4>
@@ -721,16 +771,36 @@
 </ul>
 
 <h3>
-<a id="other-databases" class="anchor" href="#other-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other Databases</h3>
+<a id="correlation-databases" class="anchor" href="#correlation-databases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Correlation Databases</h3>
 
 <ul>
-<li>
-<strong><a href="http://mdl.shsmu.edu.cn/ASD">ASD</a></strong>: Allosteric Database.</li>
 <li>
 <strong><a href="https://cornet.psb.ugent.be">CORNET</a></strong>: CORrelation NETworks.</li>
 <li>
 <strong><a href="http://www.genemania.org">GeneMANIA</a></strong>: GeneMANIA finds other genes that are related to a set of input genes, using a very large set of functional association data.</li>
 </ul>
+
+<h2>
+<a id="epigenetics" class="anchor" href="#epigenetics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Epigenetics</h2>
+
+<p>"The study of mitotically and/or meiotically heritable changes in gene function that cannot be explained by changes in DNA sequence." <a href="https://cshmonographs.org/index.php/monographs/issue/view/087969490.32">@Ref</a></p>
+
+<h3>
+<a id="dna-methylation" class="anchor" href="#dna-methylation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DNA Methylation</h3>
+
+<h4>
+<a id="dna-methylation-detection-methods" class="anchor" href="#dna-methylation-detection-methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DNA Methylation Detection Methods</h4>
+
+<ul>
+<li>
+<strong>MeDIP/mDIP - Methylated DNA immunoprecipitation</strong>: Methylated DNA immunoprecipitation (MeDIP or mDIP) is a large-scale (chromosome- or genome-wide) purification technique in molecular biology that is used to enrich for methylated DNA sequences. <a href="https://en.wikipedia.org/wiki/Methylated_DNA_immunoprecipitation">@Wiki</a>
+</li>
+<li>
+<strong>MeDIP-seq</strong>: The MeDIP-seq approach, i.e. the coupling of MeDIP with next generation, short-read sequencing technologies such as 454, Illumina (company) (Solexa), was first described by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2644410">Down et al. in 2008</a>. The high-throughput sequencing of the methylated DNA fragments produces a large number of short reads (36-50bp or 400 bp depending on the technology). </li>
+</ul>
+
+<h3>
+<a id="histone-modification" class="anchor" href="#histone-modification" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Histone Modification</h3>
 
 <h2>
 <a id="biological-processes" class="anchor" href="#biological-processes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Biological Processes</h2>
@@ -775,6 +845,26 @@
 <strong><a href="http://pathway.yeastgenome.org/">Yeast Pathways Database</a></strong>: The Yeast Pathways Database is a collection of manually curated metabolic pathways and enzymes of Saccharomyces cerevisiae.</li>
 </ul>
 
+<h4>
+<a id="pathway-predictions" class="anchor" href="#pathway-predictions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pathway Predictions</h4>
+
+<ul>
+<li>
+<strong><a href="http://fraenkel-nsf.csbi.mit.edu/PIUMet/">PIUMet</a></strong>: Inferring Disease-Modifying Pathways and Hidden Components via Integrative Analysis of Metabolite Features with Various Omic Data. <a href="http://www.nature.com/nmeth/journal/v13/n9/pdf/nmeth.3940.pdf">@Ref</a>
+</li>
+</ul>
+
+<h4>
+<a id="pathwaynetwork-analysisvisualizers" class="anchor" href="#pathwaynetwork-analysisvisualizers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pathway/Network analysis/visualizers</h4>
+
+<ul>
+<li>
+<strong><a href="https://github.com/raphael-group/hotnet2">HotNet2</a></strong>: HotNet2 is an algorithm for finding significantly altered subnetworks in a large gene interaction network. While originally developed for use with cancer mutation data, the current release also supports any application in which meaningful scores can be assigned to genes in the network. <a href="http://www.nature.com/ng/journal/v47/n2/full/ng.3168.html">@Ref</a>
+</li>
+<li>
+<strong><a href="https://github.com/opencb/cell-maps/wiki">CellMaps</a></strong>: CellMaps is an open source HTML5 web-based application that allows researchers to easily model, visualize, integrate data and analyse biological networks inside a web browser. </li>
+</ul>
+
 <h2>
 <a id="drugchemicals" class="anchor" href="#drugchemicals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Drug/Chemicals</h2>
 
@@ -791,7 +881,7 @@
 </ul>
 
 <h2>
-<a id="diseases" class="anchor" href="#diseases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diseases</h2>
+<a id="mutations-and-diseases" class="anchor" href="#mutations-and-diseases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mutations and Diseases</h2>
 
 <h3>
 <a id="diseasephenotype-databasesontologies" class="anchor" href="#diseasephenotype-databasesontologies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disease/Phenotype Databases/Ontologies</h3>
@@ -806,7 +896,7 @@
 </ul>
 
 <h3>
-<a id="genetic-diseases" class="anchor" href="#genetic-diseases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Genetic Diseases</h3>
+<a id="germline-mutations-and-genetic-diseases" class="anchor" href="#germline-mutations-and-genetic-diseases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Germline Mutations and Genetic Diseases</h3>
 
 <h4>
 <a id="related-terms-7" class="anchor" href="#related-terms-7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Terms</h4>
@@ -816,7 +906,7 @@
 <strong>GWAS</strong>: In genetics, a genome-wide association study (GWA study, or GWAS), also known as whole genome association study (WGA study, or WGAS), is an examination of a genome-wide set of genetic variants in different individuals to see if any variant is associated with a trait. <a href="https://en.wikipedia.org/wiki/Genome-wide_association_study">@Wiki</a>
 </li>
 <li>
-<strong>CNV</strong>: The chromosome now has two copies of this section of DNA, rather than one. Copy number variation (CNVs) is a relatively new field in genomics and it is defined as a phenomenon in which sections of the genome are repeated and the number of repeats in the genome varies between individuals in the human population. <a href="https://en.wikipedia.org/wiki/Copy-number_variation">@Wiki</a>(<a href="https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/">https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/</a>)</li>
+<strong>CNV - Copy-Number Variation</strong>: Copy-number variations (CNVs) are a form of structural variation that manifest as deletions or duplications in the genome. <a href="https://en.wikipedia.org/wiki/Copy-number_variation">@Wiki</a>(<a href="https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/">https://www.genome.gov/25520880/deoxyribonucleic-acid-dna-fact-sheet/</a>)</li>
 <li>
 <strong>SNP</strong>: A single nucleotide polymorphism, often abbreviated to SNP (pronounced snip; plural snips), is a variation in a single nucleotide that occurs at a specific position in the genome, where each variation is present to some appreciable degree within a population (e.g. &gt;1%). <a href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">@Wiki</a>, <a href="https://ghr.nlm.nih.gov/primer/genomicresearch/snp">@NIH</a>
 </li>
@@ -839,6 +929,22 @@
 </li>
 <li>
 <strong>MAF - Minor Allele Frequency</strong>: MAF refers to the frequency at which the second most common allele occurs in a given population. SNPs with a minor allele frequency of 5% or greater were targeted by the HapMap project.</li>
+<li>
+<strong>LOH - Loss Of Heterozygosity</strong>: Loss of heterozygosity (LOH) is a gross chromosomal event that results in loss of the entire gene and the surrounding chromosomal region. <a href="https://en.wikipedia.org/wiki/Loss_of_heterozygosity">@Wiki</a>
+</li>
+<li>
+<strong>Missense Mutation</strong>: A missense mutation is a point mutation in which a single nucleotide change results in a codon that codes for a different amino acid. <a href="https://en.wikipedia.org/wiki/Missense_mutation">@Wiki</a>
+</li>
+<li>
+<strong>Nonsense Mutation</strong>: A nonsense mutation is a point mutation in a sequence of DNA that results in a premature stop codon, or a nonsense codon in the transcribed mRNA, and in a truncated, incomplete, and usually nonfunctional protein product.</li>
+<li>
+<strong>Rare Variant</strong>: A rare functional variant is a genetic variant which alters gene function, and which occurs at low frequency in a population. <a href="https://en.wikipedia.org/wiki/Rare_functional_variant">@Wiki</a>
+</li>
+<li>
+<strong>Allele Frequency</strong>: Allele frequency, or gene frequency, is the relative frequency of an allele (variant of a gene) at a particular locus in a population, expressed as a fraction or percentage. <a href="https://en.wikipedia.org/wiki/Allele_frequency">@Wiki</a>
+</li>
+<li>
+<strong>SV - Structural Variation</strong>: Structural variation (also genomic structural variation) is the variation in structure of an organism's chromosome. It consists of many kinds of variation in the genome of one species, and usually includes microscopic and submicroscopic types, such as deletions, duplications, copy-number variants, insertions, inversions and translocations.</li>
 </ul>
 
 <h4>
@@ -857,6 +963,11 @@
 <strong><a href="https://emerge.mc.vanderbilt.edu/">eMERGE</a></strong>: eMERGE is a national network that combines DNA biorepositories with electronic medical record (EMR) systems for large scale, high-throughput genetic research in support of implementing genomic medicine.</li>
 <li>
 <strong><a href="https://www.genome.gov/10001688/international-hapmap-project/">International HapMap Project</a></strong>: The International HapMap Project was an organization that aimed to develop a haplotype map (HapMap) of the human genome, to describe the common patterns of human genetic variation. HapMap is used to find genetic variants affecting health, disease and responses to drugs and environmental factors.</li>
+<li>
+<strong><a href="http://www.mutdb.org/">MutDB</a></strong>: A database for assessing the impact of genetic variants. <a href="http://nar.oxfordjournals.org/content/36/suppl_1/D815">@Ref</a>
+</li>
+<li>
+<strong><a href="http://www.nlgenome.nl/">The Genome of the Netherlands</a></strong>: 250 trios (father, mother and child) of Dutch descent.</li>
 </ul>
 
 <h4>
@@ -869,12 +980,28 @@
 <strong><a href="https://github.com/DReichLab/EIG">EIGENSOFT</a></strong>: The EIGENSOFT package combines functionality from our population genetics methods <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.0020190">@Ref</a>, EIGENSTRAT stratification correction method <a href="http://www.nature.com/ng/journal/v38/n8/abs/ng1847.html">@Ref</a>, and FastPCA and PC-based selection statistic <a href="http://www.sciencedirect.com/science/article/pii/S0002929716000033">@Ref</a>.</li>
 <li>
 <strong><a href="http://www.ritchielab.psu.edu/software/plato-download">PLATO</a></strong>: The PLatform for the Analysis, Translation, and Organization of large-scale data (PLATO) is a standalone program written in C++ that is designed to be a flexible and extensible analysis tool for a wide variety of genetic data.</li>
+</ul>
+
+<h4>
+<a id="mutation-protein-structure-studies" class="anchor" href="#mutation-protein-structure-studies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mutation-Protein Structure Studies</h4>
+
+<ul>
 <li>
-<strong><a href="http://visualization.ritchielab.psu.edu/synthesis_views/plot">Synthesis-View</a></strong>: A SNP visualization tool. [<a href="https://github.com/Ref" class="user-mention">@Ref</a>]</li>
+<strong><a href="https://github.com/ding-lab/hotspot3d">HotSpot3D</a></strong>: This 3D proximity tool can be used to identify the mutation hotspots in the linear 1D sequence and correlates these hotspots with known or potential interacting domains based on both known intermolecular interactions and calculated proximity for potential intramolecular interactions. <a href="http://www.nature.com/ng/journal/v48/n8/full/ng.3586.html">@Ref</a>
+</li>
+<li>
+<strong><a href="http://mupit.icm.jhu.edu/MuPIT_Interactive/">MuPIT_Interactive</a></strong>: webserver for mapping variant positions to annotated, interactive 3D structures. <a href="http://link.springer.com/article/10.1007%2Fs00439-013-1325-0">@Ref</a>
+</li>
+<li>
+<strong><a href="http://interactome3d.irbbarcelona.org/">Interactome3D</a></strong>: Interactome3D is a web service for the structural annotation of protein-protein interaction networks. <a href="http://www.nature.com/nmeth/journal/v10/n1/full/nmeth.2300.html">@Ref</a>
+</li>
+<li>
+<strong><a href="https://github.com/KarchinLab/CLUMP">CLUMP</a></strong>: CLUMP (CLustering by Mutation Postion) is an unsupervised clustering of amino acid residue positions where variants occur, without any prior knowledge of their functional importance. <a href="http://www.pnas.org/content/112/40/E5486">@Ref</a>
+</li>
 </ul>
 
 <h3>
-<a id="cancer" class="anchor" href="#cancer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cancer</h3>
+<a id="somatic-mutations-and-cancers" class="anchor" href="#somatic-mutations-and-cancers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Somatic Mutations and Cancers</h3>
 
 <h4>
 <a id="related-terms-8" class="anchor" href="#related-terms-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Terms</h4>
@@ -960,6 +1087,26 @@
 <a id="ngs-data-analysis" class="anchor" href="#ngs-data-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NGS Data Analysis</h3>
 
 <h4>
+<a id="read-trimming" class="anchor" href="#read-trimming" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Read Trimming</h4>
+
+<ul>
+<li>
+<strong><a href="http://www.usadellab.org/cms/index.php?page=trimmomatic">Trimmomatic</a></strong>: A flexible read trimming tool for Illumina NGS data.</li>
+<li>
+<strong><a href="https://github.com/najoshi/sickle">Sickle</a></strong>: A windowed adaptive trimming tool for FASTQ files using quality.</li>
+</ul>
+
+<h4>
+<a id="de-duplication" class="anchor" href="#de-duplication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>De-Duplication</h4>
+
+<ul>
+<li>
+<strong><a href="https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates">PiCard MarkDuplicates</a></strong>: This tool locates and tags duplicate reads in a BAM or SAM file, where duplicate reads are defined as originating from a single fragment of DNA. </li>
+<li>
+<strong><a href="http://lomereiter.github.io/sambamba/docs/sambamba-markdup.html">sambamba-markdup</a></strong>: Find duplicate reads in BAM file.</li>
+</ul>
+
+<h4>
 <a id="alignment" class="anchor" href="#alignment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alignment</h4>
 
 <ul>
@@ -967,6 +1114,9 @@
 <strong><a href="http://bio-bwa.sourceforge.net/">bwa</a></strong>: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.</li>
 <li>
 <strong><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">bowtie2</a></strong>: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.</li>
+<li>
+<strong><a href="https://github.com/mozack/abra">ABRA</a></strong>: ABRA is a realigner for next generation sequencing data. It uses localized assembly and global realignment to align reads more accurately, thus improving downstream analysis (detection of indels and complex variants in particular). <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4173014/">@Ref</a>
+</li>
 </ul>
 
 <h4>
@@ -992,6 +1142,15 @@
 <strong><a href="http://pages.cs.wisc.edu/%7Ekliang/DBChIP/">DBChIP</a></strong>: detects differentially bound sharp binding sites across multiple conditions, with or without matching control samples.</li>
 <li>
 <strong><a href="http://bcb.dfci.harvard.edu/%7Egcyuan/MAnorm/MAnorm.htm">MAnorm</a></strong>: a robust model for quantitative comparison of ChIP-Seq data sets.</li>
+<li>
+<strong><a href="http://www.regulatory-genomics.org/thor-2/basic-intrstruction/">THOR</a></strong>: Differential peak calling of ChIP-seq signals with replicates. <a href="http://nar.oxfordjournals.org/content/early/2016/08/01/nar.gkw680.abstract">@Ref</a>
+</li>
+<li>
+<strong><a href="http://www.regulatory-genomics.org/odin-2/basic-introduction/">ODIN</a></strong>: ODIN is an HMM-based approach to detect and analyse differential peaks in pairs of ChIP-seq data. ODIN performs genomic signal processing, peak calling and p-value calculation in an integrated framework. <a href="http://bioinformatics.oxfordjournals.org/content/30/24/3467">@Ref</a>
+</li>
+<li>
+<strong><a href="https://www.bioconductor.org/packages/release/bioc/html/MMDiff.html">MMDiff</a></strong>: This package detects statistically significant difference between read enrichment profiles in different ChIP-Seq samples. <a href="bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-14-826">@Ref</a>
+</li>
 </ul>
 
 <h4>
@@ -1032,6 +1191,42 @@
 <li>
 <strong><a href="http://www.stjuderesearch.org/site/lab/zhang">CREST</a></strong>: CREST (Clipping Reveals Structure) is a new algorithm for detecting genomic structural variations at base-pair resolution using next-generation sequencing data. <a href="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1628.html">@Ref</a>
 </li>
+<li>
+<strong><a href="http://boevalab.com/FREEC/">Control-FREEC</a></strong>: Control-FREEC is a tool for detection of copy-number changes and allelic imbalances (including LOH) using deep-sequencing data.</li>
+<li>
+<strong><a href="http://compbio.bccrc.ca/software/hmmcopy/">HMMcopy</a></strong>: Copy number prediction with correction for GC and mappability bias for HTS data</li>
+<li>
+<strong><a href="http://portals.broadinstitute.org/cgi-bin/cancer/publications/pub_paper.cgi?mode=view&amp;paper_id=182">SegSeq</a></strong>: an algorithm to identify chromosomal breakpoints using massively parallel sequence data.</li>
+<li>
+<strong><a href="http://tiger.dbs.nus.edu.sg/cnv-seq/">CNV-seq</a></strong>: a new method to detect copy number variation using high-throughput sequencing.</li>
+<li>
+<strong><a href="http://www.math.pku.edu.cn/teachers/xirb/downloads/software/BICseq2/BICseq2.html">BICseq2</a></strong>: BICseq2 is an algorithm developed for the normalization of  high-throughput sequencing (HTS) data and detection of copy number variations (CNV) in the genome. BICseq2 can be used for detecting CNVs with or without a control genome.</li>
+<li>
+<strong><a href="http://bioinformatics.mdanderson.org/main/MuSE">MuSE</a></strong>: a novel approach to mutation calling based on the F81 Markov substitution model for molecular evolution, which models the evolution of the reference allele to the allelic composition of the matched tumor and normal tissue at each genomic locus. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1029-6">@Ref</a>
+</li>
+<li>
+<strong><a href="http://dkoboldt.github.io/varscan/">VarScan</a></strong>: a platform-independent software tool developed at the Genome Institute at Washington University to detect variants in NGS data.</li>
+<li>
+<strong><a href="https://github.com/genome/pindel">Pindel</a></strong>: Pindel can detect breakpoints of large deletions, medium sized insertions, inversions, tandem duplications and other structural variants at single-based resolution from next-gen sequence data.</li>
+<li>
+<strong>COPS</strong>: A Sensitive and Accurate Tool for Detecting Somatic Copy Number Alterations Using Short-Read Sequence Data from Paired Samples. COPS is available at ftp://115.119.160.213 with username “cops” and password “cops”. <a href="http://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0047812">@Ref</a>
+</li>
+<li>
+<strong><a href="https://bitbucket.org/joseph07/multisnv/wiki/Home">multiSNV</a></strong>: multiSNV is a tool for calling somatic single-nucleotide variants (SNVs) using NGS data from a normal and multiple tumour samples of the same patient. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4482059/">@Ref</a>
+</li>
+<li>
+<strong><a href="http://bioinform.github.io/somaticseq/">SomaticSeq</a></strong>: SomaticSeq is a flexible post-somatic-mutation-calling workflow for improved accuracy. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4574535/">@Ref</a>
+</li>
+</ul>
+
+<h4>
+<a id="variant-filtering" class="anchor" href="#variant-filtering" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variant Filtering</h4>
+
+<ul>
+<li>
+<strong><a href="http://snpeff.sourceforge.net/SnpSift.html">SnpSift</a></strong>: SnpSift is a toolbox that allows you to filter and manipulate annotated files.</li>
+<li>
+<strong><a href="https://varapp-demo.vital-it.ch/#/login">Varapp</a></strong>: Varapp is an open-source web application to filter variants from large sets of exome data stored in a relational database. </li>
 </ul>
 
 <h4>
@@ -1044,8 +1239,6 @@
 <strong><a href="http://snpeff.sourceforge.net/">SnpEff</a></strong>: Genetic variant annotation and effect prediction toolbox. <a href="http://www.tandfonline.com/doi/abs/10.4161/fly.19695">@Ref</a>
 </li>
 <li>
-<strong><a href="http://snpeff.sourceforge.net/SnpSift.html">SnpSift</a></strong>: SnpSift is a toolbox that allows you to filter and manipulate annotated files.</li>
-<li>
 <strong><a href="https://gemini.readthedocs.io/en/latest/">GEMINI</a></strong>: GEMINI (GEnome MINIng) is a flexible framework for exploring genetic variation in the context of the wealth of genome annotations available for the human genome. <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003153">@Ref</a>
 </li>
 <li>
@@ -1056,6 +1249,22 @@
 </li>
 <li>
 <strong><a href="http://snp.gs.washington.edu/SeattleSeqAnnotation147/">SeattleSeq Variation Annotation</a></strong>: The SeattleSeq Annotation server provides annotation of SNVs (single-nucleotide variations) and small indels, both known and novel. <a href="http://www.nature.com/nature/journal/v461/n7261/full/nature08250.html">@Ref</a>
+</li>
+<li>
+<strong><a href="https://github.com/charite/jannovar">Jannovar</a></strong>: A Java Library for Exome Annotation.</li>
+<li>
+<strong><a href="https://github.com/opencb/cellbase">Cellbase</a></strong>: CellBase is a scalable and high-performance NoSQL database that integrates relevant biological information from well-known data sources such as Ensembl, Uniprot, IntAct or ClinVar among others. All this data can be queried through a comprehensive RESTful web services API or using the command line interface. Also, a built-in variant annotator has been developed and can be used to annotate files containing variants in Variant Call Format (VCF). <a href="http://nar.oxfordjournals.org/content/40/W1/W609.short">@Ref</a>
+</li>
+<li>
+<strong><a href="https://github.com/brinkmanlab/GenomeD3Plot/">GenomeD3Plot</a></strong>: GenomeD3Plot (formerly <a href="https://github.com/lairdm/islandplot">Islandplot</a>) is an SVG based genome viewer written in javascript using D3. </li>
+</ul>
+
+<h4>
+<a id="variant-simulation" class="anchor" href="#variant-simulation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variant Simulation</h4>
+
+<ul>
+<li>
+<strong><a href="https://sourceforge.net/projects/scnvsim/">SCNVSim</a></strong>: somatic copy number variation and structure variation simulator. <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0502-7">@Ref</a>
 </li>
 </ul>
 
@@ -1073,11 +1282,39 @@
 </ul>
 
 <h4>
+<a id="ngs-datavariantgenome-visulizersbrowsersdiagrams" class="anchor" href="#ngs-datavariantgenome-visulizersbrowsersdiagrams" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NGS Data/Variant/Genome Visulizers/Browsers/Diagrams</h4>
+
+<ul>
+<li>
+<strong><a href="https://genome.ucsc.edu/cgi-bin/hgTracks">UCSC Genome Browser</a></strong>: The UCSC Genome Browser is an on-line genome browser hosted by the University of California, Santa Cruz (UCSC).</li>
+<li>
+<strong><a href="http://jbrowse.org/">JBrowse</a></strong>: a JavaScript genome browser by the open-source Generic Model Organism Database project. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2752129">@Ref</a>
+</li>
+<li>
+<strong><a href="http://visualization.ritchielab.psu.edu/synthesis_views/plot">Synthesis-View</a></strong>: A SNP visualization tool. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012023/">@Ref</a>
+</li>
+<li>
+<strong><a href="http://www.broadinstitute.org/igv/">IGV - Integrative Genomics Viewer</a></strong>: A high-performance visualization tool for interactive exploration of large, integrated genomic datasets. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603213">@Ref</a>
+</li>
+<li>
+<strong><a href="http://www.hammerlab.org/2015/06/19/introducing-pileup-js-a-browser-based-genome-viewer/">pileup.js</a></strong>: a Browser-based Genome Viewer.</li>
+<li>
+<strong><a href="http://www.biodalliance.org/index.html">Biodalliance</a></strong>: Biodalliance is a fast, interactive, genome visualization tool that's easy to embed in web pages and applications.</li>
+<li>
+<strong><a href="https://github.com/3DGenomes/TADkit">TADkit</a></strong>: TADkit is a HTML5 and JavaScript-based 3D genome browser. It makes use of D3.js for rendering the 1D and 2D tracks and WebGl by Three.js for rendering the 3D track. </li>
+</ul>
+
+<h4>
 <a id="ngs-data-analysis-pipelineframework" class="anchor" href="#ngs-data-analysis-pipelineframework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NGS Data Analysis Pipeline/framework</h4>
 
 <ul>
 <li>
 <strong><a href="https://www.nextflow.io/">nextflow</a></strong>: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.</li>
+<li>
+<strong><a href="http://rubioseq.bioinfo.cnio.es/">RUbioSeq+</a></strong>: RUbioSeq+ is a stand-alone and multiplatform application for the integrated analysis of NGS data. More specifically, our software implements pipelines for the analysis of single nucleotide and copy-number variation, bisulfite-seq and ChIP-seq experiments using well-established tools to perform these common tasks.</li>
+<li>
+<strong><a href="https://github.com/hall-lab/speedseq">SpeedSeq</a></strong>: A flexible framework for rapid genome analysis and interpretation. <a href="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3505.html">@Ref</a>
+</li>
 </ul>
 
 <h2>
@@ -1093,6 +1330,9 @@
 <strong>BED</strong>: The BED format consists of one line per feature, each containing 3-12 columns of data, plus optional track definition lines. <a href="https://genome.ucsc.edu/FAQ/FAQformat.html#format1">@UCSC</a>, <a href="http://bedtools.readthedocs.io/en/latest/content/general-usage.html">@bedtools</a>, <a href="http://useast.ensembl.org/info/website/upload/bed.html">@Ensembl</a>
 </li>
 <li>
+<strong>BigBed</strong>: The bigBed format stores annotation items that can either be simple, or a linked collection of exons, much as BED files do. BigBed files are created initially from BED type files, using the program bedToBigBed. The resulting bigBed files are in an indexed binary format. <a href="https://genome.ucsc.edu/goldenpath/help/bigBed.html">@UCSC</a>
+</li>
+<li>
 <strong>BigWig</strong>: The BigWig format is designed for dense, continuous data that is intended to be displayed as a graph. Files can be created from WIG or BedGraph files using the appropriate utility program. <a href="http://genome.ucsc.edu/goldenPath/help/bigWig.html">@UCSC</a>
 </li>
 <li>
@@ -1106,6 +1346,9 @@
 </li>
 <li>
 <strong>VCF</strong>: The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations. <a href="http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-40">v4.0@1000genomes</a>, <a href="https://en.wikipedia.org/wiki/Variant_Call_Format">@Wiki</a>
+</li>
+<li>
+<strong><a href="https://wiki.nci.nih.gov/display/TCGA/Mutation+Annotation+Format+%28MAF%29+Specification+-+v2.4">MAF - Mutation Annotation Format</a></strong>: A Mutation Annotation Format (MAF) file (.maf) is a tab-delimited text file that lists mutations. <a href="https://www.biostars.org/p/69222/">Tutorial@Biostars</a>
 </li>
 </ul>
 
@@ -1125,6 +1368,54 @@
 <strong><a href="https://github.com/samtools/samtools">samtools</a></strong>: SAM Tools provide various utilities for manipulating alignments in the SAM/BAM format, including sorting, merging, indexing and generating alignments in a per-position format.</li>
 <li>
 <strong><a href="https://vcftools.github.io/index.html">VCFtools</a></strong>: A set of tools written in Perl and C++ for working with VCF files.</li>
+<li>
+<strong><a href="https://broadinstitute.github.io/picard/">PiCard</a></strong>: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.</li>
+</ul>
+
+<h3>
+<a id="file-format-conversions" class="anchor" href="#file-format-conversions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File Format Conversions</h3>
+
+<ul>
+<li>
+<strong>[BED -&gt; BigBed]</strong>: <a href="https://www.encodeproject.org/software/bedToBigBed/">bedToBigBed</a> </li>
+</ul>
+
+<h2>
+<a id="mathstatistics" class="anchor" href="#mathstatistics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Math/Statistics</h2>
+
+<h3>
+<a id="distributions" class="anchor" href="#distributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Distributions</h3>
+
+<ul>
+<li>
+<strong>T Distribution</strong>: Student's t-distribution (or t-distribution) is any member of a family of continuous probability distributions that arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.</li>
+<li>
+<strong>Chi-Squred Distribution</strong>: The chi-squared distribution (also chi-square or χ²-distribution) with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables. <a href="https://en.wikipedia.org/wiki/Chi-squared_distribution">@Wiki</a> </li>
+</ul>
+
+<h3>
+<a id="tests" class="anchor" href="#tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tests</h3>
+
+<ul>
+<li>
+<strong>T Test</strong>: A t-test is any statistical hypothesis test in which the test statistic follows a Student's t-distribution under the null hypothesis. It can be used to determine if two sets of data are significantly different from each other. <a href="https://en.wikipedia.org/wiki/Student%27s_t-test">@Wiki</a>
+</li>
+<li>
+<strong>Chi-Squared Test</strong>: also referred to as a {\displaystyle \chi ^{2}} \chi ^{2} test, is any statistical hypothesis test wherein the sampling distribution of the test statistic is a chi-square distribution when the null hypothesis is true. <a href="https://en.wikipedia.org/wiki/Chi-squared_test">@Wiki</a>
+</li>
+<li>
+<strong><a href="http://software.broadinstitute.org/gsea/index.jsp">GSEA - Gene Set Enrichment Analysis</a></strong>: Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes). </li>
+<li>
+<strong><a href="https://github.com/ctlab/fgsea">fgsea</a></strong>: An R-package for fast preranked gene set enrichment analysis (GSEA).</li>
+</ul>
+
+<h3>
+<a id="machine-learning" class="anchor" href="#machine-learning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Machine Learning</h3>
+
+<ul>
+<li>
+<strong>SVM - Support Vector Machine</strong>: support vector machines (SVMs, also support vector networks) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. <a href="https://en.wikipedia.org/wiki/Support_vector_machine">@Wiki</a>
+</li>
 </ul>
         </section>
 
