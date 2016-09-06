@@ -43,7 +43,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Related Terms](#related-terms-6)
     - [Pathway Databases](#pathway-databases)
     - [Pathway Predictions](#pathway-predictions)
-    - [Pathway/Network analysis](#pathwaynetwork-analysis)
+    - [Pathway/Network analysis/visualizers](#pathwaynetwork-analysisvisualizers)
 - [Drug/Chemicals](#drugchemicals)
   - [Drug/Small Molecule Database](#drugsmall-molecule-database)
 - [Mutations and Diseases](#mutations-and-diseases)
@@ -76,6 +76,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - [File Formats](#file-formats)
   - [Formats](#formats)
   - [Tools](#tools-1)
+  - [File Format Conversions](#file-format-conversions)
 - [Math/Statistics](#mathstatistics)
   - [Distributions](#distributions)
   - [Tests](#tests)
@@ -362,8 +363,9 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 #### Pathway Predictions
 - **[PIUMet](http://fraenkel-nsf.csbi.mit.edu/PIUMet/)**: Inferring Disease-Modifying Pathways and Hidden Components via Integrative Analysis of Metabolite Features with Various Omic Data. [@Ref](http://www.nature.com/nmeth/journal/v13/n9/pdf/nmeth.3940.pdf)
 
-#### Pathway/Network analysis
+#### Pathway/Network analysis/visualizers
 - **[HotNet2](https://github.com/raphael-group/hotnet2)**: HotNet2 is an algorithm for finding significantly altered subnetworks in a large gene interaction network. While originally developed for use with cancer mutation data, the current release also supports any application in which meaningful scores can be assigned to genes in the network. [@Ref](http://www.nature.com/ng/journal/v47/n2/full/ng.3168.html)
+- **[CellMaps](https://github.com/opencb/cell-maps/wiki)**: CellMaps is an open source HTML5 web-based application that allows researchers to easily model, visualize, integrate data and analyse biological networks inside a web browser. 
 
 ## Drug/Chemicals
 ### Drug/Small Molecule Database
@@ -502,6 +504,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[VarScan](http://dkoboldt.github.io/varscan/)**: a platform-independent software tool developed at the Genome Institute at Washington University to detect variants in NGS data.
 - **[Pindel](https://github.com/genome/pindel)**: Pindel can detect breakpoints of large deletions, medium sized insertions, inversions, tandem duplications and other structural variants at single-based resolution from next-gen sequence data.
 - **COPS**: A Sensitive and Accurate Tool for Detecting Somatic Copy Number Alterations Using Short-Read Sequence Data from Paired Samples. COPS is available at ftp://115.119.160.213 with username “cops” and password “cops”. [@Ref](http://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0047812)
+- **[multiSNV](https://bitbucket.org/joseph07/multisnv/wiki/Home)**: multiSNV is a tool for calling somatic single-nucleotide variants (SNVs) using NGS data from a normal and multiple tumour samples of the same patient. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4482059/)
+- **[SomaticSeq](http://bioinform.github.io/somaticseq/)**: SomaticSeq is a flexible post-somatic-mutation-calling workflow for improved accuracy. [@Ref](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4574535/)
 
 #### Variant Filtering
 - **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
@@ -515,6 +519,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[VAT - Variant Annotation Tool](http://vat.gersteinlab.org/index.php)**: A computational framework to functionally annotate variants in personal genomes using a cloud-computing environment. [@Ref](http://bioinformatics.oxfordjournals.org/content/28/17/2267)
 - **[SeattleSeq Variation Annotation](http://snp.gs.washington.edu/SeattleSeqAnnotation147/)**: The SeattleSeq Annotation server provides annotation of SNVs (single-nucleotide variations) and small indels, both known and novel. [@Ref](http://www.nature.com/nature/journal/v461/n7261/full/nature08250.html)
 - **[Jannovar](https://github.com/charite/jannovar)**: A Java Library for Exome Annotation.
+- **[Cellbase](https://github.com/opencb/cellbase)**: CellBase is a scalable and high-performance NoSQL database that integrates relevant biological information from well-known data sources such as Ensembl, Uniprot, IntAct or ClinVar among others. All this data can be queried through a comprehensive RESTful web services API or using the command line interface. Also, a built-in variant annotator has been developed and can be used to annotate files containing variants in Variant Call Format (VCF). [@Ref](http://nar.oxfordjournals.org/content/40/W1/W609.short)
+- **[GenomeD3Plot](https://github.com/brinkmanlab/GenomeD3Plot/)**: GenomeD3Plot (formerly [Islandplot](https://github.com/lairdm/islandplot)) is an SVG based genome viewer written in javascript using D3. 
 
 #### Variant Simulation
 - **[SCNVSim](https://sourceforge.net/projects/scnvsim/)**: somatic copy number variation and structure variation simulator. [@Ref](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0502-7)
@@ -530,7 +536,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[Synthesis-View](http://visualization.ritchielab.psu.edu/synthesis_views/plot)**: A SNP visualization tool. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012023/)
 - **[IGV - Integrative Genomics Viewer](http://www.broadinstitute.org/igv/)**: A high-performance visualization tool for interactive exploration of large, integrated genomic datasets. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603213)
 - **[pileup.js](http://www.hammerlab.org/2015/06/19/introducing-pileup-js-a-browser-based-genome-viewer/)**: a Browser-based Genome Viewer.
-- **[Biodalliance](http://www.biodalliance.org/index.html)**: Biodalliance is a fast, interactive, genome visualization tool that's easy to embed in web pages and applications. 
+- **[Biodalliance](http://www.biodalliance.org/index.html)**: Biodalliance is a fast, interactive, genome visualization tool that's easy to embed in web pages and applications.
+- **[TADkit](https://github.com/3DGenomes/TADkit)**: TADkit is a HTML5 and JavaScript-based 3D genome browser. It makes use of D3.js for rendering the 1D and 2D tracks and WebGl by Three.js for rendering the 3D track. 
 
 #### NGS Data Analysis Pipeline/framework
 - **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
@@ -541,6 +548,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 ### Formats
 - **BAM**: BAM is the compressed binary version of the Sequence Alignment/Map (SAM) format, a compact and index-able representation of nucleotide sequence alignments.
 - **BED**: The BED format consists of one line per feature, each containing 3-12 columns of data, plus optional track definition lines. [@UCSC](https://genome.ucsc.edu/FAQ/FAQformat.html#format1), [@bedtools](http://bedtools.readthedocs.io/en/latest/content/general-usage.html), [@Ensembl](http://useast.ensembl.org/info/website/upload/bed.html)
+- **BigBed**: The bigBed format stores annotation items that can either be simple, or a linked collection of exons, much as BED files do. BigBed files are created initially from BED type files, using the program bedToBigBed. The resulting bigBed files are in an indexed binary format. [@UCSC](https://genome.ucsc.edu/goldenpath/help/bigBed.html)
 - **BigWig**: The BigWig format is designed for dense, continuous data that is intended to be displayed as a graph. Files can be created from WIG or BedGraph files using the appropriate utility program. [@UCSC](http://genome.ucsc.edu/goldenPath/help/bigWig.html)
 - **GFF**: The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. [@UCSC](https://genome.ucsc.edu/FAQ/FAQformat.html#format3), [@Ensembl](http://useast.ensembl.org/info/website/upload/gff.html), [GTF(GFFv2)@GMOD](http://gmod.org/wiki/GFF2), [@Wiki](https://en.wikipedia.org/wiki/General_feature_format)
 - **WIG**: The WIG (wiggle) format is designed for display of dense continuous data such as probability scores. Wiggle data elements must be equally sized; if you need to display continuous data that is sparse or contains elements of varying size, use the BedGraph format instead. [@UCSC](https://genome.ucsc.edu/goldenpath/help/wiggle.html), [@Ensembl](http://useast.ensembl.org/info/website/upload/wig.html)
@@ -557,12 +565,17 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[VCFtools](https://vcftools.github.io/index.html)**: A set of tools written in Perl and C++ for working with VCF files.
 - **[PiCard](https://broadinstitute.github.io/picard/)**: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
 
+### File Format Conversions
+- **[BED -> BigBed]**: [bedToBigBed](https://www.encodeproject.org/software/bedToBigBed/) 
+
 ## Math/Statistics
 ### Distributions
-- **T-distribution**: Student's t-distribution (or t-distribution) is any member of a family of continuous probability distributions that arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.
+- **T Distribution**: Student's t-distribution (or t-distribution) is any member of a family of continuous probability distributions that arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.
+- **Chi-Squred Distribution**: The chi-squared distribution (also chi-square or χ²-distribution) with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables. [@Wiki](https://en.wikipedia.org/wiki/Chi-squared_distribution) 
 
 ### Tests
-- **T-Test**: A t-test is any statistical hypothesis test in which the test statistic follows a Student's t-distribution under the null hypothesis. It can be used to determine if two sets of data are significantly different from each other. [@Wiki](https://en.wikipedia.org/wiki/Student%27s_t-test)
+- **T Test**: A t-test is any statistical hypothesis test in which the test statistic follows a Student's t-distribution under the null hypothesis. It can be used to determine if two sets of data are significantly different from each other. [@Wiki](https://en.wikipedia.org/wiki/Student%27s_t-test)
+- **Chi-Squared Test**: also referred to as a {\displaystyle \chi ^{2}} \chi ^{2} test, is any statistical hypothesis test wherein the sampling distribution of the test statistic is a chi-square distribution when the null hypothesis is true. [@Wiki](https://en.wikipedia.org/wiki/Chi-squared_test)
 - **[GSEA - Gene Set Enrichment Analysis](http://software.broadinstitute.org/gsea/index.jsp)**: Gene Set Enrichment Analysis (GSEA) is a computational method that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes). 
 - **[fgsea](https://github.com/ctlab/fgsea)**: An R-package for fast preranked gene set enrichment analysis (GSEA).
 
