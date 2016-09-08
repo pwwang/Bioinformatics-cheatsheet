@@ -556,6 +556,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[SAM](http://samtools.github.io/hts-specs/SAMv1.pdf)**: The SAM Format is a text format for storing sequence data in a series of tab delimited ASCII columns. [@Wiki](http://genome.sph.umich.edu/wiki/SAM)
 - **VCF**: The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations. [v4.0@1000genomes](http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-40), [@Wiki](https://en.wikipedia.org/wiki/Variant_Call_Format)
 - **[MAF - Mutation Annotation Format](https://wiki.nci.nih.gov/display/TCGA/Mutation+Annotation+Format+%28MAF%29+Specification+-+v2.4)**: A Mutation Annotation Format (MAF) file (.maf) is a tab-delimited text file that lists mutations. [Tutorial@Biostars](https://www.biostars.org/p/69222/)
+- **pileup**: Pileup format is a text-based format for summarizing the base calls of aligned reads to a reference sequence. [@Wiki](https://en.wikipedia.org/wiki/Pileup_format)
+- **fasta**: FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which nucleotides or amino acids are represented using single-letter codes. [@Wiki](https://en.wikipedia.org/wiki/FASTA_format)
 
 ### Tools
 - **[BEDOPS](https://bedops.readthedocs.io/en/latest/)**: the fast, highly scalable and easily-parallelizable genome analysis toolkit.
@@ -567,7 +569,9 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[PiCard](https://broadinstitute.github.io/picard/)**: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
 
 ### File Format Conversions
-- **[BED -> BigBed]**: [bedToBigBed](https://www.encodeproject.org/software/bedToBigBed/) 
+- **[BED <-> BigBed]**: [bedToBigBed](https://www.encodeproject.org/software/bedToBigBed/) [bigBedToBed](http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64.v287/bigBedToBed)
+- **[bigWig <-> Wig]**: [bigWigToWig](https://www.encodeproject.org/software/bigwigtowig/), [wigToBigWig](https://www.encodeproject.org/software/wigtobigwig/)
+
 
 ## Math/Statistics
 ### Distributions
