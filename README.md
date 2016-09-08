@@ -94,6 +94,8 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **Expression (Gene expression)**: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. [@Wiki](https://en.wikipedia.org/wiki/Gene_expression), [@Scitable](http://www.nature.com/scitable/topicpage/gene-expression-14121669)
 - **Exon**: An exon is any part of a gene that will become a part of the final mature RNA produced by that gene after introns have been removed by RNA splicing. [@Wiki](https://en.wikipedia.org/wiki/Exon)
 - **Intron**: An intron is any nucleotide sequence within a gene that is removed by RNA splicing during maturation of the final RNA product. [@Wiki](https://en.wikipedia.org/wiki/Intron)
+- **3'-UTR**: is the section of messenger RNA (mRNA) that immediately follows the translation termination codon. [@Wiki](https://en.wikipedia.org/wiki/Three_prime_untranslated_region)
+- **5'-UTR**: The 5' untranslated region (5′ UTR) (also known as a Leader Sequence or Leader RNA) is the region of an mRNA that is directly upstream from the initiation codon. [@Wiki](https://en.wikipedia.org/wiki/Five_prime_untranslated_region)
 
 #### Genome/Sequence Databases
 - **[SO - Sequence Ontology](http://www.sequenceontology.org/)**: SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation.
