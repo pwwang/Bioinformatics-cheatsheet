@@ -182,6 +182,7 @@
 <a href="#ngs-data-analysis">NGS Data Analysis</a>
 
 <ul>
+<li><a href="#read-simulation">Read Simulation</a></li>
 <li><a href="#read-trimming">Read Trimming</a></li>
 <li><a href="#de-duplication">De-Duplication</a></li>
 <li><a href="#alignment">Alignment</a></li>
@@ -205,7 +206,6 @@
 <ul>
 <li><a href="#formats">Formats</a></li>
 <li><a href="#tools-1">Tools</a></li>
-<li><a href="#file-format-conversions">File Format Conversions</a></li>
 </ul>
 </li>
 <li>
@@ -336,6 +336,12 @@
 <ul>
 <li>
 <strong>RNA</strong>: Ribonucleic acid (RNA) is a polymeric molecule implicated in various biological roles in coding, decoding, regulation, and expression of genes. <a href="https://en.wikipedia.org/wiki/RNA">@Wiki</a>
+</li>
+<li>
+<strong>3'-UTR</strong>: is the section of messenger RNA (mRNA) that immediately follows the translation termination codon. <a href="https://en.wikipedia.org/wiki/Three_prime_untranslated_region">@Wiki</a>
+</li>
+<li>
+<strong>5'-UTR</strong>: The 5' untranslated region (5′ UTR) (also known as a Leader Sequence or Leader RNA) is the region of an mRNA that is directly upstream from the initiation codon. <a href="https://en.wikipedia.org/wiki/Five_prime_untranslated_region">@Wiki</a>
 </li>
 </ul>
 
@@ -945,6 +951,8 @@
 </li>
 <li>
 <strong>SV - Structural Variation</strong>: Structural variation (also genomic structural variation) is the variation in structure of an organism's chromosome. It consists of many kinds of variation in the genome of one species, and usually includes microscopic and submicroscopic types, such as deletions, duplications, copy-number variants, insertions, inversions and translocations.</li>
+<li>
+<strong><a href="https://www.mun.ca/biology/scarr/Transitions_vs_Transversions.html">Transition vs Transversion</a></strong>: DNA substitution mutations are of two types. Transitions are interchanges of two-ring purines (A &lt;-&gt; G) or of one-ring pyrimidines (C &lt;-&gt; T): they therefore involve bases of similar shape. Transversions are interchanges of purine for pyrimidine bases, which therefore involve exchange of one-ring and two-ring structures (A &lt;-&gt; C, A &lt;-&gt; T, G &lt;-&gt; C, G &lt;-&gt; T).</li>
 </ul>
 
 <h4>
@@ -1087,6 +1095,16 @@
 <a id="ngs-data-analysis" class="anchor" href="#ngs-data-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NGS Data Analysis</h3>
 
 <h4>
+<a id="read-simulation" class="anchor" href="#read-simulation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Read Simulation</h4>
+
+<ul>
+<li>
+<strong><a href="https://sourceforge.net/p/readsim/wiki/Home/">ReadSim</a></strong>: ReadSim is a fast and simple reads simulator to target long reads such as PacBio or Nanopore.</li>
+<li>
+<strong><a href="http://www.ebi.ac.uk/goldman-srv/simNGS/">simNGS</a></strong>: simNGS is software for simulating observations from Illumina sequencing machines using the statistical models behind the AYB base-calling software.</li>
+</ul>
+
+<h4>
 <a id="read-trimming" class="anchor" href="#read-trimming" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Read Trimming</h4>
 
 <ul>
@@ -1094,6 +1112,8 @@
 <strong><a href="http://www.usadellab.org/cms/index.php?page=trimmomatic">Trimmomatic</a></strong>: A flexible read trimming tool for Illumina NGS data.</li>
 <li>
 <strong><a href="https://github.com/najoshi/sickle">Sickle</a></strong>: A windowed adaptive trimming tool for FASTQ files using quality.</li>
+<li>
+<strong><a href="https://github.com/andreas-wilm/famas">famas</a></strong>: Yet another program for FastQ massaging with features: Quality- and length-based trimming, Random sampling, Splitting into multiple files, Order checking for paired-end files, Native gzip support.</li>
 </ul>
 
 <h4>
@@ -1116,6 +1136,9 @@
 <strong><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">bowtie2</a></strong>: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.</li>
 <li>
 <strong><a href="https://github.com/mozack/abra">ABRA</a></strong>: ABRA is a realigner for next generation sequencing data. It uses localized assembly and global realignment to align reads more accurately, thus improving downstream analysis (detection of indels and complex variants in particular). <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4173014/">@Ref</a>
+</li>
+<li>
+<strong><a href="http://cibiv.github.io/NextGenMap/">NextGenMap</a></strong>: NextGenMap (NGM) is a flexible and fast read mapping program that is more than twice as fast as BWA, while achieving a mapping sensitivity similar to Stampy or Bowtie2. <a href="http://bioinformatics.oxfordjournals.org/content/29/21/2790.long">@Ref</a>
 </li>
 </ul>
 
@@ -1217,6 +1240,9 @@
 <li>
 <strong><a href="http://bioinform.github.io/somaticseq/">SomaticSeq</a></strong>: SomaticSeq is a flexible post-somatic-mutation-calling workflow for improved accuracy. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4574535/">@Ref</a>
 </li>
+<li>
+<strong><a href="http://seselab.org/cosmos/">Cosmos</a></strong>: COSMOS can detect somatic structural variations from whole genome short-read sequences. <a href="http://nar.oxfordjournals.org/content/44/8/e78">@Ref</a>
+</li>
 </ul>
 
 <h4>
@@ -1256,7 +1282,9 @@
 <strong><a href="https://github.com/opencb/cellbase">Cellbase</a></strong>: CellBase is a scalable and high-performance NoSQL database that integrates relevant biological information from well-known data sources such as Ensembl, Uniprot, IntAct or ClinVar among others. All this data can be queried through a comprehensive RESTful web services API or using the command line interface. Also, a built-in variant annotator has been developed and can be used to annotate files containing variants in Variant Call Format (VCF). <a href="http://nar.oxfordjournals.org/content/40/W1/W609.short">@Ref</a>
 </li>
 <li>
-<strong><a href="https://github.com/brinkmanlab/GenomeD3Plot/">GenomeD3Plot</a></strong>: GenomeD3Plot (formerly <a href="https://github.com/lairdm/islandplot">Islandplot</a>) is an SVG based genome viewer written in javascript using D3. </li>
+<strong><a href="https://github.com/brinkmanlab/GenomeD3Plot/">GenomeD3Plot</a></strong>: GenomeD3Plot (formerly <a href="https://github.com/lairdm/islandplot">Islandplot</a>) is an SVG based genome viewer written in javascript using D3.</li>
+<li>
+<strong><a href="http://varianttools.sourceforge.net/Main/HomePage">Variant Tools</a></strong>: variant tools is a software tool for the manipulation, annotation, selection, simulation, and analysis of variants in the context of next-gen sequencing analysis. <a href="http://bioinformatics.oxfordjournals.org/content/28/3/421.abstract?sid=f64403e7-5050-4102-963c-e690efe003f7">@Ref</a> </li>
 </ul>
 
 <h4>
@@ -1350,6 +1378,12 @@
 <li>
 <strong><a href="https://wiki.nci.nih.gov/display/TCGA/Mutation+Annotation+Format+%28MAF%29+Specification+-+v2.4">MAF - Mutation Annotation Format</a></strong>: A Mutation Annotation Format (MAF) file (.maf) is a tab-delimited text file that lists mutations. <a href="https://www.biostars.org/p/69222/">Tutorial@Biostars</a>
 </li>
+<li>
+<strong>pileup</strong>: Pileup format is a text-based format for summarizing the base calls of aligned reads to a reference sequence. <a href="https://en.wikipedia.org/wiki/Pileup_format">@Wiki</a>
+</li>
+<li>
+<strong>fasta</strong>: FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which nucleotides or amino acids are represented using single-letter codes. <a href="https://en.wikipedia.org/wiki/FASTA_format">@Wiki</a>
+</li>
 </ul>
 
 <h3>
@@ -1370,14 +1404,8 @@
 <strong><a href="https://vcftools.github.io/index.html">VCFtools</a></strong>: A set of tools written in Perl and C++ for working with VCF files.</li>
 <li>
 <strong><a href="https://broadinstitute.github.io/picard/">PiCard</a></strong>: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.</li>
-</ul>
-
-<h3>
-<a id="file-format-conversions" class="anchor" href="#file-format-conversions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File Format Conversions</h3>
-
-<ul>
 <li>
-<strong>[BED -&gt; BigBed]</strong>: <a href="https://www.encodeproject.org/software/bedToBigBed/">bedToBigBed</a> </li>
+<strong><a href="https://github.com/ctsa/svtools">SVTools</a></strong>: Tools for processing and analyzing structural variants.</li>
 </ul>
 
 <h2>
