@@ -60,6 +60,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
   - [Techniques](#techniques)
   - [NGS Data Repositories](#ngs-data-repositories)
   - [NGS Data Analysis](#ngs-data-analysis)
+    - [Read Simulation](#read-simulation)
     - [Read Trimming](#read-trimming)
     - [De-Duplication](#de-duplication)
     - [Alignment](#alignment)
@@ -76,7 +77,6 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - [File Formats](#file-formats)
   - [Formats](#formats)
   - [Tools](#tools-1)
-  - [File Format Conversions](#file-format-conversions)
 - [Math/Statistics](#mathstatistics)
   - [Distributions](#distributions)
   - [Tests](#tests)
@@ -94,8 +94,6 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **Expression (Gene expression)**: Gene expression is the process by which information from a gene is used in the synthesis of a functional gene product. These products are often proteins, but in non-protein coding genes such as transfer RNA (tRNA) or small nuclear RNA (snRNA) genes, the product is a functional RNA. [@Wiki](https://en.wikipedia.org/wiki/Gene_expression), [@Scitable](http://www.nature.com/scitable/topicpage/gene-expression-14121669)
 - **Exon**: An exon is any part of a gene that will become a part of the final mature RNA produced by that gene after introns have been removed by RNA splicing. [@Wiki](https://en.wikipedia.org/wiki/Exon)
 - **Intron**: An intron is any nucleotide sequence within a gene that is removed by RNA splicing during maturation of the final RNA product. [@Wiki](https://en.wikipedia.org/wiki/Intron)
-- **3'-UTR**: is the section of messenger RNA (mRNA) that immediately follows the translation termination codon. [@Wiki](https://en.wikipedia.org/wiki/Three_prime_untranslated_region)
-- **5'-UTR**: The 5' untranslated region (5′ UTR) (also known as a Leader Sequence or Leader RNA) is the region of an mRNA that is directly upstream from the initiation codon. [@Wiki](https://en.wikipedia.org/wiki/Five_prime_untranslated_region)
 
 #### Genome/Sequence Databases
 - **[SO - Sequence Ontology](http://www.sequenceontology.org/)**: SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation.
@@ -133,6 +131,8 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 ### RNA
 #### Related Terms
 - **RNA**: Ribonucleic acid (RNA) is a polymeric molecule implicated in various biological roles in coding, decoding, regulation, and expression of genes. [@Wiki](https://en.wikipedia.org/wiki/RNA)
+- **3'-UTR**: is the section of messenger RNA (mRNA) that immediately follows the translation termination codon. [@Wiki](https://en.wikipedia.org/wiki/Three_prime_untranslated_region)
+- **5'-UTR**: The 5' untranslated region (5′ UTR) (also known as a Leader Sequence or Leader RNA) is the region of an mRNA that is directly upstream from the initiation codon. [@Wiki](https://en.wikipedia.org/wiki/Five_prime_untranslated_region)
 
 ### Protein
 #### Related Terms
@@ -399,6 +399,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **Rare Variant**: A rare functional variant is a genetic variant which alters gene function, and which occurs at low frequency in a population. [@Wiki](https://en.wikipedia.org/wiki/Rare_functional_variant)
 - **Allele Frequency**: Allele frequency, or gene frequency, is the relative frequency of an allele (variant of a gene) at a particular locus in a population, expressed as a fraction or percentage. [@Wiki](https://en.wikipedia.org/wiki/Allele_frequency)
 - **SV - Structural Variation**: Structural variation (also genomic structural variation) is the variation in structure of an organism's chromosome. It consists of many kinds of variation in the genome of one species, and usually includes microscopic and submicroscopic types, such as deletions, duplications, copy-number variants, insertions, inversions and translocations.
+- **[Transition vs Transversion](https://www.mun.ca/biology/scarr/Transitions_vs_Transversions.html)**: DNA substitution mutations are of two types. Transitions are interchanges of two-ring purines (A <-> G) or of one-ring pyrimidines (C <-> T): they therefore involve bases of similar shape. Transversions are interchanges of purine for pyrimidine bases, which therefore involve exchange of one-ring and two-ring structures (A <-> C, A <-> T, G <-> C, G <-> T).
 
 #### Genetic Variant/Disease Databases
 - **[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)**: The Single Nucleotide Polymorphism Database (dbSNP) is a free public archive for genetic variation within and across different species developed and hosted by the National Center for Biotechnology Information (NCBI) in collaboration with the National Human Genome Research Institute (NHGRI).
@@ -453,9 +454,14 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[Expression Atlas](http://www.ebi.ac.uk/gxa)**: The Expression Atlas provides information on gene expression patterns under different biological conditions such as a gene knock out, a plant treated with a compound, or in a particular organism part or cell. [@Ref](http://nar.oxfordjournals.org/content/44/D1/D746.full)
 
 ### NGS Data Analysis
+#### Read Simulation
+- **[ReadSim](https://sourceforge.net/p/readsim/wiki/Home/)**: ReadSim is a fast and simple reads simulator to target long reads such as PacBio or Nanopore.
+- **[simNGS](http://www.ebi.ac.uk/goldman-srv/simNGS/)**: simNGS is software for simulating observations from Illumina sequencing machines using the statistical models behind the AYB base-calling software.
+
 #### Read Trimming
 - **[Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic)**: A flexible read trimming tool for Illumina NGS data.
 - **[Sickle](https://github.com/najoshi/sickle)**: A windowed adaptive trimming tool for FASTQ files using quality.
+- **[famas](https://github.com/andreas-wilm/famas)**: Yet another program for FastQ massaging with features: Quality- and length-based trimming, Random sampling, Splitting into multiple files, Order checking for paired-end files, Native gzip support.
 
 #### De-Duplication
 - **[PiCard MarkDuplicates](https://broadinstitute.github.io/picard/command-line-overview.html#MarkDuplicates)**: This tool locates and tags duplicate reads in a BAM or SAM file, where duplicate reads are defined as originating from a single fragment of DNA. 
@@ -465,6 +471,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 - **[bwa](http://bio-bwa.sourceforge.net/)**: BWA is a software package for mapping low-divergent sequences against a large reference genome, such as the human genome.
 - **[bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)**: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences.
 - **[ABRA](https://github.com/mozack/abra)**: ABRA is a realigner for next generation sequencing data. It uses localized assembly and global realignment to align reads more accurately, thus improving downstream analysis (detection of indels and complex variants in particular). [@Ref](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4173014/)
+- **[NextGenMap](http://cibiv.github.io/NextGenMap/)**: NextGenMap (NGM) is a flexible and fast read mapping program that is more than twice as fast as BWA, while achieving a mapping sensitivity similar to Stampy or Bowtie2. [@Ref](http://bioinformatics.oxfordjournals.org/content/29/21/2790.long)
 
 #### Quality Control
 - **[ClinQC](https://sourceforge.net/projects/clinqc/)**: ClinQC is an integrated and user-friendly pipeline for quality control, filtering and trimming of Sanger and NGS sequencing data for hundred to thousands of samples/patients in a single run in clinical research.
@@ -508,6 +515,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **COPS**: A Sensitive and Accurate Tool for Detecting Somatic Copy Number Alterations Using Short-Read Sequence Data from Paired Samples. COPS is available at ftp://115.119.160.213 with username “cops” and password “cops”. [@Ref](http://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0047812)
 - **[multiSNV](https://bitbucket.org/joseph07/multisnv/wiki/Home)**: multiSNV is a tool for calling somatic single-nucleotide variants (SNVs) using NGS data from a normal and multiple tumour samples of the same patient. [@Ref](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4482059/)
 - **[SomaticSeq](http://bioinform.github.io/somaticseq/)**: SomaticSeq is a flexible post-somatic-mutation-calling workflow for improved accuracy. [@Ref](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4574535/)
+- **[Cosmos](http://seselab.org/cosmos/)**: COSMOS can detect somatic structural variations from whole genome short-read sequences. [@Ref](http://nar.oxfordjournals.org/content/44/8/e78)
 
 #### Variant Filtering
 - **[SnpSift](http://snpeff.sourceforge.net/SnpSift.html)**: SnpSift is a toolbox that allows you to filter and manipulate annotated files.
@@ -569,11 +577,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[samtools](https://github.com/samtools/samtools)**: SAM Tools provide various utilities for manipulating alignments in the SAM/BAM format, including sorting, merging, indexing and generating alignments in a per-position format.
 - **[VCFtools](https://vcftools.github.io/index.html)**: A set of tools written in Perl and C++ for working with VCF files.
 - **[PiCard](https://broadinstitute.github.io/picard/)**: Picard is a set of command line tools for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.
-
-### File Format Conversions
-- **[BED <-> BigBed]**: [bedToBigBed](https://www.encodeproject.org/software/bedToBigBed/) [bigBedToBed](http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64.v287/bigBedToBed)
-- **[bigWig <-> Wig]**: [bigWigToWig](https://www.encodeproject.org/software/bigwigtowig/), [wigToBigWig](https://www.encodeproject.org/software/wigtobigwig/)
-
+- **[SVTools](https://github.com/ctsa/svtools)**: Tools for processing and analyzing structural variants.
 
 ## Math/Statistics
 ### Distributions
