@@ -551,6 +551,7 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[pileup.js](http://www.hammerlab.org/2015/06/19/introducing-pileup-js-a-browser-based-genome-viewer/)**: a Browser-based Genome Viewer.
 - **[Biodalliance](http://www.biodalliance.org/index.html)**: Biodalliance is a fast, interactive, genome visualization tool that's easy to embed in web pages and applications.
 - **[TADkit](https://github.com/3DGenomes/TADkit)**: TADkit is a HTML5 and JavaScript-based 3D genome browser. It makes use of D3.js for rendering the 1D and 2D tracks and WebGl by Three.js for rendering the 3D track. 
+- **[ngs.plot](https://github.com/shenlab-sinai/ngsplot)**: ngs.plot is a program that allows you to easily visualize your next-generation sequencing (NGS) samples at functional genomic regions. [@Ref](http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-15-284)
 
 #### NGS Data Analysis Pipeline/framework
 - **[nextflow](https://www.nextflow.io/)**: Nextflow is a fluent DSL modelled around the UNIX pipe concept, that simplifies writing parallel and scalable pipelines in a portable manner.
