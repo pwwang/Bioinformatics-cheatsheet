@@ -66,7 +66,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Alignment](#alignment)
     - [Quality Control](#quality-control)
     - [Peak Calling/Differential Peak Calling](#peak-callingdifferential-peak-calling)
-    - [Differential Expressed Gene Calling](#differential-expressed-gene-calling)
+    - [RNA-seq data analyses](#rna-seq-data-analyses)
     - [Variant Calling](#variant-calling)
     - [Variant Filtering](#variant-filtering)
     - [Variant Annotators](#variant-annotators)
@@ -489,8 +489,8 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[ODIN](http://www.regulatory-genomics.org/odin-2/basic-introduction/)**: ODIN is an HMM-based approach to detect and analyse differential peaks in pairs of ChIP-seq data. ODIN performs genomic signal processing, peak calling and p-value calculation in an integrated framework. [@Ref](http://bioinformatics.oxfordjournals.org/content/30/24/3467)
 - **[MMDiff](https://www.bioconductor.org/packages/release/bioc/html/MMDiff.html)**: This package detects statistically significant difference between read enrichment profiles in different ChIP-Seq samples. [@Ref](bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-14-826)
 
-
-#### Differential Expressed Gene Calling
+#### RNA-seq data analyses
+- **[RSEM](http://deweylab.github.io/RSEM/)**: accurate transcript quantification from RNA-Seq data with or without a reference genome[@Ref](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323)
 - **[Limma](https://bioconductor.org/packages/release/bioc/html/limma.html)**: Linear Models for Microarray and RNA-Seq Data.
 - **[edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)**: Empirical Analysis of Digital Gene Expression Data in R.
 - **[DESeq](http://bioconductor.org/packages/release/bioc/html/DESeq.html)**: Differential gene expression analysis based on the negative binomial distribution.
