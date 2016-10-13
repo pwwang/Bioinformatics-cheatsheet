@@ -70,6 +70,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Variant Calling](#variant-calling)
     - [Variant Filtering](#variant-filtering)
     - [Variant Annotators](#variant-annotators)
+    - [Variant prioritization](#variant-prioritization)
     - [Variant Simulation](#variant-simulation)
     - [Haplotype Estimation Tools](#haplotype-estimation-tools)
     - [NGS Data/Variant/Genome Visulizers/Browsers/Diagrams](#ngs-datavariantgenome-visulizersbrowsersdiagrams)
@@ -534,6 +535,9 @@ __Differential peak calling__ is about identifying significant differences in tw
 - **[Cellbase](https://github.com/opencb/cellbase)**: CellBase is a scalable and high-performance NoSQL database that integrates relevant biological information from well-known data sources such as Ensembl, Uniprot, IntAct or ClinVar among others. All this data can be queried through a comprehensive RESTful web services API or using the command line interface. Also, a built-in variant annotator has been developed and can be used to annotate files containing variants in Variant Call Format (VCF). [@Ref](http://nar.oxfordjournals.org/content/40/W1/W609.short)
 - **[GenomeD3Plot](https://github.com/brinkmanlab/GenomeD3Plot/)**: GenomeD3Plot (formerly [Islandplot](https://github.com/lairdm/islandplot)) is an SVG based genome viewer written in javascript using D3.
 - **[Variant Tools](http://varianttools.sourceforge.net/Main/HomePage)**: variant tools is a software tool for the manipulation, annotation, selection, simulation, and analysis of variants in the context of next-gen sequencing analysis. [@Ref](http://bioinformatics.oxfordjournals.org/content/28/3/421.abstract?sid=f64403e7-5050-4102-963c-e690efe003f7) 
+
+#### Variant prioritization
+- **[Mutsig](http://archive.broadinstitute.org/cancer/cga/mutsig)**: MutSig analyzes lists of mutations discovered in DNA sequencing, to identify genes that were mutated more often than expected by chance given background mutation processes. [@Ref](http://www.nature.com/nature/journal/v499/n7457/full/nature12213.html)
 
 #### Variant Simulation
 - **[SCNVSim](https://sourceforge.net/projects/scnvsim/)**: somatic copy number variation and structure variation simulator. [@Ref](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0502-7)
