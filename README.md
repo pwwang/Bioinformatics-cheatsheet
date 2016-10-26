@@ -51,7 +51,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
   - [GWAS](#gwas)
     - [Related Terms](#related-terms-7)
     - [Meta-Analysis Tools](#meta-analysis-tools)
-    - [Download-stream GWAS Analysis](#download-stream-gwas-analysis)
+    - [Downstream GWAS Analysis](#downstream-gwas-analysis)
   - [Disease/Phenotype Databases/Ontologies](#diseasephenotype-databasesontologies)
   - [Germline Mutations and Genetic Diseases](#germline-mutations-and-genetic-diseases)
     - [Related Terms](#related-terms-8)
@@ -398,7 +398,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 #### Meta-Analysis Tools
 - **[RAREMETAL](http://genome.sph.umich.edu/wiki/RAREMETAL)**: RAREMETAL is a program that facilitates the meta-analysis of rare variants from genotype arrays or sequencing. 
 
-#### Download-stream GWAS Analysis
+#### Downstream GWAS Analysis
 - **[PrediXcan](https://github.com/hakyim/PrediXcan)**: PrediXcan is a gene-based association test that prioritizes genes that are likely to be causal for the phenotype. [@Ref](http://www.nature.com/ng/journal/v47/n9/full/ng.3367.html)
 - **[MetaXcan](https://github.com/hakyimlab/MetaXcan)**: MetaXcan is an extension of PrediXcan method, that infers the results of PrediXcan using only summary statistics. 
 - **[PredictDB](http://predictdb.hakyimlab.org/)**: This PredictDB Data Repository hosts genetic prediction models of transcriptome levels to be used with PrediXcan and MetaXcan.
