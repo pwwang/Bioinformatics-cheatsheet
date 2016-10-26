@@ -73,6 +73,7 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
     - [Peak Calling/Differential Peak Calling](#peak-callingdifferential-peak-calling)
     - [RNA-seq data analyses](#rna-seq-data-analyses)
     - [(Capture) Hi-C data analyses](#capture-hi-c-data-analyses)
+    - [Chromatin status data analysis](#chromatin-status-data-analysis)
     - [Variant Calling](#variant-calling)
     - [Variant Filtering](#variant-filtering)
     - [Variant Annotators](#variant-annotators)
