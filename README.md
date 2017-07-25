@@ -491,8 +491,10 @@ A cheat sheet for Bioinformatians. [@Github Pages](https://pwwang.github.io/Bioi
 
 ### NGS Data Analysis
 #### Read Simulation
+- **[dwgsim](https://github.com/nh13/DWGSIM)**: Whole genome simulator.
 - **[ReadSim](https://sourceforge.net/p/readsim/wiki/Home/)**: ReadSim is a fast and simple reads simulator to target long reads such as PacBio or Nanopore.
 - **[simNGS](http://www.ebi.ac.uk/goldman-srv/simNGS/)**: simNGS is software for simulating observations from Illumina sequencing machines using the statistical models behind the AYB base-calling software.
+- **[wgsim](https://github.com/lh3/wgsim)**: Wgsim is a small tool for simulating sequence reads from a reference genome.
 
 #### Read Trimming
 - **[Trimmomatic](http://www.usadellab.org/cms/index.php?page=trimmomatic)**: A flexible read trimming tool for Illumina NGS data.
