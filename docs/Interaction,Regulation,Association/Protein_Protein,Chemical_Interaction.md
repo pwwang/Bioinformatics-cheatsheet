@@ -1,0 +1,117 @@
+# Protein-Protein/Chemical Interaction
+<!-- toc -->
+
+## Related Terms
+- **PPI - Protein-Protein Interaction**: Protein–protein interactions (PPIs) refer to lasting or ephemeral physical contacts of high specificity established between two or more protein molecules as a result of biochemical events steered by electrostatic forces including the hydrophobic effect. [@Wiki](https://en.wikipedia.org/wiki/Protein–protein_interaction)
+
+## Protein-Protein Interaction Databases
+- **[2P2Idb](http://2p2idb.cnrs-mrs.fr)**: 2P2I<sub>DB</sub> is a hand-curated database dedicated to the structure of protein-protein complexes with known small molecule inhibitors.
+- **[3D-Interologs](http://3d-interologs.life.nctu.edu.tw/index.php)**: The 3D-Interologs is a cross-species interacting database inferring from three-dimensional (3D) protein structure complexes and a novel scoring function by using 3D-domain interologs.
+- **[3DID](http://3did.irbbarcelona.org)**: The database of three-dimensional interacting domains (3did) is a collection of high-resolution three-dimensional structural templates for domain-domain interactions.
+- **[ANAP](http://gmdd.shgmo.org/Computational-Biology/ANAP)**: Arabidopsis Network Analysis Pipeline.
+- **[AntiJen](http://www.ddg-pharmfac.net/antijen/AntiJen/antijenhomepage.htm)**: AntiJen v2.0, is a database containing quantitative binding data for peptides binding to MHC Ligand, TCR-MHC Complexes, T Cell Epitope, TAP , B Cell Epitope molecules and immunological Protein-Protein interactions.
+- **[APID](http://cicblade.dep.usal.es:8080/APID/init.action)**: APID (Agile Protein Interactomes DataServer) provides a comprehensive collection of protein interactomes for more than 400 organisms based in the integration of known experimentally validated protein-protein physical interactions (PPIs).
+- **[ASPD](http://wwwmgs.bionet.nsc.ru/mgs/gnw/aspd)**: ASPD (Artificial Selected Proteins/Peptides Database) is a curated database on selected from randomized pools proteins and peptides.
+- **[ATDB](http://protchem.hunnu.edu.cn/toxin/index.jsp)**:ATDB mainly focuses on construct a globe-scale animal toxin-channel interaction network based on literatures and database annotations.
+- **[AtPID](http://www.megabionet.org/atpid/webfile)**: Arabidopsis thaliana Protein Interactome Database.
+- **[Bacteriome.org](http://128.100.134.188/bacteriome)**: Bacterial Protein Interaction Database for Escherichia Coli.
+- **[BIANA](http://sbi.imim.es/web/index.php/research/servers/biana?page=biana.server)**: Biologic Interaction and Network Analysis.
+- **[BID](http://tsailab.chem.pacific.edu/wikiBID/index.php/Main_Page)**: Binding Interface Database.
+- **[BioGRID](thebiogrid.org/)**: BioGRID Is An Online Interaction Respository With Data Compiled Through Comprehensive Curation Efforts.
+- **[BISC](http://bisc.cse.ucsc.edu)**: BISC(BInary SubComplex Database) is a new protein-protein interaction (PPI) database intending to bridge between the two communities most active in their characterisation: structural biology and functional genomics researchers.
+- **[CCSB Interactome Database](http://interactome.dfci.harvard.edu)**: Center for Cancer Systems Biology Interactome Database.
+- **[ComSim](http://antares.protres.ru/comsin)**: Database of protein structures in bound (Complex) and unbound (Single) states.
+- **[CORUM](http://mips.helmholtz-muenchen.de/genre/proj/corum/index.html)**: Comprehensive resource of mammalian protein complexes.
+- **[CTDB](http://calcium.uhnres.utoronto.ca/ctdb/flash.htm)**: Calmodulin Target Database.
+- **[CutDB](http://cutdb.burnham.org)**: CutDB: Proteolytic Event Database.
+- **[DeathDomain](http://www.deathdomain.org)**: A manually curated database of protein-protein interactions for Death Domain Superfamily.
+- **[DIMA](http://webclu.bio.wzw.tum.de/dima/index.jsp)**: DIMA is a Domain Interaction MAp and aims at becoming a comprehensive resource for functional and physical interactions among conserved protein-domains.
+- **[DIP](http://dip.doe-mbi.ucla.edu/)**: The DIP<sup>TM</sup> database catalogs experimentally determined interactions between proteins.
+- **[DOMINE](http://domine.utdallas.edu/cgi-bin/Domine)**: DOMINE is a database of known and predicted protein domain (domain-domain) interactions.
+- **[DOMINO](http://mint.bio.uniroma2.it/domino)**: DOMINO is an open-access database comprising more than 3900 annotated experiments describing interactions mediated by protein-interaction domains.
+- **[DOMMINO](http://orion.rnet.missouri.edu/~nz953/DOMMINO)**: Database of MacroMolecular Interactions .
+- **[DroID](http://www.droidb.org/)**: DroID is a comprehensive gene and protein interactions (interactome) database designed specifically for the model organism Drosophila.
+- **[DroPNet](http://dropnet.isima.fr/DroPNet_project/index.faces)**: Drosophila Protein Network.
+- **[EciD](http://ecid.bioinfo.cnio.es)**: E. coli Interaction Database.
+- **[FunCoup](http://funcoup.sbc.su.se)**: FunCoup is a framework to infer genome-wide functional couplings in 11 model organisms.
+- **[Gene3D](http://gene3d.biochem.ucl.ac.uk)**: Gene3D takes CATH domain families (from PDB structures) and assigns them to the millions protein sequences (using Hidden Markov models generated from HMMER) with no PDB structures.
+- **[gpDB](http://biophysics.biol.uoa.gr/gpDB/index.jsp)**: a database of GPCRs, G-proteins, Effectors and their interactions.
+- **[GWIDD](http://gwidd.bioinformatics.ku.edu)**: Genome-WIde protein Docking Database.
+- **[HCPIN](http://nesg.org:9090/HCPIN)**: Human Cancer Protein Interaction Network.
+- **[HCVpro](http://cbrc.kaust.edu.sa/hcvpro)**: Hepatitus C Virus Protein Interaction Database.
+- **[HINT](http://hint.yulab.org)**:HINT (High-quality INTeractomes) is a database of high-quality protein-protein interactions in different organisms.
+- **[HitPredict](http://hintdb.hgc.jp/htp)**: HitPredict is a resource of experimentally determined protein-protein interactions with reliability scores.
+- **[HIV-1 Human Interaction Database](http://www.ncbi.nlm.nih.gov/RefSeq/HIVInteractions)**: The HIV-1, human interactions project collates published reports of two types of interactions - protein interactions, and human gene knock-downs that affect virus replication and infectivity (reported as 'replication interactions').
+- **[HIVMID](http://www.hiv.lanl.gov/content/immunology)**: HIV Molecular Immunology Database.
+- **[HotRegion](http://prism.ccbb.ku.edu.tr/hotregion)**: A Database of Cooperative Hotspots.
+- **[HP-DPI](http://dpi.nhri.org.tw)**: Helicobacter pylori Database of Protein Interactomes.
+- **[HPID](http://www.hpid.org)**: Human Protein Interaction Database.
+- **[HPIDB](http://agbase.msstate.edu/hpi/main.html)**: Host-Pathogen Interaction Database.
+- **[HPRD](http://www.hprd.org/)**: The Human Protein Reference Database represents a centralized platform to visually depict and integrate information pertaining to domain architecture, post-translational modifications, interaction networks and disease association for each protein in the human proteome.
+- **[Human-gpDB](http://bioinformatics.biol.uoa.gr/human_gpdb)**: A database of human GPCRs, G-proteins, Effectors and their interactions.
+- **[HumanPSD](http://www.proteome.com/control/researchproducts/insilico/proteome/details)**: Human Proteome Survey Database .
+- **[HuPI](http://hupi.ircm.qc.ca/hupi)**: database of the Human Proteotheque Initiative.
+- **[I2D](http://ophid.utoronto.ca)**: Interologous Interaction Database.
+- **[IBIS](http://www.ncbi.nlm.nih.gov/Structure/ibis/ibis.cgi)**: Inferred Biomolecular Interactions (protein-protein, protein-small molecule, protein nucleic acids and protein-ion interactions) Server.
+- **[ICBS](http://icbs.ics.uci.edu)**: A database of protein-protein interactions mediated by interchain ß-sheet formation.
+- **[IMEx](http://www.imexconsortium.org)**: The International Molecular Exchange Consortium.
+- **[iMOTdb](http://caps.ncbs.res.in/imotdb)**: Interacting motifs in proteins database.
+- **[InnateDB](http://www.innatedb.ca)**: A Knowledge Resource for Innate Immunity Interactions and Pathways.
+- **[INstruct](http://instruct.yulab.org)**: a database of 3D protein interactome networks with structural resolution.
+- **[IntAct](www.ebi.ac.uk/intact/)**: IntAct provides a freely available, open source database system and analysis tools for molecular interaction data.
+- **[Interactome](http://interactome-cmp.ucsf.edu/)**: Krogan Lab Interactome Database.
+- **[InterDom](http://interdom.i2r.a-star.edu.sg)**: InterDom is a database of putative interacting protein domains derived from multiple sources, ranging from domain fusions (Rosetta Stone), protein interactions (DIP and BIND), protein complexes (PDB), to scientific literature (MEDLINE). 
+- **[InterEvol](http://biodev.cea.fr/interevol)**: InterEvol database is designed for the analysis of co-evolution events at the interface of known structures of hetero- and homo-oligomers.
+- **[Interfaces](http://home.ku.edu.tr/~okeskin/INTERFACE/INTERFACES.html)**: DATASET OF PROTEIN-PROTEIN INTERFACES.
+- **[Interolog](http://interolog.gersteinlab.org)**: Interolog/Regulog Database.
+- **[InteroPorc](http://biodev.extra.cea.fr/interoporc)**: InteroPorc is an automatic prediction tool to infer protein-protein interaction networks.
+- **[iRefIndex](http://irefindex.org/wiki/index.php?title=iRefIndex)**: iRefIndex provides an index of protein interactions available in a number of primary interaction databases including BIND, BioGRID, CORUM, DIP, HPRD, InnateDB, IntAct, MatrixDB, MINT, MPact, MPIDB and MPPI.
+- **[iRefWeb](http://wodaklab.org/iRefWeb)**: Interaction Reference Index Web Interface.
+- **[IRView](http://ir.hgc.jp)**: a database and viewer of interacting regions (IRs) in protein sequences.
+- **[MatrixDB](http://matrixdb.univ-lyon1.fr/)**: MatrixDB stores experimental data established by full-length proteins, matricryptins, glycosaminoglycans, lipids and cations.
+- **[MINT](http://mint.bio.uniroma2.it/)**: MINT focuses on experimentally verified protein-protein interactions mined from the scientific literature by expert curators.
+- **[MIPS-MPPI](http://mips.helmholtz-muenchen.de/proj/ppi)**: MIPS Mammalian Protein-Protein Interaction Database.
+- **[MPI-LIT](http://www.jcvi.org/mpidb/interaction.php?dbsource=MPI-LIT)**: the microbial protein interaction database.
+- **[MPID](http://bioinformatics.cau.edu.cn/cgi-bin/zzd-cgi/ppi/mpid.pl)**: Magnaporthe grisea Protein-protein Interaction Database.
+- **[MPID-T](http://variome.bic.nus.edu.sg/mpidt/index.html)**: MHC-Peptide Interaction Database.
+- **[MPIDB](http://www.jcvi.org/mpidb/about.php)**: Microbial Protein Interaction Database.
+- **[NCG](http://bio.ieo.eu/ncg2)**: NCG collects information on duplicability, orthology, evolutionary appearance and protein interactions network (PIN) properties of 736 cancer genes.
+- **[NCPI](http://protein.cau.edu.cn/ncpi)**: Neurospora Crassa Protein Interactome Database.
+- **[Negatome](http://mips.helmholtz-muenchen.de/proj/ppi/negatome)**: The Negatome is a collection of protein and domain pairs which are unlikely engaged in direct physical interactions.
+- **[PRISM](http://cosbi.ku.edu.tr/prism/)**: Protein Interactions by Structural Matching.
+- **[PCRPi-DB](http://www.bioinsilico.org/cgi-bin/PCRPIDB/htmlPCRPI/home)**: PCRPi-DB is a database of computationally annotated hot spots in protein interfaces.
+- **[PDZBase](http://icb.med.cornell.edu/services/pdz/start)**: PDZBase is a manually curated protein-protein interaction database developed specifically for interactions involving PDZ domains.
+- **[PICCOLO](http://www-cryst.bioc.cam.ac.uk/~richard/piccolo/about.php)**: PICCOLO is a comprehensive database of structurally-characterized protein-protein interactions described at atomic level.
+- **[PIPs](http://www.compbio.dundee.ac.uk/www-pips/)**: PIPs is a database of predicted human protein-protein interactions. 
+- **[PiSITE](http://pisite.hgc.jp)**: PiSITE is a web-based database of protein interaction sites.
+- **[PPIRA](http://protein.cau.edu.cn/ppira)**: Protein-Protein Interactions between Ralstonia solanacearum and Arabidopsis thaliana.
+- **[PDBePISA](http://www.ebi.ac.uk/pdbe/pisa/)**: PDBePISA is an interactive tool for the exploration of macromolecular interfaces.
+- **[PRIN](http://bis.zju.edu.cn/prin)**: Predicted Rice Interactome Database.
+- **[RKD](http://rkd.ucdavis.edu/interactome.shtml)**: Rice Kinase Database.
+- **[SCOPPI](http://scoppi.biotec.tu-dresden.de/scoppi/index.html)**: Structural classification of protein-protein interfaces.
+- **[SCOWLP](http://www.scowlp.org/scowlp)**: structural classification of protein binding reasons for atomic comparative analysis of protein interactions.
+- **[SNAPPI-DB](http://www.compbio.dundee.ac.uk/SNAPPI)**: Structures, iNterfaces and Alignments for Protein-Protein Interactions.
+- **[STRING](string-db.org/)**: functional protein association networks.
+- **[Struct2Net](http://groups.csail.mit.edu/cb/struct2net/webserver)**: Structure-based Computational Predictions of Protein-Protein Interactions.
+- **[SYFPEITHI](http://www.syfpeithi.de)**: Database of MHC Ligands and Peptide Motifs.
+- **[TissueNet](http://netbio.bgu.ac.il/tissuenet)**: The Database of Human Tissue Protein-Protein Interactions.
+- **[TRIP](http://www.trpchannel.org)**: a manually curated database of protein-protein interactions for mammalian TRP channels.
+- **[Wiki-Pi](http://severus.dbmi.pitt.edu/wiki-pi)**: Wiki-Pi: a wiki resource centred on human protein-protein interactions.
+- **[XooNET](http://bioportal.kobic.re.kr/XooNET)**: Integrated Protein-Protein Interaction database of Xanthomonas oryzae pathovar oryzae KACC1031.
+
+## Protein-Chemical Interaction Databases
+- **[ChemProt](http://potentia.cbs.dtu.dk/ChemProt/)**: The ChemProt 3.0 server is a ressource of annotated and predicted chemical-protein interactions. 
+
+## PPI Detection Methods
+- **[CoIP - Co-immunoprecipitation](https://en.wikipedia.org/wiki/Co-immunoprecipitation)**: is considered to be the gold standard assay for protein–protein interactions, especially when it is performed with endogenous (not overexpressed and not [tagged](https://en.wikipedia.org/wiki/Epitope#Epitope_tags)) proteins. The protein of interest is isolated with a specific antibody. Interaction partners which stick to this protein are subsequently identified by [Western blotting](https://en.wikipedia.org/wiki/Western_blotting). Interactions detected by this approach are considered to be real. 
+- **[Bimolecular fluorescence complementation](https://en.wikipedia.org/wiki/Bimolecular_fluorescence_complementation)**: (BiFC) is a new technique in observing the interactions of proteins. Combining with other new techniques, this method can be used to screen protein–protein interactions and their modulators, [DERB](https://en.wikipedia.org/wiki/DERB).
+- **[Affinity electrophoresis](https://en.wikipedia.org/wiki/Affinity_electrophoresis)**: as used for estimation of [binding constant](https://en.wikipedia.org/wiki/binding_constant)s, as for instance in [lectin](https://en.wikipedia.org/wiki/lectin) affinity electrophoresis or characterization of molecules with specific features like [glycan](https://en.wikipedia.org/wiki/glycan) content or [ligand](https://en.wikipedia.org/wiki/ligand) binding.
+- **Pull-down assays**: are a common variation of [immunoprecipitation](https://en.wikipedia.org/wiki/immunoprecipitation) and [immunoelectrophoresis](https://en.wikipedia.org/wiki/immunoelectrophoresis) and are used identically, although this approach is more amenable to an initial screen for interacting proteins.
+- **[Label transfer](https://en.wikipedia.org/wiki/Label_transfer)**: can be used for screening or confirmation of protein interactions and can provide information about the interface where the interaction takes place. Label transfer can also detect weak or transient interactions that are difficult to capture using other ''in vitro'' detection strategies. In a label transfer reaction, a known protein is tagged with a detectable label. The label is then passed to an interacting protein, which can then be identified by the presence of the label.
+- **[Y2H - Yeast Two-Hybrid](https://en.wikipedia.org/wiki/yeast_two-hybrid)**: Y2H screen investigates the interaction between artificial fusion proteins inside the nucleus of yeast. This approach can identify binding partners of a protein in an unbiased manner.
+- **[Phage display](https://en.wikipedia.org/wiki/Phage_display)**: used for the high-throughput screening of protein interactions
+- **[TAP - Tandem Affinity Purification](https://en.wikipedia.org/wiki/Tandem_affinity_purification)**: (TAP) method allows high throughput identification of protein interactions. In contrast to yeast two-hybrid approach the accuracy of the method can be compared to those of small-scale experiments and the interactions are detected within the correct cellular environment as by [co-immunoprecipitation](https://en.wikipedia.org/wiki/co-immunoprecipitation). However, the TAP tag method requires two successive steps of protein purification and consequently it can not readily detect transient protein–protein interactions. 
+- **[Cross-link/Chemical cross-linking](https://en.wikipedia.org/wiki/cross-link|Chemical_cross-linking)**: is often used to "fix" protein interactions in place before trying to isolate/identify interacting proteins. Common crosslinkers for this application include the non-cleavable [NHS](https://en.wikipedia.org/wiki/N-Hydroxysuccinimide)-ester cross-linker, [bissulfosuccinimidyl suberate](https://en.wikipedia.org/wiki/bissulfosuccinimidyl_suberate) (BS3); a cleavable version of BS3, [dithiobis(sulfosuccinimidyl propionate)](https://en.wikipedia.org/wiki/dithiobis(sulfosuccinimidyl_propionate)) (DTSSP); and the [imidoester](https://en.wikipedia.org/wiki/imidoester) cross-linker [dimethyl dithiobispropionimidate](https://en.wikipedia.org/wiki/dimethyl_dithiobispropionimidate) (DTBP) that is popular for fixing interactions in [ChIP](https://en.wikipedia.org/wiki/ChIP) assays.
+- **[SPINE](https://en.wikipedia.org/wiki/SPINE_(molecular_biology))**: (Strepprotein interaction experiment) uses a combination of reversible crosslinking with formaldehyde and an incorporation of an affinity tag to detect interaction partners ''in vivo''.
+- **[Quantitative immunoprecipitation combined with knock-down](https://en.wikipedia.org/wiki/Quantitative_immunoprecipitation_combined_with_knock-down)**: (QUICK) relies on co-immunoprecipitation, quantitative [mass spectrometry](https://en.wikipedia.org/wiki/mass_spectrometry) ([SILAC](https://en.wikipedia.org/wiki/SILAC)) and [RNA interference](https://en.wikipedia.org/wiki/RNA_interference) (RNAi). This method detects interactions among endogenous non-tagged proteins. Thus, it has the same high confidence as co-immunoprecipitation. However, this method also depends on the availability of suitable antibodies.
+- **[Proximity ligation assay](https://en.wikipedia.org/wiki/Proximity_ligation_assay)**: (PLA) in situ is an immunohistochemical method utilizing so called PLA probes for detection of proteins, protein interactions and modifications.
