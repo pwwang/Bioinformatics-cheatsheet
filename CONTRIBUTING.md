@@ -3,7 +3,8 @@ Contributions are always so very welcome!
 
 ## Guidelines
 - Fork the project.
-- Add section if needed and add section title to Table of contents ([doctoc](https://github.com/thlorenz/doctoc) is recommended).
+- Make directories under ./docs for new parts.
+- Add `<!-- toc -->` for a new section under `h1` so table of contents can be generated automatically.
 - Search previous items before making a new one, as yours may be a duplicate.
 - Add your items: 
 ```
